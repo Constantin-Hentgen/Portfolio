@@ -37,28 +37,70 @@ export default {
 					subtitle: "website",
 					year: "2022",
 					content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
-					techs:["js","python"]
+					techs:["vuejs","fedora","linux"],
 				},
 				{
 					title: "Citadelles",
 					subtitle: "Un jeu en java",
 					year: "2021",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["java","android"]
+					techs:["java","android","fedora","linux"]
 				},
 				{
 					title: "Clavier bépo",
 					subtitle: "Une configuration clavier optimisée",
 					year: "2020",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["fedora","linux"]
+					techs:["gaming","windows","fedora","linux"]
 				},
 				{
 					title: "Prime Explo",
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["js","windows"]
+					techs:["python","fedora","linux"]
+				},
+				{
+					title: "Task Manager",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["js","vuejs","fedora","linux"]
+				},
+				{
+					title: "Text Parser",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["python","fedora","linux"]
+				},
+				{
+					title: "Vue-Weather",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["vuejs","fedora","linux"]
+				},
+				{
+					title: "Touyube",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["html5","css3","linux"]
+				},
+				{
+					title: "Le Pouvoir du vote",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["html5","css3","js","linux"]
+				},
+				{
+					title: "Php Experiment",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["php","html5","css3","linux"]
 				}
 			]
 		}

@@ -1,6 +1,9 @@
 <template>
 	<footer class="mx-auto mt-24 flex justify-evenly w-1/2">
-		<p> {{ language }} </p>
+		<select class="bg-transparent" v-model="language">
+			<option value="english">English (US)</option>
+			<option value="francais">Français (France)</option>
+		</select>
 		<p> {{ license }} </p>
 		<p> made with <fa icon="heart" size="l" /> with <fa :icon='["fab","vuejs"]' size="l"/> </p>
 	</footer>
@@ -10,8 +13,12 @@
 export default {
   name: 'Card',
   props: {
-    language: String,
 		license: String
-  }
+  },
+	data() {
+		return {
+			language:"english"
+		}
+	}
 }
 </script>

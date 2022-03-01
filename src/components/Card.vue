@@ -2,9 +2,8 @@
 	<div class="
 		w-11/12 flex 
 		bg-white 
-		rounded-3xl 
-		select-none 
-		p-4
+		rounded-3xl
+		p-3
 		shadow-2xl 
 		cursor-pointer 
 		hover:to-blue-500
@@ -16,7 +15,7 @@
 	">
 
 		<div class="w-full md:w-1/3 bg-myBlue-900 rounded-xl mr-10 overflow-hidden object-fill">
-			<img class="object-none h-48 w-full" src= "../assets/coding.jpeg" alt="project's thumbnail">
+			<img class="object-none h-48 w-full" src="../assets/coding.jpeg" alt="project's thumbnail">
 		</div>
 
 		<div class="w-2/3 flex justify-evenly flex-col">
@@ -45,11 +44,7 @@ export default {
 		content: String,
 		year: String,
 		subtitle: String,
-  },
-	data() {
-		return {
-			test:true,
-		}
-	}
+		imageName: String,
+  }
 }
 </script>
