@@ -1,5 +1,5 @@
 <template>
-	<footer class="m-auto mt-40 flex justify-evenly w-1/2 h-72">
+	<footer class="mx-auto mt-24 flex justify-evenly w-1/2">
 		<p> {{ language }} </p>
 		<p> {{ license }} </p>
 		<p> made with <fa icon="heart" size="l" /> with <fa :icon='["fab","vuejs"]' size="l"/> </p>
