@@ -1,7 +1,5 @@
 <template>
-<transition name="fade" appear>
 	<Header />
-</transition>
 
 <transition name="fade" appear>
 	<main class="grid place-items-center mt-24 space-y-10">
@@ -130,24 +128,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-
- .transition-enter-active{
-    animation: fade-in-down 1.5s ease-out;
-  }
-  @keyframes fade-in-down {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-  .fade-enter-from{
-    opacity: 0;
-  }
-  .fade-enter-active{
-    transition: opacity 1.5s ease;
-  }
-</style>
