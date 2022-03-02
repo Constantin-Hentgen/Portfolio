@@ -1,7 +1,7 @@
 <template>
-	<Header />
 
-	<main class="grid place-items-center mt-24 space-y-10">
+	<button @click="titleParser">CLIQUE MOI POUR PARSER</button>
+
 		<Card v-for="(project, index) in projects" :key="index"
 			:title="project.title"
 			:year="project.year"
@@ -10,29 +10,25 @@
 			:techs="project.techs"
 			:id="project.id"
 		/>
-	</main>
 
-	<Footer
-		language="English (US)"
-		license="Copyright @2022 All rights reserved"
-	/>
+		<p> {{ projects[id].title }} </p>
+
+	<Footer />
+
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
+	import Footer from '@/components/Footer.vue'
 
-export default {
-  name: 'Home',
-  components: {
-		Card,
-		Header,
-		Footer
-  },
-	data() {
-		return {
-			projects: [
+	export default {
+		name: 'Project',
+		components: {
+			Footer,
+		},
+		data() {
+			return {
+				id: this.$route.params.id - 1,
+				projects:[
 				{
 					id:1,
 					title: "Mon site perso",
@@ -121,8 +117,17 @@ export default {
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["sass","php"]
 				}
-			]
-		}
+				],
+			}
+		},
+		methods: {
+			titleParser(title) {
+				if (title.indexOf(" ") > -1) {
+					alert("y a un putain d'espace dans ton titre")
+				}
+			}
+		},
 	}
-}
+
 </script>
+
