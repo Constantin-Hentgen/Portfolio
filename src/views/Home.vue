@@ -1,8 +1,11 @@
 <template>
+<transition name="fade" appear>
 	<Header />
+</transition>
 
+<transition name="fade" appear>
 	<main class="grid place-items-center mt-24 space-y-10">
-		<Card v-for="(project, index) in projects" :key="index"
+		<Card @click="setBackground" v-for="(project, index) in projects" :key="index"
 			:title="project.title"
 			:year="project.year"
 			:subtitle="project.subtitle"
@@ -12,6 +15,7 @@
 		/>
 	</main>
 
+</transition>
 	<Footer
 		language="English (US)"
 		license="Copyright @2022 All rights reserved"
@@ -126,3 +130,24 @@ export default {
 	}
 }
 </script>
+
+<style>
+
+ .transition-enter-active{
+    animation: fade-in-down 1.5s ease-out;
+  }
+  @keyframes fade-in-down {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .fade-enter-from{
+    opacity: 0;
+  }
+  .fade-enter-active{
+    transition: opacity 1.5s ease;
+  }
+</style>

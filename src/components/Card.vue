@@ -1,5 +1,6 @@
 <template>
 	<div @click="this.$router.push(`/${id}`)"
+		id="card"
 		class="
 			w-full flex 
 			bg-white 
@@ -51,3 +52,14 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+	#card {
+		transition: ease-in-out;
+		transition-duration: 0.2s;
+	}
+
+	#card:hover {
+		transform: scale(1.05);
+	}
+</style>

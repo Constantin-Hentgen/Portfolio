@@ -1,9 +1,8 @@
 <template>
-  <router-view/>
+	<router-view/>
 </template>
 
 <style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 	body {
 		@apply bg-myBlue-200 w-full h-full;
@@ -16,4 +15,5 @@
 	#app {
 		@apply w-full h-full p-5;
 	}
+
 </style>
