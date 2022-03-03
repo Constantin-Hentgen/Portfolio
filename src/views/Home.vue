@@ -1,23 +1,28 @@
 <template>
-	<Header />
+	<transition name="fade" appear>
+		<Header />
+	</transition>
 
-<transition name="fade" appear>
-	<main class="grid place-items-center mt-24 space-y-10">
-		<Card @click="setBackground" v-for="(project, index) in projects" :key="index"
-			:title="project.title"
-			:year="project.year"
-			:subtitle="project.subtitle"
-			:content="project.content"
-			:techs="project.techs"
-			:id="project.id"
+	<transition name="fade" appear>
+		<main class="grid place-items-center mt-24 space-y-10">
+			<Card @click="setBackground" v-for="(project, index) in projects" :key="index"
+				:title="project.title"
+				:year="project.year"
+				:subtitle="project.subtitle"
+				:content="project.content"
+				:techs="project.techs"
+				:imageURL="project.imageURL"
+				:id="project.id"
+			/>
+		</main>
+	</transition>
+
+	<transition name="fade" appear>
+		<Footer
+			language="English (US)"
+			license="Copyright @2022 All rights reserved"
 		/>
-	</main>
-
-</transition>
-	<Footer
-		language="English (US)"
-		license="Copyright @2022 All rights reserved"
-	/>
+	</transition>
 </template>
 
 <script>
@@ -42,6 +47,7 @@ export default {
 					year: "2022",
 					content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 					techs:["vuejs"],
+					imageURL:"https://bit.ly/3Ccb6d9"
 				},
 				{
 					id:2,
@@ -50,30 +56,34 @@ export default {
 					year: "2022",
 					content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 					techs:["vuejs"],
+					imageURL:"https://bit.ly/3Kf0lcA"
 				},
 				{
 					id:3,
-					title: "Citadelles",
-					subtitle: "Un jeu en java",
-					year: "2021",
-					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["java","android"]
-				},
-				{
-					id:4,
-					title: "Clavier bépo",
-					subtitle: "Une configuration clavier optimisée",
-					year: "2020",
-					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["windows","linux"]
-				},
-				{
-					id:5,
 					title: "Prime Explo",
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["python"]
+					techs:["python"],
+					imageURL:"https://bit.ly/35KZW2S"
+				},
+				{
+					id:4,
+					title: "Citadelles",
+					subtitle: "Un jeu en java",
+					year: "2021",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["java"],
+					imageURL:"https://bit.ly/3Ca2IdQ"
+				},
+				{
+					id:5,
+					title: "Vue-Weather",
+					subtitle: "Recherche de nombres premiers",
+					year: "2019",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["vuejs"],
+					imageURL:"https://bit.ly/36NbGSL"
 				},
 				{
 					id:6,
@@ -81,7 +91,8 @@ export default {
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["js-square","vuejs"]
+					techs:["js-square","vuejs"],
+					imageURL:"https://bit.ly/3pyqefA"
 				},
 				{
 					id:7,
@@ -89,15 +100,17 @@ export default {
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["python"]
+					techs:["python"],
+					imageURL:"https://bit.ly/3MjXqRT"
 				},
 				{
 					id:8,
-					title: "Vue-Weather",
+					title: "Php Experiment",
 					subtitle: "Recherche de nombres premiers",
-					year: "2019",
+					year: "2020",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["vuejs"]
+					techs:["sass","php"],
+					imageURL:"https://bit.ly/3tkbeTy"
 				},
 				{
 					id:9,
@@ -105,23 +118,26 @@ export default {
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["html5","css3-alt"]
+					techs:["html5","css3-alt"],
+					imageURL:"https://bit.ly/34azlf7"
 				},
 				{
 					id:10,
+					title: "Clavier bépo",
+					subtitle: "Une configuration clavier optimisée",
+					year: "2020",
+					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+					techs:["windows","linux"],
+					imageURL:"https://bit.ly/3MnFqG7"
+				},
+				{
+					id:11,
 					title: "Le Pouvoir du vote",
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["html5","css3-alt","js-square"]
-				},
-				{
-					id:10,
-					title: "Php Experiment",
-					subtitle: "Recherche de nombres premiers",
-					year: "2019",
-					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["sass","php"]
+					techs:["html5","css3-alt","js-square"],
+					imageURL:"https://bit.ly/3sG3sod"
 				}
 			]
 		}

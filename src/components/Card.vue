@@ -16,14 +16,13 @@
 			xl:w-1/2
 		"
 	>
-
-		<div class="w-full md:w-1/3 bg-myBlue-900 rounded-xl mr-10 overflow-hidden object-fill">
-			<img class="object-none h-48 w-full" src="../assets/coding.jpeg" alt="project's thumbnail">
+		<div class="w-full h-44 md:w-1/3 bg-myBlue-900 rounded-xl mr-10 overflow-hidden object-fill">
+			<img class="h-full w-full object-cover object-center" :src="imageURL" alt="project's thumbnail">
 		</div>
 
 		<div class="w-full xl-w-2/3 flex justify-evenly flex-col">
 			<div class="flex-row flex justify-between">
-				<h1 class="text-myBlue-900 font-bold text-2xl md:text-3xl"> {{ title }} </h1>
+				<h1 class="text-myBlue-900 font-bold text-2xl md:text-3xl">{{ title }} </h1>
 				<div class="space-x-3">
 					<fa v-for="(tech, index) in techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
 				</div>
@@ -48,7 +47,7 @@ export default {
 		content: String,
 		year: String,
 		subtitle: String,
-		imageName: String,
+		imageURL: String,
   }
 }
 </script>
@@ -56,7 +55,7 @@ export default {
 <style lang="postcss" scoped>
 	#card {
 		transition: ease-in-out;
-		transition-duration: 0.2s;
+		transition-duration: 0.15s;
 	}
 
 	#card:hover {
