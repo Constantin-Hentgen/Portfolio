@@ -1,21 +1,25 @@
 <template>
 	<transition name="fade" appear>
-		<header class="m-auto grid place-items-center">
+		<header class="m-auto grid place-items-center text-lg">
 			<router-link to="/" >back home</router-link>
 		</header>
 	</transition>
 
 	<transition name="fade" appear>
-		<main class="w-full xl:w-1/2 m-auto mt-32">
+		<main class="w-full xl:w-1/2 m-auto mt-32 space-y-8">
+			<a id="github" :href="projects[id].github"  class="flex space-x-2 cursor-pointer p-2">
+				<h1 class="text-5xl text-myBlue-900 font-bold"> {{ projects[id].title }} · </h1>
+				<fa class="my-auto" :icon='["fab","github-alt"]' size="2xl" color="21243D" />
+			</a>
 
-			<h1 class="w-full text-5xl text-myBlue-900 font-bold"> {{ projects[id].title }} </h1>
-
-			<div class="flex flex-row border-2 border-black">
-				<p class="mt-20"> {{ projects[id].year }} </p>
-				<fa v-for="(tech, index) in projects[id].techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
+			<div class="flex flex-row space-x-4">
+				<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{ projects[id].year }} </p>
+				<div class="h-full m-0 my-auto space-x-2">
+					<fa v-for="(tech, index) in projects[id].techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
+				</div>
 			</div>
 
-			<p class="flex"> {{ projects[id].content }} </p>
+			<p class="text-lg"> {{ projects[id].content }} </p>
 
 		</main>
 	</transition>
@@ -45,7 +49,8 @@
 						year: "2022",
 						content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 						techs:["vuejs"],
-						imageURL:"https://bit.ly/3Ccb6d9"
+						imageURL:"https://bit.ly/3Ccb6d9",
+						github:"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
 					},
 					{
 						id:2,
@@ -54,7 +59,8 @@
 						year: "2022",
 						content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 						techs:["vuejs"],
-						imageURL:"https://bit.ly/3Kf0lcA"
+						imageURL:"https://bit.ly/3Kf0lcA",
+						github:"https://github.com/Rhylionn/denmark-blog",
 					},
 					{
 						id:3,
@@ -63,7 +69,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["python"],
-						imageURL:"https://bit.ly/35KZW2S"
+						imageURL:"https://bit.ly/35KZW2S",
+						github:"https://github.com/Constantin-Hentgen/prime-explo",
 					},
 					{
 						id:4,
@@ -72,7 +79,8 @@
 						year: "2021",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["java"],
-						imageURL:"https://bit.ly/3Ca2IdQ"
+						imageURL:"https://github.com/Constantin-Hentgen/Citadelles",
+						github:"",
 					},
 					{
 						id:5,
@@ -81,7 +89,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["vuejs"],
-						imageURL:"https://bit.ly/36NbGSL"
+						imageURL:"https://bit.ly/36NbGSL",
+						github:"https://github.com/Constantin-Hentgen/vue-weather",
 					},
 					{
 						id:6,
@@ -90,7 +99,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["js-square","vuejs"],
-						imageURL:"https://bit.ly/3pyqefA"
+						imageURL:"https://bit.ly/3pyqefA",
+						github:"https://github.com/Constantin-Hentgen/task-manager",
 					},
 					{
 						id:7,
@@ -99,7 +109,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["python"],
-						imageURL:"https://bit.ly/3MjXqRT"
+						imageURL:"https://bit.ly/3MjXqRT",
+						github:"https://github.com/Constantin-Hentgen/text-parser",
 					},
 					{
 						id:8,
@@ -108,7 +119,8 @@
 						year: "2020",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["sass","php"],
-						imageURL:"https://bit.ly/3tkbeTy"
+						imageURL:"https://bit.ly/3tkbeTy",
+						github:"https://github.com/Constantin-Hentgen/php-experiment",
 					},
 					{
 						id:9,
@@ -117,7 +129,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["html5","css3-alt"],
-						imageURL:"https://bit.ly/34azlf7"
+						imageURL:"https://bit.ly/34azlf7",
+						github:"https://github.com/Constantin-Hentgen/Touyube",
 					},
 					{
 						id:10,
@@ -126,7 +139,8 @@
 						year: "2020",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["windows","linux"],
-						imageURL:"https://bit.ly/3MnFqG7"
+						imageURL:"https://bit.ly/3MnFqG7",
+						github:"https://github.com/Constantin-Hentgen/xkb-fr-bepo",
 					},
 					{
 						id:11,
@@ -135,7 +149,8 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["html5","css3-alt","js-square"],
-						imageURL:"https://bit.ly/3sG3sod"
+						imageURL:"https://bit.ly/3sG3sod",
+						github:"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote",
 					}
 				]
 			}
@@ -170,5 +185,11 @@
   .fade-enter-active{
     transition: opacity 1.5s ease;
   }
+
+	#github:hover {
+		outline: black 1px solid;
+		border-radius: 10px;
+	}
+
 
 </style>
