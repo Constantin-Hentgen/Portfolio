@@ -18,7 +18,7 @@
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt voluptatibus dolores tenetur ipsam sapiente blanditiis ratione aperiam, eveniet sit.</p>
 
 			<div class="w-full grid place-items-center">
-				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "http://duckduckgo.com" >Download Resume</a>
+				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">Download Resume</a>
 			</div>
 		</div>
 
