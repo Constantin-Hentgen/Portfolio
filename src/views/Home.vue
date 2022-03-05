@@ -3,6 +3,18 @@
 		<Header />
 	</transition>
 
+
+
+
+
+
+	<p>{{ $t("message.hello") }}</p>
+
+
+
+
+
+
 	<transition name="fade" appear>
 		<main class="grid place-items-center mt-24 space-y-10">
 			<Card @click="setBackground" v-for="(project, index) in projects" :key="index"
@@ -39,6 +51,9 @@ export default {
   },
 	data() {
 		return {
+			
+			// add img alt
+
 			projects: [
 				{
 					id:1,
