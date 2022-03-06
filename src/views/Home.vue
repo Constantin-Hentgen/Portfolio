@@ -18,10 +18,7 @@
 	</transition>
 
 	<transition name="fade" appear>
-		<Footer
-			language="English (US)"
-			license="Copyright @2022 All rights reserved"
-		/>
+		<Footer />
 	</transition>
 </template>
 
