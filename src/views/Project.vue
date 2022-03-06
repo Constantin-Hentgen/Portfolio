@@ -9,7 +9,7 @@
 		<main class="w-full xl:w-1/2 m-auto mt-14 md:mt-32 space-y-8">
 			<div>
 				<a id="github" :href="projects[id].github"  class="flex space-x-2 cursor-pointer p-2">
-					<h1 class="text-3xl md:text-5xl text-myBlue-900 font-bold"> {{ projects[id].title }} · </h1>
+					<h1 class="text-2xl md:text-5xl text-myBlue-900 font-bold"> {{ projects[id].title }} · </h1>
 					<fa class="my-auto" :icon='["fab","github-alt"]' size="2xl" color="21243D" />
 				</a>
 

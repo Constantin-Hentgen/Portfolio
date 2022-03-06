@@ -30,7 +30,7 @@
 
 			<div class="flex">
 				<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-full px-2"> {{ year }} </h3>
-				<h2 class="text-xl ml-6 text-gray-500 font-light"> {{ subtitle }} </h2>
+				<h2 class="text-sm md:text-lg ml-2 text-gray-500 font-light"> {{ subtitle }} </h2>
 			</div>
 			<p> {{ content }} </p>
 		</div>

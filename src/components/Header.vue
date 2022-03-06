@@ -19,7 +19,7 @@
 Vous trouverez tous mes projets ci-dessous <fa icon="arrow-down-wide-short" size="l" /></p>
 
 			<div class="w-full grid place-items-center">
-				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">Download Resume</a>
+				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">Consulter mon CV<fa class="ml-2" icon="file-pdf" size="l" /></a>
 			</div>
 		</div>
 
