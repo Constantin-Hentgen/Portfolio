@@ -13,26 +13,29 @@ library.add(fas, fab)
 
 
 
-const messages = {
-	en: {
-		message: {
-			hello: "hello world"
-		}
-	},
-	fr: {
-		message: {
-			hello: "bonjour monde"
-		}
-	}
+function loadLocaleMessages() {
+  const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
+  const messages = {}
+  locales.keys().forEach(key => {
+    const matched = key.match(/([A-Za-z0-9-_]+)\./i)
+    if (matched && matched.length > 1) {
+      const locale = matched[1]
+      messages[locale] = locales(key).default
+    }
+  })
+  return messages
 }
 
-
-
 const i18n = createI18n({
-	locale: 'en', // set locale
-  fallbackLocale: 'fr', // set fallback locale
-  messages, // set locale messages
+  legacy: false,
+  globalInjection: true,
+  // locale: process.env.VUE_APP_I18N_LOCALE || 'en',
+  // fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+	locale: "en",
+	fallbackLocale:"en",
+  messages: loadLocaleMessages()
 })
+
 
 
 const app = createApp(App)

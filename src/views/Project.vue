@@ -5,6 +5,8 @@
 		</header>
 	</transition>
 
+	<h1> {{ $t('pute') }} </h1>
+
 	<transition name="fade" appear>
 		<main class="w-full xl:w-1/2 m-auto mt-32 space-y-8">
 			<a id="github" :href="projects[id].github"  class="flex space-x-2 cursor-pointer p-2">
@@ -155,13 +157,11 @@
 				]
 			}
 		},
-		methods: {
-			titleParser(title) {
-				if (title.indexOf(" ") > -1) {
-					alert("y a un putain d'espace dans ton titre")
-				}
-			}
-		},
+		// methods: {
+		// 	fetchProject() {
+		// 		return projectsJson
+		// 	}
+		// }
 	}
 
 </script>
