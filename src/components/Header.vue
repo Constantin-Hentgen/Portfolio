@@ -9,8 +9,7 @@
 		md:flex
 		md:flex-row
 		justify-evenly
-		w-11/12
-		md:w-1/2
+		lg:w-1/2
 	">
 		<img class="w-36 h-36 md:w-60 md:h-60 rounded-full m-auto" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
