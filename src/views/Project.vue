@@ -49,7 +49,7 @@
 						year: "2022",
 						content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 						techs:["vuejs"],
-						imageURL:"coding.jpeg",
+						imageURL:"img/coding.jpeg",
 						github:"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
 					},
 					{
@@ -59,7 +59,7 @@
 						year: "2022",
 						content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 						techs:["vuejs"],
-						imageURL:"dk.jpeg",
+						imageURL:"img/dk.jpeg",
 						github:"https://github.com/Rhylionn/denmark-blog",
 					},
 					{
@@ -69,7 +69,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["python"],
-						imageURL:"graph.jpeg",
+						imageURL:"img/graph.jpeg",
 						github:"https://github.com/Constantin-Hentgen/prime-explo",
 					},
 					{
@@ -79,7 +79,7 @@
 						year: "2021",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["java"],
-						imageURL:"retro.jpeg",
+						imageURL:"img/retro.jpeg",
 						github:"https://github.com/Constantin-Hentgen/Citadelles",
 					},
 					{
@@ -89,7 +89,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["vuejs"],
-						imageURL:"app.jpeg",
+						imageURL:"img/app.jpeg",
 						github:"https://github.com/Constantin-Hentgen/vue-weather",
 					},
 					{
@@ -99,7 +99,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["js-square","vuejs"],
-						imageURL:"todo.jpeg",
+						imageURL:"img/todo.jpeg",
 						github:"https://github.com/Constantin-Hentgen/task-manager",
 					},
 					{
@@ -109,7 +109,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["python"],
-						imageURL:"stats.jpeg",
+						imageURL:"img/stats.jpeg",
 						github:"https://github.com/Constantin-Hentgen/text-parser",
 					},
 					{
@@ -119,7 +119,7 @@
 						year: "2020",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["sass","php"],
-						imageURL:"calculator.jpeg",
+						imageURL:"img/calculator.jpeg",
 						github:"https://github.com/Constantin-Hentgen/php-experiment",
 					},
 					{
@@ -129,7 +129,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["html5","css3-alt"],
-						imageURL:"youtube.jpeg",
+						imageURL:"img/youtube.jpeg",
 						github:"https://github.com/Constantin-Hentgen/Touyube",
 					},
 					{
@@ -139,7 +139,7 @@
 						year: "2020",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["windows","linux"],
-						imageURL:"keyboard.jpeg",
+						imageURL:"img/keyboard.jpeg",
 						github:"https://github.com/Constantin-Hentgen/xkb-fr-bepo",
 					},
 					{
@@ -149,7 +149,7 @@
 						year: "2019",
 						content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 						techs:["html5","css3-alt","js-square"],
-						imageURL:"france.jpeg",
+						imageURL:"img/france.jpeg",
 						github:"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote",
 					}
 				]

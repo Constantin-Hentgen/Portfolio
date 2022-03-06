@@ -11,8 +11,8 @@
 			hover:to-blue-500
 			flex-col
 
+			md:w-3/4
 			md:flex-row
-			md:w-2/3
 			xl:w-1/2
 		"
 	>

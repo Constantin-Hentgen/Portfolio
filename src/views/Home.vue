@@ -44,7 +44,7 @@ export default {
 					year: "2022",
 					content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 					techs:["vuejs"],
-					imageURL:"coding.jpeg"
+					imageURL:"img/coding.jpeg"
 				},
 				{
 					id:2,
@@ -53,7 +53,7 @@ export default {
 					year: "2022",
 					content: "Mon site perso qui est construit avec vue.js et tailwindcss. Regroupe tous les projets terminés que j'ai pu faire ces dernières années",
 					techs:["vuejs"],
-					imageURL:"dk.jpeg"
+					imageURL:"img/dk.jpeg"
 				},
 				{
 					id:3,
@@ -62,7 +62,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["python"],
-					imageURL:"graph.jpeg"
+					imageURL:"img/graph.jpeg"
 				},
 				{
 					id:4,
@@ -71,7 +71,7 @@ export default {
 					year: "2021",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["java"],
-					imageURL:"retro.jpeg"
+					imageURL:"img/retro.jpeg"
 				},
 				{
 					id:5,
@@ -80,7 +80,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["vuejs"],
-					imageURL:"app.jpeg"
+					imageURL:"img/app.jpeg"
 				},
 				{
 					id:6,
@@ -89,7 +89,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["js-square","vuejs"],
-					imageURL:"todo.jpeg"
+					imageURL:"img/todo.jpeg"
 				},
 				{
 					id:7,
@@ -98,7 +98,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["python"],
-					imageURL:"stats.jpeg"
+					imageURL:"img/stats.jpeg"
 				},
 				{
 					id:8,
@@ -107,7 +107,7 @@ export default {
 					year: "2020",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["sass","php"],
-					imageURL:"calculator.jpeg"
+					imageURL:"img/calculator.jpeg"
 				},
 				{
 					id:9,
@@ -116,7 +116,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["html5","css3-alt"],
-					imageURL:"youtube.jpeg"
+					imageURL:"img/youtube.jpeg"
 				},
 				{
 					id:10,
@@ -125,7 +125,7 @@ export default {
 					year: "2020",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["windows","linux"],
-					imageURL:"keyboard.jpeg"
+					imageURL:"img/keyboard.jpeg"
 				},
 				{
 					id:11,
@@ -134,7 +134,7 @@ export default {
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 					techs:["html5","css3-alt","js-square"],
-					imageURL:"france.jpeg"
+					imageURL:"img/france.jpeg"
 				}
 			]
 		}
