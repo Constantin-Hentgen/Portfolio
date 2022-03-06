@@ -21,7 +21,6 @@
 				</div>
 			</div>
 
-
 			<p class="text-lg"> {{ projects[id].content }} </p>
 		</main>
 	</transition>

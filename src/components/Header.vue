@@ -14,8 +14,9 @@
 		<img class="w-36 h-36 md:w-60 md:h-60 rounded-full m-auto" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
 		<div class="flex-row w-11/12 md:w-1/2 h-full space-y-8">
-			<h1 class="text-3xl md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Hi, I am Constantin, <br> CS student</h1>
-			<p class="text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt voluptatibus dolores tenetur ipsam sapiente blanditiis ratione aperiam, eveniet sit.</p>
+			<h1 class="text-3xl md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, <br> Étudiant ingénieur</h1>
+			<p class="text-center md:text-left">Je suis un étudiant <fa icon="graduation-cap" size="l" /> de première année en ingénierie informatique <fa icon="shield" size="l" />.
+Vous trouverez tous mes projets ci-dessous <fa icon="arrow-down-wide-short" size="l" /></p>
 
 			<div class="w-full grid place-items-center">
 				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">Download Resume</a>
