@@ -4,7 +4,7 @@
 
 <style lang="postcss">
 
-	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+	@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 	body {
 		@apply bg-myBlue-200 w-full h-full;
 	}

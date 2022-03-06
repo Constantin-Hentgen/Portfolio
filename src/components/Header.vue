@@ -2,7 +2,7 @@
 	<header
 	class="
 		m-auto
-		mt-20
+		md:mt-20
 		flex-col
 		space-x-5
 		space-y-5
@@ -12,7 +12,7 @@
 		w-11/12
 		md:w-1/2
 	">
-		<img class="w-44 h-44 md:w-60 md:h-60 rounded-full m-auto" src="../assets/pp.jpeg" alt="picture of the webmaster">
+		<img class="w-36 h-36 md:w-60 md:h-60 rounded-full m-auto" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
 		<div class="flex-row w-11/12 md:w-1/2 h-full space-y-8">
 			<h1 class="text-3xl md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Hi, I am Constantin, <br> CS student</h1>

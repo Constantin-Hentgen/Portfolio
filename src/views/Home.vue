@@ -133,7 +133,7 @@ export default {
 					subtitle: "Recherche de nombres premiers",
 					year: "2019",
 					content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-					techs:["html5","css3-alt","js-square"],
+					techs:["html5","css3-alt"],
 					imageURL:"img/france.jpeg"
 				}
 			]
