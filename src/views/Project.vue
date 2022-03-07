@@ -23,7 +23,7 @@
 
 			<p class="text-lg"></p>
 
-			<p>{{project.content}}</p>
+			<p>{{project.extendedContent}}</p>
 		</main>
 	</transition>
 

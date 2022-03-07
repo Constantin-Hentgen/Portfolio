@@ -12,7 +12,7 @@
 		md:w-3/4
 		xl:w-1/2
 	">
-		<img class="w-48 h-48 mx-auto my-auto md:w-60 md:h-60 rounded-full" src="../assets/pp.jpeg" alt="picture of the webmaster">
+		<img class="w-48 h-48 mx-auto my-auto md:w-60 md:h-60 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
 		<div class="flex-row w-full sm:w-2/3 mx-auto h-full space-y-8">
 			<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, <br> étudiant ingénieur</h1>
