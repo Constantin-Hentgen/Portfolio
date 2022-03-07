@@ -22,6 +22,8 @@
 			</div>
 
 			<p class="text-lg"> {{ projects[id].content }} </p>
+
+			<p>{{fetchProject(5)}}</p>
 		</main>
 	</transition>
 
@@ -40,7 +42,7 @@
 		},
 		data() {
 			return {
-				id: this.$route.params.id-1,
+				id: this.$route.params.id,
 				projectBank: [],
 				projects: [
 					{
@@ -156,10 +158,13 @@
 				]
 			}
 		},
-		created() {
-			fetch("/data.json")
-				.then(response => response.json())
-				.then(data => (this.projectBank = data))
+		methods: {
+			fetchProject(index) {
+				fetch("/data.json")
+					.then(response => response.json())
+					.then(data => (this.projectBank = data))
+				return this.projectBank.projects[index-1]
+			}
 		}
 	}
 </script>

@@ -10,6 +10,7 @@
 			hover:to-blue-500
 			flex-col
 			md:w-3/4
+			xl:w-1/2
 			md:flex-row
 			space-y-5
 		">
@@ -50,7 +51,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="css" scoped>
 	#card {
 		transition: ease-in-out;
 		transition-duration: 0.15s;
