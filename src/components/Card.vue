@@ -1,6 +1,5 @@
 <template>
-	<div @click="this.$router.push(`/${id}`)"
-		id="card"
+	<div @click="this.$router.push(`/${id}`)" id="card"
 		class="
 			w-full flex 
 			bg-white 
@@ -10,12 +9,11 @@
 			cursor-pointer 
 			hover:to-blue-500
 			flex-col
-
 			md:w-3/4
 			md:flex-row
 			space-y-5
-		"
-	>
+		">
+
 		<div class="w-full h-44 md:w-1/3 bg-myBlue-900 rounded-xl mr-2 2xl:mr-10 overflow-hidden object-fill">
 			<img class="h-full w-full object-cover object-center" :src="imageURL" alt="project's thumbnail">
 		</div>
@@ -47,7 +45,7 @@ export default {
 		content: String,
 		year: String,
 		subtitle: String,
-		imageURL: String,
+		imageURL: String
   }
 }
 </script>

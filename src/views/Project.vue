@@ -1,7 +1,7 @@
 <template>
 	<transition name="fade" appear>
 		<header class="m-auto grid place-items-center text-lg">
-			<router-link to="/" >back home</router-link>
+			<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
 		</header>
 	</transition>
 
@@ -13,7 +13,7 @@
 					<fa class="my-auto" :icon='["fab","github-alt"]' size="2xl" color="21243D" />
 				</a>
 
-				<div class="flex flex-row space-x-4">
+				<div class="flex flex-row space-x-4 mt-1">
 					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{ projects[id].year }} </p>
 					<div class="h-full m-0 my-auto space-x-2">
 						<fa v-for="(tech, index) in projects[id].techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
@@ -28,7 +28,6 @@
 	<transition name="fade" appear>
 		<Footer />
 	</transition>
-
 </template>
 
 <script>
@@ -42,6 +41,7 @@
 		data() {
 			return {
 				id: this.$route.params.id-1,
+				projectBank: [],
 				projects: [
 					{
 						id:1,
@@ -155,13 +155,16 @@
 					}
 				]
 			}
+		},
+		created() {
+			fetch("/data.json")
+				.then(response => response.json())
+				.then(data => (this.projectBank = data))
 		}
 	}
-
 </script>
 
 <style>
-
  .transition-enter-active{
     animation: fade-in-down 1.5s ease-out;
   }
@@ -177,13 +180,11 @@
     opacity: 0;
   }
   .fade-enter-active{
-    transition: opacity 1.5s ease;
+    transition: opacity 1s ease;
   }
 
 	#github:hover {
 		outline: black 1px solid;
 		border-radius: 10px;
 	}
-
-
 </style>
