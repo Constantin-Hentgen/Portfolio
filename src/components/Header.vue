@@ -4,18 +4,19 @@
 		m-auto
 		md:mt-20
 		flex-col
-		space-x-5
 		space-y-5
 		md:flex
 		md:flex-row
-		justify-evenly
-		lg:w-1/2
+		justify-center
+		md:space-x-10
+		md:w-3/4
+		xl:w-1/2
 	">
-		<img class="w-36 h-36 md:w-60 md:h-60 rounded-full m-auto" src="../assets/pp.jpeg" alt="picture of the webmaster">
+		<img class="w-48 h-48 mx-auto my-auto md:w-60 md:h-60 rounded-full" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
-		<div class="flex-row w-11/12 md:w-1/2 h-full space-y-8">
-			<h1 class="text-3xl md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, <br> Étudiant ingénieur</h1>
-			<p class="text-center md:text-left">Je suis un étudiant <fa icon="graduation-cap" size="l" /> de première année en ingénierie informatique <fa icon="shield" size="l" />.
+		<div class="flex-row w-2/3 mx-auto h-full space-y-8">
+			<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, <br> étudiant ingénieur</h1>
+			<p class="text-center md:text-left w-full">Je suis un étudiant <fa icon="graduation-cap" size="l" /> de première année en ingénierie informatique <fa icon="shield" size="l" />.
 Vous trouverez tous mes projets ci-dessous <fa icon="arrow-down-wide-short" size="l" /></p>
 
 			<div class="w-full grid place-items-center">
