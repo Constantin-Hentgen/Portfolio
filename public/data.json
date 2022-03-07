@@ -8,6 +8,7 @@
 			"content": "Mon site perso qui est construit avec VueJS et TailwindCSS. Regroupe tous les projets terminés que j'ai pu réaliser ces dernières années",
 			"techs":["vuejs"],
 			"imageURL":"img/coding.jpeg",
+			"imageAlt":"Un écran qui affiche des ligne de codes colorées.",
 			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr"
 		},
 		{
@@ -18,6 +19,7 @@
 			"content": "Blog réalisé en VueJS dans un contexte d'ERASMUS au Danemark.",
 			"techs":["vuejs"],
 			"imageURL":"img/dk.jpeg",
+			"imageAlt":"Le drapeau danois flottant.",
 			"github":"https://github.com/Rhylionn/denmark-blog"
 		},
 		{
@@ -28,6 +30,7 @@
 			"content": "Programme calculateur de nombres premiers qui trace des graphiques afin de modéliser des allures et faire des approximations.",
 			"techs":["python"],
 			"imageURL":"img/graph.jpeg",
+			"imageAlt":"Un écran d'ordinateur affichant des graphiques.",
 			"github":"https://github.com/Constantin-Hentgen/prime-explo"
 		},
 		{
@@ -38,6 +41,7 @@
 			"content": "Projet SCRUM par 4 étudiants d'un jeu de rôle de plateau.",
 			"techs":["java"],
 			"imageURL":"img/retro.jpeg",
+			"imageAlt":"Une borne d'arcade affichant le message 'game over'.",
 			"github":"https://github.com/Constantin-Hentgen/Citadelles"
 		},
 		{
@@ -48,6 +52,7 @@
 			"content": "Introduction au framework VueJS avec appel API OpenWeather.",
 			"techs":["vuejs"],
 			"imageURL":"img/app.jpeg",
+			"imageAlt":"Une personne montrant une application de météo sur son téléphone.",
 			"github":"https://github.com/Constantin-Hentgen/vue-weather"
 		},
 		{
@@ -58,6 +63,7 @@
 			"content": "Site de découverte de VueJS avec usage de JavaScript natif.",
 			"techs":["js-square","vuejs"],
 			"imageURL":"img/todo.jpeg",
+			"imageAlt":"Une feuille de suivi des activités.",
 			"github":"https://github.com/Constantin-Hentgen/task-manager"
 		},
 		{
@@ -68,6 +74,7 @@
 			"content": "Projet de développement web niveau débutant en HTML & CSS natifs.",
 			"techs":["html5","css3-alt"],
 			"imageURL":"img/youtube.jpeg",
+			"imageAlt":"Un écran d'ordinateur affichan Youtube.",
 			"github":"https://github.com/Constantin-Hentgen/Touyube"
 		},
 		{
@@ -78,6 +85,7 @@
 			"content": "Programme générateur de statistiques sur un texte donné permettant des études comparatives.",
 			"techs":["python"],
 			"imageURL":"img/stats.jpeg",
+			"imageAlt":"Un tableur graphique remplis de valeurs.",
 			"github":"https://github.com/Constantin-Hentgen/text-parser"
 		},
 		{
@@ -88,6 +96,7 @@
 			"content": "Site d'entrainement au calcul mental, introduction au language PHP et SCSS.",
 			"techs":["sass","php"],
 			"imageURL":"img/calculator.jpeg",
+			"imageAlt":"Une calculatrice posée sur une table.",
 			"github":"https://github.com/Constantin-Hentgen/php-experiment"
 		},
 		{
@@ -98,6 +107,7 @@
 			"content": "Personnalisation de configuration clavier optimisée sous Linux & Windows.",
 			"techs":["windows","linux"],
 			"imageURL":"img/keyboard.jpeg",
+			"imageAlt":"Un clavier d'ordinateur portable.",
 			"github":"https://github.com/Constantin-Hentgen/xkb-fr-bepo"
 		},
 		{
@@ -108,6 +118,7 @@
 			"content": "Projet scolaire, site web statique de sensibilisation au droit de vote en France.",
 			"techs":["html5","css3-alt"],
 			"imageURL":"img/france.jpeg",
+			"imageAlt":"Le drapeau français flottant.",
 			"github":"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote"
 		}
 	]

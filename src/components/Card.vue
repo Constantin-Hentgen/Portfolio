@@ -16,7 +16,7 @@
 		">
 
 		<div class="w-full h-44 md:w-1/3 bg-myBlue-900 rounded-xl mr-2 2xl:mr-10 overflow-hidden object-fill">
-			<img class="h-full w-full object-cover object-center" :src="imageURL" alt="project's thumbnail">
+			<img class="h-full w-full object-cover object-center" :src="imageURL" :alt="imageAlt">
 		</div>
 
 		<div class="w-full xl-w-2/3 flex justify-evenly space-y-1 flex-col">
@@ -46,7 +46,8 @@ export default {
 		content: String,
 		year: String,
 		subtitle: String,
-		imageURL: String
+		imageURL: String,
+		imageAlt: String
   }
 }
 </script>

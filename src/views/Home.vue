@@ -12,6 +12,7 @@
 				:content="project.content"
 				:techs="project.techs"
 				:imageURL="project.imageURL"
+				:imageAlt="project.imageAlt"
 				:id="project.id"
 			/>
 		</main>
