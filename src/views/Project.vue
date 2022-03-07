@@ -23,7 +23,7 @@
 
 			<p class="text-lg"></p>
 
-			<p></p>
+			<p>{{project.content}}</p>
 		</main>
 	</transition>
 
@@ -49,18 +49,23 @@
 		created(){
 			fetch("/data.json")
 			.then((res) => {
-				res.json().then((data) => {
-					let proj = data.projects
-
-					let project = this.project = proj.filter((project) => {
-							return project.id === this.id
+				if (res.status === 200){
+					res.json().then((data) => {
+						let proj = data.projects
+	
+						let project = this.project = proj.filter((project) => {
+								return project.id === this.id
+						})
+	
+						this.project = project[0]
 					})
-
-					this.project = project[0]
-				})
+				} else {
+					alert('caca')
+				}
 			})
-			.then((err) => {
+			.catch(() => {
 				///Error handler
+				alert("caca")
 			})
 		}
 	}
