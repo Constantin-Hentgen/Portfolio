@@ -55,8 +55,7 @@
 	
 						let project = this.project = proj.filter((project) => {
 								return project.id === this.id
-						})
-	
+						})	
 						this.project = project[0]
 					})
 				} else {
@@ -65,14 +64,18 @@
 			})
 			.catch(() => {
 				///Error handler
-				alert("caca")
 			})
-		}
+		},
+		// computed: {
+		// 	toHTML(){
+		// 	  return marked(atob(this.article.extendedContent))
+		// 	}
+		// }
 	}
 </script>
 
 <style>
- .transition-enter-active{
+	.transition-enter-active{
     animation: fade-in-down 1.5s ease-out;
   }
   @keyframes fade-in-down {
