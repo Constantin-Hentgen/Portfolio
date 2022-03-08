@@ -6,7 +6,7 @@
 			"subtitle": "Website",
 			"year": "2022",
 			"content": "Mon site perso qui est construit avec VueJS et TailwindCSS. Regroupe tous les projets terminés que j'ai pu réaliser ces dernières années",
-			"extendedContent": "",
+			"extendedContent": "Mon site perso qui est construit avec VueJS et TailwindCSS. Regroupe tous les projets terminés que j'ai pu réaliser ces dernières années.",
 			"techs":["vuejs"],
 			"imageURL":"img/coding.jpeg",
 			"imageAlt":"Un écran qui affiche des ligne de codes colorées.",
