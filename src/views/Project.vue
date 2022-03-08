@@ -23,7 +23,7 @@
 
 			<p class="text-lg"></p>
 
-			<p>{{project.extendedContent}}</p>
+			<p v-html="toHTML"></p>
 		</main>
 	</transition>
 
@@ -59,18 +59,19 @@
 						this.project = project[0]
 					})
 				} else {
-					alert('caca')
+					alert('else')
 				}
 			})
 			.catch(() => {
 				///Error handler
 			})
 		},
-		// computed: {
-		// 	toHTML(){
-		// 	  return marked(atob(this.article.extendedContent))
-		// 	}
-		// }
+		computed: {
+			toHTML(){
+				// return marked(atob(this.project.extendedContent))
+				return atob(this.project.extendedContent)
+			}
+		}
 	}
 </script>
 
