@@ -1,6 +1,6 @@
 <template>
 	<transition name="fade" appear>
-		<header class="m-auto grid place-items-center text-lg">
+		<header class="m-auto justify-items-end text-lg">
 			<nav>
 				<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
 			</nav>
@@ -8,22 +8,20 @@
 	</transition>
 
 	<transition name="fade" appear>
-		<main class="w-full xl:w-1/2 m-auto mt-14 md:mt-32 space-y-8">
-			<div>
-				<a id="github" :href="project.github"  class="flex space-x-2 cursor-pointer p-2">
-					<h1 class="text-2xl md:text-5xl text-myBlue-900 font-bold"> {{ project.title }} · </h1>
-					<fa class="my-auto" :icon='["fab","github-alt"]' size="2xl" color="21243D" />
-				</a>
-
+		<main class="w-full flex-col xl:w-1/2 m-auto mt-14 md:mt-14 space-y-8">
+			<a id="github" :href="project.github"  class="flex justify-center space-x-2 cursor-pointer p-2">
 				<div class="flex flex-row space-x-4 mt-1">
 					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{ project.year }} </p>
-					<div class="h-full m-0 my-auto space-x-2">
-						<fa v-for="(tech, index) in project.techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
-					</div>
 				</div>
-			</div>
 
-			<div class="article" v-html="article"></div>
+				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{ project.title }} · </h1>
+				
+				<div class="flex justify-center items-center gap-1">
+					<fa v-for="(tech, index) in project.techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
+				</div>
+			</a>
+
+			<div class="article w-full md:w-1/2" v-html="article"></div>
 		</main>
 	</transition>
 
