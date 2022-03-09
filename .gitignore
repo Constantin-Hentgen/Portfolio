@@ -1,7 +1,14 @@
 .DS_Store
 node_modules
 /dist
-
+.gitignore
+package.json
+package-lock.json
+postcss.config.json
+tailwind.config.json
+babel.config.json
+.eslintrc.json
+.browserslistrc
 
 # local env files
 .env.local
