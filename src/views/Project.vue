@@ -21,7 +21,7 @@
 				</div>
 			</a>
 
-			<div class="article w-full md:w-1/2" v-html="article"></div>
+			<div class="article w-full" v-html="article"></div>
 		</main>
 	</transition>
 
