@@ -1,7 +1,9 @@
 <template>
 	<transition name="fade" appear>
 		<header class="m-auto grid place-items-center text-lg">
-			<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
+			<nav>
+				<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
+			</nav>
 		</header>
 	</transition>
 
@@ -21,9 +23,7 @@
 				</div>
 			</div>
 
-			<p class="text-lg"></p>
-
-			<p v-html="toHTML"></p>
+			<div v-html="article"></div>
 		</main>
 	</transition>
 
@@ -34,16 +34,18 @@
 
 <script>
 	import Footer from '@/components/Footer.vue'
+	import { marked } from 'marked';
 
 	export default {
 		name: 'Project',
 		components: {
-			Footer,
+			Footer
 		},
 		data() {
 			return {
 				id: parseInt(this.$route.params.id),
-				project: {}
+				project: {},
+				article: "",
 			}
 		},
 		created(){
@@ -57,6 +59,7 @@
 								return project.id === this.id
 						})	
 						this.project = project[0]
+						this.article = marked(atob(this.project.extendedContent))
 					})
 				} else {
 					alert('else')
@@ -65,37 +68,15 @@
 			.catch(() => {
 				///Error handler
 			})
-		},
-		computed: {
-			toHTML(){
-				// return marked(atob(this.project.extendedContent))
-				return atob(this.project.extendedContent)
-			}
 		}
 	}
 </script>
 
-<style>
-	.transition-enter-active{
-    animation: fade-in-down 1.5s ease-out;
-  }
-  @keyframes fade-in-down {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-  .fade-enter-from{
-    opacity: 0;
-  }
-  .fade-enter-active{
-    transition: opacity 1s ease;
-  }
+<style scoped>
 
 	#github:hover {
 		outline: black 1px solid;
 		border-radius: 10px;
 	}
+
 </style>

@@ -45,3 +45,25 @@
 		}
 	}
 </script>
+
+<style lang="css">
+
+	.transition-enter-active{
+    animation: fade-in-down 1.5s ease-out;
+  }
+  @keyframes fade-in-down {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .fade-enter-from{
+    opacity: 0;
+  }
+  .fade-enter-active{
+    transition: opacity 1s ease;
+  }
+	
+</style>
