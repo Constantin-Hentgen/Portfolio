@@ -5,6 +5,11 @@
 <style lang="postcss">
 
 	@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
 		@apply bg-myBlue-200 w-full h-full;
 	}

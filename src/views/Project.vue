@@ -23,7 +23,7 @@
 				</div>
 			</div>
 
-			<div v-html="article"></div>
+			<div class="article" v-html="article"></div>
 		</main>
 	</transition>
 
@@ -45,7 +45,7 @@
 			return {
 				id: parseInt(this.$route.params.id),
 				project: {},
-				article: "",
+				article: ""
 			}
 		},
 		created(){
@@ -77,6 +77,41 @@
 	#github:hover {
 		outline: black 1px solid;
 		border-radius: 10px;
+	}
+
+	.article {
+		color: #21243D;
+	}
+
+	.article >>> h1 {
+		font-size: 2em;
+		font-weight: 800;
+	}
+
+	.article >>> h2 {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	.article >>> hr {
+		background-color: #21243D;
+		width: 100%;
+		height: 2px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.article >>> ul {
+		padding-left: 5%;
+	}
+
+	.article >>> img {
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		border-radius: 15px;
+	}
+
+	.article >>> p, .article >>> ul, .article >>> h2 {
+		margin-top: 20px;
 	}
 
 </style>
