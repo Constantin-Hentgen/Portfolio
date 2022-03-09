@@ -1,7 +1,7 @@
 <template>
 	<transition name="fade" appear>
-		<header class="m-auto justify-items-end text-lg">
-			<nav>
+		<header class="m-auto text-lg">
+			<nav class="w-full flex-col xl:w-1/2 m-auto text-myBlue-900">
 				<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
 			</nav>
 		</header>
