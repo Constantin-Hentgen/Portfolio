@@ -2,7 +2,10 @@ module.exports = {
   content: [
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
-  theme: {
+
+	purge: false,
+
+	theme: {
     extend: {
 			colors: {
 				'myBlue': {
