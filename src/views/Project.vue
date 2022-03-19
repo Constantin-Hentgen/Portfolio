@@ -107,7 +107,7 @@
 		width:auto;
 		margin:auto;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -10px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 10px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-		border-radius: 15px;
+		border-radius: 10px;
 	}
 
 	.article :deep() p, .article :deep() ul, .article :deep() h2 {
