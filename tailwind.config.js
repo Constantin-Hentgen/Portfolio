@@ -2,6 +2,13 @@ module.exports = {
   content: [
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
+
+  purge: [
+    "./views/*.vue", 
+    "./components/*.vue"
+  ],
+
+
   theme: {
     extend: {
 			colors: {
