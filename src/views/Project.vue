@@ -114,4 +114,8 @@
 		margin-top: 20px;
 	}
 
+	.article :deep() ul,li {
+		list-style-type: circle;
+	}
+
 </style>
