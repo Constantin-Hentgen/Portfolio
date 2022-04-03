@@ -16,6 +16,7 @@ babel.config.json
 .gitignore
 
 package.json
+package-lock.json
 postcss.config.json
 tailwind.config.js
 .browserslistrc
