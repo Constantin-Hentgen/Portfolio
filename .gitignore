@@ -13,6 +13,14 @@ babel.config.json
 # local env files
 .env.local
 .env.*.local
+.gitignore
+
+package.json
+postcss.config.json
+tailwind.config.js
+.browserslistrc
+
+node_modules/
 
 # Log files
 npm-debug.log*
