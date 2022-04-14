@@ -1,8 +1,9 @@
 <template>
-	<div @click="this.$router.push(`/${id}`)" id="card"
+	<div @click="this.$router.push(`/project`)" id="card"
 		class="
-			w-full flex 
-			bg-white 
+			w-full
+			flex 
+			bg-white
 			rounded-3xl
 			p-3
 			shadow-2xl 

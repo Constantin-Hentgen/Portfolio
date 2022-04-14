@@ -1,4 +1,6 @@
 <template>
+<div>
+
 	<transition name="fade" appear>
 		<header class="m-auto text-lg">
 			<nav class="w-full flex-col xl:w-1/2 m-auto text-myBlue-900">
@@ -28,6 +30,7 @@
 	<transition name="fade" appear>
 		<Footer />
 	</transition>
+</div>
 </template>
 
 <script>
@@ -41,7 +44,7 @@
 		},
 		data() {
 			return {
-				id: parseInt(this.$route.params.id),
+				id: 2,
 				project: {},
 				article: ""
 			}
