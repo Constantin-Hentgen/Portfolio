@@ -14,6 +14,7 @@
 		md:space-x-10
 		md:w-3/4
 		xl:w-1/2
+		lg:mt-0
 	">
 		<img class="w-48 h-48 mx-auto my-auto md:w-60 md:h-60 shadow-2xl rounded-full pp" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
@@ -32,7 +33,7 @@
 	<transition name="fade" appear>
 		<main class="mt-10 md:mt-24 space-y-10">
 
-			<router-link :to="`/${$i18n.locale}/project`">
+			
 			<Card @click="setBackground" v-for="(project, index) in bank.projects" :key="index"
 				:title="project.title"
 				:year="project.year"
@@ -43,7 +44,6 @@
 				:imageAlt="project.imageAlt"
 				:id="project.id"
 			/>
-			</router-link>
 		</main>
 	</transition>
 
@@ -52,14 +52,13 @@
 	</transition>
 
 	</div>
-
 </template>
 
 <script>
 	import Card from '@/components/Card.vue'
 	import Footer from '@/components/Footer.vue'
 
-export default {
+	export default {
 		name: 'Home',
 		components: {
 			Card,
@@ -77,18 +76,12 @@ export default {
 			fetch("/data.json")
 			.then(response => response.json())
 			.then(data => (this.bank = data))
-		},
-		methods: {
-			test() {
-				// $i18n.locale = "fr";
-				document.getElementById("display").innerHTML = this.$i18n.locale.toString();
-				// location.reload();
-				// if (this.lang == "en") {
-				// 	this.$i18n.locale = "fr";
-				// } else {
-				// 	this.$i18n.locale = "en";
-				// }
-			}
 		}
 	}
 </script>
+
+<style lang="postcss">
+	.pp {
+		transform: scaleX(-1);
+	}
+</style>

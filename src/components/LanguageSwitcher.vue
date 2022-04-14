@@ -2,7 +2,7 @@
   <div class="relative">
     <button
       href="#"
-      class="flex items-center"
+      class="flex items-center focus:outline-none"
       @click="toggleVisibility"
       @keydown.space.exact.prevent="toggleVisibility"
       @keydown.esc.exact="hideDropdown"
@@ -48,7 +48,7 @@
           </a>
         </li>
 
-				 <!-- <li>
+				<!-- <li>
           <a
             href="#"
             @click.prevent="setLocale('de')"

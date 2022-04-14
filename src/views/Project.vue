@@ -1,14 +1,5 @@
 <template>
 <div>
-
-	<transition name="fade" appear>
-		<header class="m-auto text-lg">
-			<nav class="w-full flex-col xl:w-1/2 m-auto text-myBlue-900">
-				<router-link to="/" ><fa class="mr-2" icon="house-chimney" size="lg"/>Accueil</router-link>
-			</nav>
-		</header>
-	</transition>
-
 	<transition name="fade" appear>
 		<main class="w-full flex-col xl:w-1/2 m-auto mt-14 md:mt-14 space-y-8">
 			<a id="github" :href="project.github"  class="flex justify-center space-x-2 cursor-pointer p-2">
