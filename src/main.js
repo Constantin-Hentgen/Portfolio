@@ -13,6 +13,20 @@ import i18n from './i18n'
 // library.add(faHeart, faHouseChimney, faFilePdf, faArrowDownWideShort, faVuejs, faGraduationCap, faShield, faGithub, faGithubAlt, faPhp, faSass, faPython, faJava, faJsSquare, faHtml5, faCss3Alt, faWindows, faLinux, faDiscord, faLinkedin)
 
 
+
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+// library.add(faCoffee)
+
+// Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+
+
+
+
 // Vue.config.productionTip = false
 
 // use beforeEach route guard to set the language

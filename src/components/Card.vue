@@ -1,7 +1,8 @@
 <template>
-	<router-link :to="`/${$i18n.locale}/project`">
 		<div id="card"
 			class="
+				mx-auto
+				mb-10
 				w-full
 				flex 
 				bg-white
@@ -16,6 +17,9 @@
 				md:flex-row
 				space-y-5
 			">
+	<router-link :to="`/${$i18n.locale}/project`">
+
+		<div class="flex">
 
 			<div class="w-full h-44 md:w-1/3 bg-myBlue-900 rounded-xl mr-2 2xl:mr-10 overflow-hidden object-fill">
 				<img class="h-full w-full object-cover object-center" :src="imageURL" :alt="imageAlt">
@@ -37,6 +41,7 @@
 			</div>
 		</div>
 	</router-link>
+		</div>
 </template>
 
 <script>
