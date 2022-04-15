@@ -38,9 +38,59 @@ export default new Router({
           component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
         },
         {
-          path: 'project',
-          name: 'project',
-          component: () => import(/* webpackChunkName: "contact" */ './views/Project.vue')
+          path: 'mon-site-perso',
+          name: 'mon-site-perso',
+          component: () => import(/* webpackChunkName: "contact" */ './views/MonSitePerso.vue')
+        },
+        {
+          path: 'horsensei',
+          name: 'horsensei',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Horsensei.vue')
+        },
+        {
+          path: 'prime-explo',
+          name: 'prime-explo',
+          component: () => import(/* webpackChunkName: "contact" */ './views/PrimeExplo.vue')
+        },
+        {
+          path: 'citadelles',
+          name: 'citadelles',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Citadelles.vue')
+        },
+        {
+          path: 'vue-weather',
+          name: 'vue-weather',
+          component: () => import(/* webpackChunkName: "contact" */ './views/VueWeather.vue')
+        },
+        {
+          path: 'task-manager',
+          name: 'task-manager',
+          component: () => import(/* webpackChunkName: "contact" */ './views/TaskManager.vue')
+        },
+        {
+          path: 'touyube',
+          name: 'touyube',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Touyube.vue')
+        },
+        {
+          path: 'text-parser',
+          name: 'text-parser',
+          component: () => import(/* webpackChunkName: "contact" */ './views/TextParser.vue')
+        },
+        {
+          path: 'php-experiment',
+          name: 'php-experiment',
+          component: () => import(/* webpackChunkName: "contact" */ './views/PhpExperiment.vue')
+        },
+        {
+          path: 'clavier-bepo',
+          name: 'clavier-bepo',
+          component: () => import(/* webpackChunkName: "contact" */ './views/ClavierBepo.vue')
+        },
+        {
+          path: 'le-pouvoir-du-vote',
+          name: 'le-pouvoir-du-vote',
+          component: () => import(/* webpackChunkName: "contact" */ './views/LePouvoirDuVote.vue')
         }
       ]
     }

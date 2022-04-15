@@ -4,16 +4,13 @@
 		<transition name="fade" appear>
 			<header class="bg-white z-10 opacity-75 w-full shadow-md sticky top-0">
 	      <nav class="container mx-auto px-8 flex flex-wrap justify-between items-center py-8">
-	        <div class="mb-0 lg:mb-6 xl:mb-0">
-	          <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
-	            Home
-	          </router-link>
-	        </div>
 
-	        <ul
-	          class="uppercase bg-white tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
-	          :class="menuOpen ? 'block': 'hidden'"
-	        >
+	        <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
+	          {{$t("nav.home")}}
+	        </router-link>
+
+	        <ul class="uppercase bg-white tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
+	          :class="menuOpen ? 'block': 'hidden'">
 	          <li class="mr-8 mb-6 lg:mb-0">
 	            <router-link :to="`/${$i18n.locale}/about`" class="text-copy-primary hover:text-gray-600">{{$t("nav.about")}}</router-link>
 	          </li>

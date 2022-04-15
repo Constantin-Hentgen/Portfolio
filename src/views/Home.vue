@@ -43,6 +43,7 @@
 				:imageURL="project.imageURL"
 				:imageAlt="project.imageAlt"
 				:id="project.id"
+				:URL="project.URL"
 			/>
 		</main>
 	</transition>

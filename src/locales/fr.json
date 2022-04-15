@@ -1,6 +1,7 @@
 {
   "message": "bonjour i18n !!",
   "nav": {
+		"home": "Accueil",
     "about": "À propos",
 		"contact": "Contact"
   },

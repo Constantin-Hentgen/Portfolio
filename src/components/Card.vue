@@ -17,10 +17,11 @@
 				md:flex-row
 				space-y-5
 			">
-	<router-link :to="`/${$i18n.locale}/project`">
+			
+			
+	<router-link :to="`/${$i18n.locale}/${URL}`">
 
 		<div class="flex">
-
 			<div class="w-full h-44 md:w-1/3 bg-myBlue-900 rounded-xl mr-2 2xl:mr-10 overflow-hidden object-fill">
 				<img class="h-full w-full object-cover object-center" :src="imageURL" :alt="imageAlt">
 			</div>
@@ -42,7 +43,7 @@
 			</div>
 		</div>
 	</router-link>
-		</div>
+	</div>
 </template>
 
 <script>
@@ -56,7 +57,8 @@ export default {
 		year: String,
 		subtitle: String,
 		imageURL: String,
-		imageAlt: String
+		imageAlt: String,
+		URL: String
   }
 }
 </script>

@@ -10,7 +10,8 @@
 			"techs":["fa-brands fa-vuejs"],
 			"imageURL":"img/coding.jpeg",
 			"imageAlt":"Un écran qui affiche des ligne de codes colorées.",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr"
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
 		},
 		{
 			"id":2,
@@ -22,7 +23,8 @@
 			"techs":["fa-brands fa-vuejs"],
 			"imageURL":"img/dk.jpeg",
 			"imageAlt":"Le drapeau danois flottant.",
-			"github":"https://github.com/Rhylionn/denmark-blog"
+			"github":"https://github.com/Rhylionn/denmark-blog",
+			"URL":"horsensei"
 		},
 		{
 			"id":3,
@@ -34,7 +36,8 @@
 			"techs":["fa-brands fa-python"],
 			"imageURL":"img/graph.jpeg",
 			"imageAlt":"Un écran d'ordinateur affichant des graphiques.",
-			"github":"https://github.com/Constantin-Hentgen/prime-explo"
+			"github":"https://github.com/Constantin-Hentgen/prime-explo",
+			"URL":"prime-explo"
 		},
 		{
 			"id":4,
@@ -46,7 +49,8 @@
 			"techs":["fa-brands fa-java"],
 			"imageURL":"img/retro.jpeg",
 			"imageAlt":"Une borne d'arcade affichant le message 'game over'.",
-			"github":"https://github.com/Constantin-Hentgen/Citadelles"
+			"github":"https://github.com/Constantin-Hentgen/Citadelles",
+			"URL":"citadelles"
 		},
 		{
 			"id":5,
@@ -58,7 +62,8 @@
 			"techs":["fa-brands fa-vuejs"],
 			"imageURL":"img/app.jpeg",
 			"imageAlt":"Une personne montrant une application de météo sur son téléphone.",
-			"github":"https://github.com/Constantin-Hentgen/vue-weather"
+			"github":"https://github.com/Constantin-Hentgen/vue-weather",
+			"URL":"vue-weather"
 		},
 		{
 			"id":6,
@@ -70,7 +75,8 @@
 			"techs":["fa-brands fa-js-square","fa-brands fa-vuejs"],
 			"imageURL":"img/todo.jpeg",
 			"imageAlt":"Une feuille de suivi des activités.",
-			"github":"https://github.com/Constantin-Hentgen/task-manager"
+			"github":"https://github.com/Constantin-Hentgen/task-manager",
+			"URL":"task-manager"
 		},
 		{
 			"id":7,
@@ -82,7 +88,8 @@
 			"techs":["fa-brands fa-html5","fa-brands fa-css3-alt"],
 			"imageURL":"img/youtube.jpeg",
 			"imageAlt":"Un écran d'ordinateur affichan Youtube.",
-			"github":"https://github.com/Constantin-Hentgen/Touyube"
+			"github":"https://github.com/Constantin-Hentgen/Touyube",
+			"URL":"touyube"
 		},
 		{
 			"id":8,
@@ -94,7 +101,8 @@
 			"techs":["fa-brands fa-python"],
 			"imageURL":"img/stats.jpeg",
 			"imageAlt":"Un tableur graphique remplis de valeurs.",
-			"github":"https://github.com/Constantin-Hentgen/text-parser"
+			"github":"https://github.com/Constantin-Hentgen/text-parser",
+			"URL":"text-parser"
 		},
 		{
 			"id":9,
@@ -106,7 +114,8 @@
 			"techs":["fa-brands fa-sass","fa-brands fa-php"],
 			"imageURL":"img/calculator.jpeg",
 			"imageAlt":"Une calculatrice posée sur une table.",
-			"github":"https://github.com/Constantin-Hentgen/php-experiment"
+			"github":"https://github.com/Constantin-Hentgen/php-experiment",
+			"URL":"php-experiment"
 		},
 		{
 			"id":10,
@@ -118,7 +127,8 @@
 			"techs":["fa-brands fa-windows","fa-brands fa-linux"],
 			"imageURL":"img/keyboard.jpeg",
 			"imageAlt":"Un clavier d'ordinateur portable.",
-			"github":"https://github.com/Constantin-Hentgen/xkb-fr-bepo"
+			"github":"https://github.com/Constantin-Hentgen/xkb-fr-bepo",
+			"URL":"clavier-bepo"
 		},
 		{
 			"id":11,
@@ -130,7 +140,8 @@
 			"techs":["fa-brands fa-html5","fa-brands fa-css3-alt"],
 			"imageURL":"img/france.jpeg",
 			"imageAlt":"Le drapeau français flottant.",
-			"github":"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote"
+			"github":"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote",
+			"URL":"le-pouvoir-du-vote"
 		}
 	]
 }
