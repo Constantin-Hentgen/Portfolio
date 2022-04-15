@@ -5,29 +5,14 @@ import router from './router'
 import i18n from './i18n'
 
 
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faHeart, faFilePdf, faHouseChimney, faArrowDownWideShort, faGraduationCap, faShield } from '@fortawesome/free-solid-svg-icons'
-// import { faVuejs, faGithub, faGithubAlt, faPython, faJava, faPhp, faSass, faJsSquare, faHtml5, faCss3Alt, faWindows, faLinux, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-// library.add(faHeart, faHouseChimney, faFilePdf, faArrowDownWideShort, faVuejs, faGraduationCap, faShield, faGithub, faGithubAlt, faPhp, faSass, faPython, faJava, faJsSquare, faHtml5, faCss3Alt, faWindows, faLinux, faDiscord, faLinkedin)
+
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
 
 
 
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
-// library.add(faCoffee)
-
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-
-
-
-
-// Vue.config.productionTip = false
+Vue.config.productionTip = false
 
 // use beforeEach route guard to set the language
 router.beforeEach((to, from, next) => {

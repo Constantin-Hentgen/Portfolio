@@ -10,7 +10,7 @@
 				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{ project.title }} · </h1>
 				
 				<div class="flex justify-center items-center gap-1">
-					<fa v-for="(tech, index) in project.techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/>
+					<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
 				</div>
 			</a>
 

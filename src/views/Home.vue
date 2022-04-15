@@ -20,20 +20,20 @@
 
 		<div class="flex-row w-full sm:w-2/3 mx-auto h-full space-y-8">
 			<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold"> <span>Constantin,</span> <br> <span>{{ $t('student') }}</span> </h1>
-			<p class="text-center md:text-left w-full"> {{ $t('description') }} <fa icon="arrow-down-wide-short" size="l" /></p>
+			<p class="text-center md:text-left w-full"> {{ $t('description') }} <i class="fas fa-arrow-down-wide-short"></i></p>
 
 			<div class="w-full grid place-items-center">
-				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">{{ $t('cv') }}<fa class="ml-2" icon="file-pdf" size="l" /></a>
+				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">{{ $t('cv') }}
+				<i class="fas fa-file-pdf"></i></a>
 			</div>
 		</div>
-
 	</header>
 	</transition>
 
+
+
 	<transition name="fade" appear>
 		<main class="mt-10 md:mt-24 space-y-10">
-
-			
 			<Card @click="setBackground" v-for="(project, index) in bank.projects" :key="index"
 				:title="project.title"
 				:year="project.year"
