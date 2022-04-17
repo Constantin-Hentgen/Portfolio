@@ -14,7 +14,10 @@
 				</div>
 			</a>
 
+			<p>{{$t(`projects.${this.name}.extendedContent`)}}</p>
+
 			<div class="article w-full" v-html="article"></div>
+			<!-- <div class="article w-full" v-html="marked(atob($t(projects.name.extendedContent)))"></div> -->
 		</main>
 	</transition>
 
@@ -36,6 +39,7 @@
 		data() {
 			return {
 				id: 1,
+				name: this.$route.name,
 				project: "",
 				article: ""
 			}

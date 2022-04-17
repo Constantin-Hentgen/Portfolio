@@ -31,21 +31,22 @@
 	</header>
 	</transition>
 
+	<!-- <h1 v-for="(project, index) in $t('projects')" :key="index">{{project.translatable.title}}</h1> -->
+
 	<transition name="fade" appear>
 		<main class="mt-10 md:mt-24 space-y-10">
-			<Card @click="setBackground" v-for="(project, index) in bank.projects" :key="index"
-				:title="project.title"
-				:year="project.year"
-				:subtitle="project.subtitle"
-				:content="project.content"
+			<Card v-for="(project, index) in $t('projects')" :key="index"
+				:title="project.translatable.title"
+				:year="project.translatable.year"
+				:subtitle="project.translatable.subtitle"
+				:content="project.translatable.content"
 				:techs="project.techs"
 				:imageURL="project.imageURL"
-				:imageAlt="project.imageAlt"
-				:id="project.id"
+				:imageAlt="project.translatable.imageAlt"
 				:URL="project.URL"
 			/>
 		</main>
-	</transition>
+	</transition>	
 
 	<transition name="fade" appear>
 		<Footer />
@@ -68,6 +69,7 @@
 			return {
 				sync: true,
 				bank: [],
+				// bank_i18: $t("projects"),
 				langs: ['en','fr']
 				// lang: navigator.language.split('-')[0],
 			}
