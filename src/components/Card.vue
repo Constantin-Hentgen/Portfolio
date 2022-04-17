@@ -30,7 +30,6 @@
 				<div class="flex-row flex justify-between">
 					<h1 class="text-myBlue-900 font-bold text-2xl md:text-3xl"> {{ title }} </h1>
 					<div class="space-x-3">
-						<!-- <fa v-for="(tech, index) in techs" :key="index" :icon='["fab", tech ]' size="2xl" color="#21243D"/> -->
 						<i v-for="(tech, index) in techs" :key="index" :class=tech ></i>
 					</div>
 				</div>

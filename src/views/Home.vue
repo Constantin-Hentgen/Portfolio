@@ -1,6 +1,5 @@
 <template>
   <div>
-
 	<transition name="fade" appear>
 	<header
 	class="
@@ -19,18 +18,18 @@
 		<img class="w-48 h-48 mx-auto my-auto md:w-60 md:h-60 shadow-2xl rounded-full pp" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
 		<div class="flex-row w-full sm:w-2/3 mx-auto h-full space-y-8">
-			<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold"> <span>Constantin,</span> <br> <span>{{ $t('student') }}</span> </h1>
-			<p class="text-center md:text-left w-full"> {{ $t('description') }} <i class="fas fa-arrow-down-wide-short"></i></p>
+			<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold"> <span>Constantin,</span> <br> <span>{{ $t('landing-page.student') }}</span> </h1>
+			<p class="text-center md:text-left w-full"> {{ $t('landing-page.description') }} <i class="fas fa-arrow-down-wide-short"></i></p>
 
 			<div class="w-full grid place-items-center">
-				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "./static/cv.pdf" target="_blank">{{ $t('cv') }}
-				<i class="fas fa-file-pdf"></i></a>
+				<a class="bg-myBlue-900 text-white text-xl p-2 rounded-md font-bold" href= "/static/cv.pdf" target="_blank">
+					{{ $t('landing-page.cv') }}
+					<i class="fas fa-file-pdf"></i>
+				</a>
 			</div>
 		</div>
 	</header>
 	</transition>
-
-
 
 	<transition name="fade" appear>
 		<main class="mt-10 md:mt-24 space-y-10">

@@ -5,7 +5,7 @@
 			<a href="https://github.com/Constantin-Hentgen" target="_blank"><fa :icon='["fab","github"]' size="2xl"/></a>
 			<a href="https://discord.com/users/357214102361341967" target="_blank"><fa :icon='["fab","discord"]' size="2xl"/></a>
 		</div>
-		<p class="m-auto text-center">codé  en <i class="fa-brands fa-vuejs"></i> avec <i class="fas fa-heart"></i></p>
+		<p class="m-auto text-center"> {{$t("landing-page.footer.codedWith")}} <i class="fa-brands fa-vuejs"></i> {{$t("landing-page.footer.in")}} <i class="fas fa-heart"></i></p>
 	</footer>
 </template>
 

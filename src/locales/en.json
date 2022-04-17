@@ -1,15 +1,176 @@
 {
-  "message": "hello i18n !!",
-  "nav": {
-		"home": "Home",
-    "about": "About",
-		"contact": "Contact"
-  },
-  "about": {
-    "title": "About",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint."
-  },
-	"student": "engineer student",
-	"description": "I am a first year student in computer engineering. You will find all my projects below.",
-	"cv": "my CV"
+	"landing-page": {
+		"nav": {
+			"home": "Home",
+			"about": "About",
+			"contact": "Contact"
+		},
+		"about": {
+			"title": "About",
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint."
+		},
+		"footer": {
+			"codedWith": "coded with",
+			"in": "in"
+		},
+		"student": "engineer student",
+		"description": "I am a first year student in computer engineering. You will find all my projects below.",
+		"cv": "my CV"
+	},
+	"projects": {
+		"mon-site-perso": {
+			"translatable": {
+				"title": "My personal website",
+				"subtitle": "Website",
+				"year": "2022",
+				"content": "My personal website which is built with VueJS and TailwindCSS. Gathers all the finished projects I was able to realize in the last years.",
+				"imageAlt": "A screen that displays colored lines of code."
+			},
+			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aWYKU2l0ZSB3ZWIgcXVpIHJlZ3JvdXBlIHRvdXMgbGVzIHByb2pldHMgcXVlIGonYWkgcHUgculhbGlz6SBjZXMgZGVybmnocmVzIGFubullcy4KX19fCiMjIENvbnRleHRlCk7pY2Vzc2l06SBkZSByZWNlbnNlciBldCBtZXR0cmUgZW4gYXZhbnQgdG91cyBsZXMgcHJvamV0cyBxdWUgaidhaSBwdSBmYWlyZS4gTWV0dHJlIGVuIHByYXRpcXVlIGNlIHF1ZSBqZSBzYWlzIGZhaXJlIGRlIG1pZXV4IGVuIGTpdmVsb3BwZW1lbnQgd2ViLgpfX18KIyMgUmVzc291cmNlcwotICoqVnVlLkpTKioKLSAqKlRhaWx3aW5kLkNTUyoqCi0gW01hcmtlZF0KLSBGb250YXdlc29tZQotIE5hdmlnYXRldXIgQnJhdmUKCl9fXwojIyBSZXRvdXIgZCdleHDpcmllbmNlClRy6HMgc2F0aXNmYWl0IGR1IHJlc3BvbnNpdmUuCgojIyMgQXhlIGQnYW3pbGlvcmF0aW9uCi0gaTE4biA6IGFqb3V0IGRlIGwnYW5nbGFpcwotIGFqb3V0IGRlcyBudW3pcm9zIGRlIHZlcnNpb25z",
+			"techs":["fa-brands fa-vuejs"],
+			"imageURL":"img/coding.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
+		},
+		"horsensei": {
+			"translatable": {
+				"title": "Hor'sensei",
+				"subtitle": "Website",
+				"year": "2022",
+				"content": "Blog made in VueJS in an ERASMUS context in Denmark.",
+				"imageAlt": "The Danish flag flying."
+			},
+			"extendedContent": "IyBCbG9nIGVuIEFuZ2xhaXMKIyMgT2JqZWN0aWYKCmxlIHNpdGUgZXN0IGQnYWlsbGV1cnMgZGlzcG9uaWJsZSDgIGwnYWRyZXNzZSBzdWl2YW50ZSA6IFtodHRwczovL2hvcnNlbnNlaS5vbmxpbmUvXShodHRwczovL2hvcnNlbnNlaS5vbmxpbmUvKQoKVG91dCBsZSBzaXRlIGEg6XTpIGNvZOkgYXZlYyBWdWUuanMsIHVzYWdlIGRlcyBpY/RuZXMgZm9udGF3ZXNvbWUsIGVtYmFycXVlbWVudCBkdSBtYXJrZG93bi4KCnZlcnNpb25uaW5nIGF2ZWMgZ2l0aHViCl9fXwojIyBDb250ZXh0ZQpIb3JzZW5zJ2VpIGVzdCB1biBibG9nIGNvbud1IGFmaW4gZGUgculkaWdlciBkZXMgYXJ0aWNsZXMgdG91dCBhdSBsb25nIGRlIG1vbiBFcmFzbXVzIGF1IERhbmVtYXJrLgo0IOAgYWxpbWVudGVyIGxlIHNpdGUsIDIg4CBsZSBk6XZlbG9wcGVyCl9fXwojIyBSZXNzb3VyY2VzCi0gKipWdWUuSlMqKgotIFttYXJrZWRdCi0gTmF2aWdhdGV1ciBCcmF2ZQoKX19fCiMjIFJldG91ciBkJ2V4cOlyaWVuY2UKCiFbc2NyZWVuc2hvdCBkdSBibG9nXShodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdHRhY2htZW50cy82Njc0NDM3Nzg0Nzg0MDc2ODAvOTUxNTIwMjQzMDMxODY3MzkyL3Vua25vd24ucG5nKQ==",
+			"techs":["fa-brands fa-vuejs"],
+			"imageURL":"img/dk.jpeg",
+			"github":"https://github.com/Rhylionn/denmark-blog",
+			"URL":"horsensei"
+		},
+		"prime-explo": {
+			"translatable": {
+				"title": "Prime Explo",
+				"subtitle": "Prime Number Search",
+				"year": "2022",
+				"content": "Prime number calculator program that plots graphs to model gaits and make approximations.",
+				"imageAlt": "A computer screen displaying graphs."
+			},
+			"extendedContent": "IyBOb21icmVzIHByZW1pZXJzCiMjIE9iamVjdGlmClJlY3VlaWwgZGUgZm9uY3Rpb25zIGxp6WVzIGF1IGNhbGN1bCBkZSBub21icmVzIHByZW1pZXJzLgpfX18KIyMgQ29udGV4dGUKUGV0aXQgcHJvamV0IHBsYWlzaXIgcG91ciByZXByZW5kcmUgZG91Y2VtZW50IGxlcyBtYXRocyBwZW5kYW50IG1vbiBFcmFzbXVzIGF1IERhbmVtYXJrLgpfX18KIyMgUmVzc291cmNlcwotIFB5dGhvbgotIE1hdGhQbG90TGliCi0gTGFUZVgKLSBHZW9nZWJyYQoKQ2ktZGVzc291cyB1bmUgY291cmJlIGFwcHJveGltYW50IGxlIHRlbXBzIGRlIGNhbGN1bCBlbiBmb25jdGlvbiBkdSBub21icmUgZGUgY2FsY3VscyBzZWxvbiBtYSBtYWNoaW5lLgoKIVtdKGh0dHBzOi8vdXNlci1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzQ4MzY2MDAwLzE1NTg0MzI2Ny00ZWJkMjA0ZC01OWYwLTRhY2UtYjU5Yi1lYTVkMGMzMTRjY2IucG5nKQoKCkNpLWRlc3NvdXMgbGVzIHJhaXNvbm5lbWVudHMgcG91ciBy6XNvdWRyZSBkZXMg6XF1YXRpb25zIGRvbnQgbCdpbmNvbm51ZSBlc3QgbGEgY2xlZiBwb3VyIHRyb3V2ZXIgbGVzIG5vbWJyZXMgcHJlbWllcnMgcGFydGljdWxpZXJzIGxp6XMuCgohW10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTUxOTQ1NTEwMjcxNDc1NzYyLzk1NDY3MTMxMzY0NDA0MDIzMi91bmtub3duLnBuZykKCgohW10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTUxOTQ1NTEwMjcxNDc1NzYyLzk1NDY3MTM4NDQ5NDIxMTA4Mi91bmtub3duLnBuZykKCiMjIFJldG91ciBkJ2V4cOlyaWVuY2UKVHLocyBhZ3LpYWJsZSBldCB1biBtb3llbiBkZSBtZXR0cmUgZW4gcHJhdGlxdWUgbGVzIG1hdGjpbWF0aXF1ZXMgcG91ciB1biBjb2RlIHBsdXMgZGlyZWN0LgojIyMgUGlzdGUgZCdhbelsaW9yYXRpb24KLSBBam91dGVyIGxlcyBmb25jdGlvbnMgZGUgZOljb21wb3NpdGlvbnMKLSBBam91dGVyIHVuZSBkaW1lbnNpb24gY3J5cHRvZ3JhcGhpcXVlCi0gSW1wbOltZW50ZXIgVGF5bG9yLVlvdW5nIHBvdXIgcG91dm9pciBmYWlyZSBkZSBtZWlsbGV1cnMgYXBwcm94aW1hdGlvbnM=",
+			"techs":["fa-brands fa-python"],
+			"imageURL":"img/graph.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/prime-explo",
+			"URL":"prime-explo"
+		},
+		"citadelles": {
+			"translatable": {
+				"title": "Citadels",
+				"subtitle": "OOP in team",
+				"year": "2021",
+				"content": "SCRUM project by 4 students of a board role playing game.",
+				"imageAlt": "An arcade terminal displaying the message 'game over'."
+			},
+			"extendedContent": "IyBKZXUgZGUgcvRsZQojIyBPYmplY3RpZgpDaXRhZGVsbGVzIGVzdCB1biBwcm9qZXQgZCfpY29sZSBkZSBncm91cGUg4CA0IGFmaW4gZGUgbWV0dHJlIGVuIHByYXRpcXVlIGxhICoqcHJvZ3JhbWF0aW9uIG9yaWVudOllIG9iamV0KiogZW4gY29sbGFib3JhdGlvbiBhdmVjICoqdmVyc2lvbmluZyoqLgpfX18KIyMgQ29udGV4dGUKUHJlbWnocmUgYW5u6WUgZGUgKipjeWNsZSBpbmfpbmlldXIg4CBsJ0VTQUlQKiosIG1vZHVsZSBkZSBk6WNvdXZlcnRlIGRlIGxhIHByb2dyYW1hdGlvbiBvcmllbnTpZSBvYmpldCBlbiBqYXZhLiBKZSBuJ2FpIGFsb3JzIGF1Y3VuZSBjb25uYWlzc2FuY2UgZW4gKipqYXZhKiogZXQgbWVzIGNv6XF1aXBpZXJzIG5vbiBwbHVzLiBKJ2FpIGNlcGVuZGFudCBk6WrgIGTpdmVsb3Bw6SBlbiBweXRob24gZXQgZW4gamF2YXNjcmlwdCBjZSBxdWkgbWUgZmFjaWxpdGUgbGEgdOJjaGUuCl9fXwojIyBSZXNzb3VyY2VzCi0gR2l0SHViCi0gVmlzdWFsIFN0dWRpbyBDb2RlCgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQpFeGNlbGxlbnQsIGJlYXVjb3VwIGQnYXBwcmVudGlzc2FnZSBwdWlzcXVlIHByZW1p6HJlIHbpcml0YWJsZSBleHDpcmllbmNlIGVuIHByb2dyYW1tYXRpb24gb3JpZW506WUgb2JqZXQuCgohW3VzYWdlIGNvbXBsZXQgZHUgdmVyc2lvbmluZ10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvNjY3NDQzNzc4NDc4NDA3NjgwLzk1MTUxOTAxODc2MDY5OTk5NC91bmtub3duLnBuZykKKmNpIGRlc3N1cyB1bmUgY2FwdHVyZSBkJ+ljcmFuIGQndW4gdmlzdWVsIGRlIGwnZXh0ZW5zaW9uICJnaXRncmFwaCIgc291cyBWaXN1YWwgU3R1ZGlvIENvZGUgOiBwcmVtaehyZSB1dGlsaXNhdGlvbiBkZXMgYnJhbmNoZXMgZW4gY29sbGFib3JhdGlvbio=",
+			"techs":["fa-brands fa-java"],
+			"imageURL":"img/retro.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/Citadelles",
+			"URL":"citadelles"
+		},
+		"vue-weather": {
+			"translatable": {
+				"title": "Vue-Weather",
+				"subtitle": "weather application",
+				"year": "2021",
+				"content": "Introduction to VueJS framework with OpenWeather API call.",
+				"imageAlt": "A person showing a weather app on their phone."
+			},
+			"extendedContent": "IyBBcHAgbel06W8KIyMgT2JqZWN0aWYKTW9uIG9iamVjdGlmIOl0YWl0IGRlIGTpY291dnJpciBjb21tZW50IGZvbmN0aW9ubmUgZGVzIGFwcGVscyAqKlJFU1QgQVBJKiogIGVuICoqVnVlLkpTKiouCl9fXwojIyBDb250ZXh0ZQpKZSBzdWlzIGFsb3JzIHVuIGTpYnV0YW50IGVuICoqVnVlLkpTKiosIGplIG4nYWkgZmFpdCBxdSd1biBzZXVsIHByb2pldCBhdmVjIGNldHRlIHRlY2hub2xvZ2llLiBKZSBzdWlzIGNlcGVuZGFudCDgIGwnYWlzZSBhdmVjIGxlcyBsYW5ndWFnZXMgd2ViIGV0IHBvdXIgZmFpcmUgZmFjZSDgIGxhIGRpZmZpY3VsdOkgZGUgbCdvcmlnaW5hbGl06SBkZSBsYSBzeW50YXhlICoqSmF2YVNjcmlwdCoqIGRhbnMgY2UgY29udGV4dGUsIGplIGTpY2lkZSBkZSBzdWl2cmUgdW4gdHV0b3JpZWwuCl9fXwojIyBSZXNzb3VyY2VzClBvdXIgculhbGlzZXIgY2UgcHJvamV0IGonYWkgdXRpbGlz6SAqKlZpc3VhbCBTdHVkaW8gQ29kZSoqIGFpbnNpIHF1J3VuIHR1dG9yaWVsIFlvdVR1YmUuCl9fXwojIyBSZXRvdXIgZCdleHDpcmllbmNlClRy6HMgZW5yaWNoaXNzYW50IGNhciBwcmVtaWVyIGFwcGVsICoqUkVTVCBBUEkqKiBldCDpZ2FsZW1lbnQgcHJlbWllciBjb250YWN0IGF2ZWMgZGVzIGRvbm7pZXMgYXUgZm9ybWF0ICoqSlNPTioqLgoKIyMjIFBpc3RlIGQnYW3pbGlvcmF0aW9uCi0gUGx1cyBkZSBkYXRhCi0gRmFpcmUgdW4gaGlzdG9yaXF1ZSwgYXZlYyBkZXMgZ3JhcGhzID8KCiFbXShodHRwczovL3VzZXItaW1hZ2VzLmdpdGh1YnVzZXJjb250ZW50LmNvbS80ODM2NjAwMC8xNDQ2NTYwNzktMDMyZThhZDUtNGE1OS00YmZiLTljODItMDllODRlYzVlNzA4LnBuZyk=",
+			"techs":["fa-brands fa-vuejs"],
+			"imageURL":"img/app.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/vue-weather",
+			"URL":"vue-weather"
+		},
+		"task-manager": {
+			"translatable": {
+				"title": "Task Manager",
+				"subtitle": "Website",
+				"year": "2021",
+				"content": "VueJS discovery site with native JavaScript usage.",
+				"imageAlt": "An activity tracking sheet."
+			},
+			"extendedContent": "IyBTaXRlICJjaGVjay1saXN0IgojIyBPYmplY3RpZgpE6WNvdXZyaXIgKipWdWUuSlMqKgpfX18KIyMgQ29udGV4dGUKSmUgbidhaSBmYWl0IGp1c3F1J2Fsb3JzIHF1ZSBkdSBk6XZlbG9wcG1lbnQgbmF0aWYgZW4gKipIVE1ML0NTUy9KYXZhU2NyaXB0KiouCl9fXwojIyBSZXNzb3VyY2VzCi0gKipWaXN1YWwgU3R1ZGlvIENvZGUqKgotIEZpcmVmb3gKCl9fXwojIyBSZXRvdXIgZCdleHDpcmllbmNlCkonYWkgcHUgYXBwcm9mb25kaXIgbWVzIGNvbm5haXNzYW5jZXMgKipWdWUuSlMqKiB0b3V0IGVuIGV4cGxvcmFudCBkZSBub3V2ZWxsZXMgcG9zc2liaWxpdOlzIGF2ZWMgKipDU1MqKi4KCiFbXShodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdHRhY2htZW50cy85NTE5NDU1MTAyNzE0NzU3NjIvOTUxOTQ5MzgyOTU2MjI0NTcyL3Vua25vd24ucG5nKQ==",
+			"techs":["fa-brands fa-js-square","fa-brands fa-vuejs"],
+			"imageURL":"img/todo.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/task-manager",
+			"URL":"task-manager"
+		},
+		"touyube": {
+			"translatable": {
+				"title": "Touyube",
+				"subtitle": "Website",
+				"year": "2021",
+				"content": "Beginner level web development project in native HTML & CSS.",
+				"imageAlt": "A computer screen displaying Youtube."
+			},
+			"extendedContent": "IyBS6XBsaXF1ZSBZb3VUdWJlCiMjIE9iamVjdGlmCnNpdGUgZW4gcHVyIGh0bWwgY3NzIHF1aSByZXByb2R1aXQgbCdpbnRlcmZhY2UgZCdhY2N1ZWlsIGRlIHlvdXR1YmUuCl9fXwojIyBDb250ZXh0ZQpQcm9qZXQgZCfpY29sZSBlbiBwdXIgSFRNTC9DU1MgOiBpbnRyb2R1Y3Rpb24gYXUgZOl2ZWxvcHBlbWVudCB3ZWIuCl9fXwojIyBSZXNzb3VyY2VzCi0gKipWaXN1YWwgU3R1ZGlvIENvZGUqKgotICoqRW1tZXQqKgotIE5hdmlnYXRldXIgQnJhdmUKCl9fXwojIyBSZXRvdXIgZCdleHDpcmllbmNlCiMjIyBQaXN0ZSBkJ2Ft6Wxpb3JhdGlvbgotIEFt6Wxpb3JhdGlvbiBkdSByZXNwb25zaXZlCi0gYWpvdXQgZGVzIGRpZmbpcmVudHMgbWVudXMgZXQgc291cyBtZW51cwotIHN1cHBvcnQgamF2YXNjcmlwdAoKCiFbXShodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdHRhY2htZW50cy85NTE5NDU1MTAyNzE0NzU3NjIvOTUxOTUwMTg2NjQzNjE1Nzk0L3Vua25vd24ucG5nKQ==",
+			"techs":["fa-brands fa-html5","fa-brands fa-css3-alt"],
+			"imageURL":"img/youtube.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/Touyube",
+			"URL":"touyube"
+		},
+		"text-parser": {
+			"translatable": {
+				"title": "Text Parser.",
+				"subtitle": "Text Parsing.",
+				"year": "2021",
+				"content": "A program that generates statistics on a given text for comparative studies.",
+				"imageAlt": "A graphical spreadsheet filled with values."
+			},
+			"extendedContent": "IyDJdHVkZSBmculxdWVudGllbGxlCiMjIE9iamVjdGlmCkwnb2JqZWN0aWYgZGUgY2UgcHJvZ3JhbW1lIGVzdCBkZSB0aXJlciBkZXMgaW5mb3JtYXRpb25zIHN1ciB1biB0ZXh0ZSBldCAgZGUgY29tcGFyZXIgY2VzIGRvbm7pZXMuCl9fXwojIyBDb250ZXh0ZQpE6XZlbG9wcGVyIHVuZSBwcm9ncmFtbWUgcXVpIG1lIHBlcm1ldHRyYWl0IGQnYW3pbGlvcmVyIG1hIGNvbmZpZ3VyYXRpb24gY2xhdmllci4gTCdpbnRlcup0IGVzdCDpZ2FsZW1lbnQgbGluZ3Vpc3RpcXVlIGVuIGNvbXBhcmFudCBkaWZm6XJlbnRlcyBsYW5ndWVzLgpfX18KIyMgUmVzc291cmNlcwotIERpdmVycyB0ZXh0ZSBkb250IE5vdHJlIERhbWUgZGUgVmljdG9yIEh1Z28sIEhhbWxldCBkZSBTaGFrZXNwZWFyZS4KLSAqKlZpc3VhbCBTdHVkaW8gQ29kZSoqCgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQojIyMgUGlzdGUgZCdhbelsaW9yYXRpb24KLSBpbnRlcmZhY2UgZ3JhcGhpcXVlCi0gYWZmaW5hZ2UgZGVzIHLpc3VsdGF0cwotIGZvbmN0aW9ubmFsaXTpcyBjcnlwdG9ncmFwaGlxdWVzCgoKYGBgCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgpFbnRyZXIgbGUgbm9tIGR1IGZpY2hpZXIgc2FucyBleHRlbnNpb24gOiBiYW5rL2ZyCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgpDb25zb25uZXMgbWFqb3JpdGFpcmVzICggNTQuNzM5ICUgKQpyYXRpbyBkZSB2b3llbGxlcyBhY2NlbnR16WVzIDogIDEwLjI1ODYgJQpMZXMgcGhyYXNlcyBjb250aWVubmVudCAyNi44MTI1IG1vdHMgZW4gbW95ZW5uZS4KTGVzIG1vdHMgb250IGVuIG1veWVubmUgNC4yNzU1IGxldHRyZXMuCnByb3BvcnRpb24gZGUgbW90cyB1bmlxdWVzIDogIDM1LjY2ICUKQ29tcGxleGl06SBkZSBsZWN0dXJlIHRleHRlIEJFVEEgOiAgMTM5CioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgptb3QgYWzpYXRvaXJlIGVuIHNpdHVhdGlvbiBkJ+lxdWlwcm9iYWJpbGl06SA6IGfpbmllCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgoxIGUgMTUuNDA1ICUgCjIgcyA4LjA4MSAlIAozIGEgNy40MjMgJSAKNCB0IDcuMzU3ICUgCjUgciA2Ljk1NSAlIAo2IGkgNi44NjYgJSAKNyBuIDYuNzU1ICUgCjggdSA2LjY2NSAlIAo5IGwgNS44NDEgJSAKMTAgbyA1LjE5NCAlIAoxMSBkIDMuODM0ICUgCjEyIGMgMy4yMzIgJSAKMTMgcCAyLjU3NCAlIAoxNCBtIDIuNDA3ICUgCjE1IOkgMi4xNCAlIAoxNiB2IDEuNTk0ICUgCjE3IHEgMS4zOTMgJSAKMTggaCAxLjA1OCAlIAoxOSBmIDAuOTU4ICUgCjIwIGIgMC44MzYgJSAKMjEgZyAwLjc4ICUgCjIyIOAgMC40OSAlIAoyMyB4IDAuNDM0ICUgCjI0IGogMC4zOSAlIAoyNSB5IDAuMyAlIAoyNiDoIDAuMjU2ICUgCjI3IOogMC4yMjIgJSAKMjggeiAwLjE2NyAlIAoyOSDiIDAuMTQ0ICUgCjMwIOcgMC4wNjYgJSAKMzEg+yAwLjA1NSAlIAozMiD7IDAuMDU1ICUgCjMzIPQgMC4wMzMgJSAKMzQgvSAwLjAzMyAlIAozNSD0IDAuMDMzICUgCjM2IO4gMC4wMjIgJSAKMzcg7iAwLjAyMiAlIAozOCD5IDAuMDIyICUgCjM5IPkgMC4wMjIgJSAKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqClRvdGFsIDogIDEwMCAlCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgoxIGRlIDUuMjIxICUgCjIgbCAyLjYxICUgCjMgbGEgMi40MjQgJSAKNCBpbCAyLjE5MSAlIAo1IGxlIDIuMDk3ICUgCjYgZXQgMS44NjQgJSAKNyDgIDEuODE4ICUgCjggZXN0IDEuNjc4ICUgCjkgbGVzIDEuNjMxICUgCjEwIHF1ZSAxLjM1MSAlIAoxMSBjZSAxLjMwNSAlIAoxMiB1biAxLjE2NSAlIAoxMyBwYXMgMS4xMTggJSAKMTQgcXVpIDEuMDcyICUgCjE1IGRhbnMgMS4wNzIgJSAKMTYgZW4gMS4wNzIgJSAKMTcgZCAxLjAyNSAlIAoxOCBhIDEuMDI1ICUgCjE5IGRlcyAwLjk3OSAlIAoyMCB1bmUgMC45MzIgJSAKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqClRvdGFsIDogIDMzLjY1OSAlCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgoxICwgMzkuMDggJSAKMiAgMzQuOTQyICUgCjMgLiAxOC4zOSAlIAo0ICAzLjY3OCAlIAo1ID8gMS4zNzkgJSAKNiA7IDEuMzc5ICUgCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgpUb3RhbCA6ICA5OC44NSAlCioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgpgYGA=",
+			"techs":["fa-brands fa-python"],
+			"imageURL":"img/stats.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/text-parser",
+			"URL":"text-parser"
+		},
+		"php-experiment": {
+			"translatable": {
+				"title": "Php Experiment",
+				"subtitle": "Website",
+				"year": "2021",
+				"content": "Mental calculation training site, introduction to PHP and SCSS language.",
+				"imageAlt": "A calculator on a table."
+			},
+			"extendedContent": "IyBDYWxjdWwgbWVudGFsCiMjIE9iamVjdGlmCkwnb2JqZWN0aWYgZGUgY2Ugc2l0ZSB3ZWIgZXN0IGRlIHMnZW50cmHubmVyIGF1IGNhbGN1bCBtZW50YWwuCl9fXwojIyBDb250ZXh0ZQpBeWFudCBwcmF0aXF16SBsZSBk6XZlbG9wcGVtZW50IHdlYiB1bmlxdWVtZW50IGVuICoqSFRNTC9DU1MvSmF2YVNjcmlwdCoqIG5hdGlmcywgamUgc291aGFpdGFpcyBk6WNvdXZyaXIgZCdhdXRyZXMgZmFjZXR0ZXMgZGUgY2UgZG9tYWluZSBldCBjJ2VzdCBwb3VyIGNlbGEgcXVlIGonYWkgY2hvaXNpIGxlICoqUEhQKiouIEFmaW4gZGUgZOljb3V2cmlyIHVuIHBldSBwbHVzIOlnYWxlbWVudCBkdSBj9HTpIHN0eWxlLCBqJ2FpIGFpbnNpIGNob2lzaXQgZCd1dGlsaXNlciAqKlNDU1MqKgpfX18KIyMgUmVzc291cmNlcwotIDMgc2VtYWluZXMgZW52aXJvbgotICoqVmlzdWFsIFN0dWRpbyBDb2RlKioKLSBGaXJlZm94CgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQpKJ2FpIGV1IHF1ZWxxdWVzIGRpZmZpY3VsdOlzIGF1IG5pdmVhdSBkdSB0cmFuc2ZlcnQgZGVzIGRvbm7pZXMgZCd1bmUgcGFnZSDgIGwnYXV0cmUsIHByb2Js6G1lIHF1ZSBqJ2FpIHRlbXBvcmFpcmVtZW50IGNvbnRvdXJu6SBlbiB1dGlsaXNhbnQgZGVzIGNvb2tpZXMuCgojIyMgQXhlIGQnYW3pbGlvcmF0aW9uCi0gcmVtYW5pZXIgbGUgY29kZSBldCBsZSBuZXR0b3llcgotIGFqb3V0ZXIgcXVlbHF1ZXMgdW5lcyBkZXMgZm9uY3Rpb25uYWxpdOlzIGFkZGl0aW9ubmVsbGVzIHF1ZSBqJ2FpIG5vdOkKCgohW10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvNjY3NDQzNzc4NDc4NDA3NjgwLzk1MTU1NzUzNzg4MTI2NDEyOC91bmtub3duLnBuZykKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE1NTczODcyMzAyNTcyNjIvdW5rbm93bi5wbmcpCiFbXShodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdHRhY2htZW50cy82Njc0NDM3Nzg0Nzg0MDc2ODAvOTUxNTU3NzkyMTUyNTcyMDE0L3Vua25vd24ucG5nKQ==",
+			"techs":["fa-brands fa-sass","fa-brands fa-php"],
+			"imageURL":"img/calculator.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/php-experiment",
+			"URL":"php-experiment"
+		},
+		"clavier-bepo": {
+			"translatable": {
+				"title": "Bepo keyboard",
+				"subtitle": "Optimized keyboard",
+				"year": "2020",
+				"content": "Customized keyboard configuration optimized for Linux & Windows.",
+				"imageAlt": "A laptop keyboard."
+			},
+			"extendedContent": "IyBDbGF2aWVyIHBlcnNvbm5hbGlz6QojIyBPYmplY3RpZgpWb2ljaSB1bmUgYXJjaGl2ZSBkZSBsYSBkaXNwb3NpdGlvbiBkZSBtb24gY2xhdmllciBxdWkgbWUgcGVybWV0IGRlIGxhIHJldHJvdXZlciBv+SBxdWUgamUgc29pcyBldCBxdWkgcGVybWV0IGF1c3NpIOAgbGEgY29tbXVuYXV06SBkZSBwZXV0Lep0cmUgcydlbiBpbnNwaXJlci4KCkMnZXN0IHVuIGNsYXZpZXIgQkVQTyBwZXJzb25uYWxpc+ksIGFt6Wxpb3LpIHBvdXIgbGUgZOl2ZWxvcHBlbWVudCBldCBsYSBmcmFwcGUgcmFwaWRlLgpCRVBPIGVzdCBlbiBmYWl0IHVuZSBhZGFwdGF0aW9uIGZyYW7nYWlzZSBkZSBsYSBkaXNwb3NpdGlvbiBEdm9yYWsgcXVpIGEg6XTpIGZhaXRlIHBvdXIgbGEgZGFjdHlsb2dyYXBoaWUgYW5nbGFpc2UuCgpMZXMgcG9pbnRzIHF1ZSBqJ2FpIGFib3Jk6XMgcG91ciBy6WFsaXNlciBjZWxhIDoKCjEuIMl2aXRlciBsZXMgdG91Y2hlcyBtb3J0ZXMKMi4gQW1lbmVyIGxlcyBwYXJlbnRo6HNlcyBqdXN0ZSBzb3VzIGxlcyBkb2lndHMgZGUgbGEgbWFpbiBkcm9pdGUuCjMuIExpZXIgbGVzIGJhcnJlcyBvYmxpcXVlcyDgIGxhIGJhcnJlIGQnZXNwYWNlIHBvdXIgZmFjaWxpdGVyIGxhIG5hdmlnYXRpb24uCgpWb2ljaSBsZSBwbGFuIGRlcyB0b3VjaGVzIGRlIG1hIHZlcnNpb24gQkVQTy4KIVtpbWFnZV0oaHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDgzNjYwMDAvMTQxNjU4OTQ2LWRhNjk0N2JiLTlkMGQtNDkwYy1iMjY1LWE0NGM0ZjMzZWY3Ni5wbmcpCiMjIENvbnRleHRlCkxlcyB0cm91YmxlcyBtdXNjdWxvLXNxdWVsZXR0aXF1ZXMsIGZyYXBwZXMgcGx1cyBpbnRlbGxpZ2VudGVzIGV0IGRvbmMgcGx1cyByYXBpZGUuCl9fXwojIyBSZXNzb3VyY2VzCkNvbW1lbmNlciDgIHRyYXZhaWxsZXIgc3VyIGNlIGNsYXZpZXIgc291cyBMdWJ1bnR1LCBwdWlzIHNvdXMgRmVkb3JhIGV0IGplIGwndXRpbGlzZSDpZ2FsZW1lbnQgc291cyBXaW5kb3dzLiBNZXMgb3V0aWxzIG9udCBwcmluY2lwYWxlbWVudCDpdOkgdW4gdGVybWluYWwgdG91cm5hbnQgc291cyBiYXNoIGV0IG5hbm8gb3UgZ2VkaXQuCgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQpDZWxhIGZhaXQgbWFpbnRlbmFudCBwbHVzIGQndW4gYW4gcXVlIGondXRpbGlzZSBsYSBjb25maWd1cmF0aW9uIGNsYXZpZXIgYulwbyBldCBqJ2FpIGFpbnNpIGTpcGFzc+kgbWEgdml0ZXNzZSBkZSBmcmFwcGUgZW4gYXplcnR5IGV0IGRlIHRy6HMgbG9pbi4gRW4gZWZmZXQsIGplIHRhcGFpcyBhdXggYWxlbnRvdXJzIGRlcyA2MCBtb3RzIHBhciBtaW51dGVzIGF2YW50IHBvdXIgbWFpbnRlbmFudCBhdm9pc2luZXIgbGVzIDEwMC4gQXUtZGVs4CBkZSBzaW1wbGVzIHBlcmZvcm1hbmNlcyBicnV0ZXMsIGonYWkgcXVlc3Rpb25u6SBtb24gdXNhZ2UgZXQgaidhaSBhZGFwdOkgYXUgZmlsIGR1IHRlbXBzIG1hIGNvbmZpZ3VyYXRpb24gYXV4IGxhbmd1YWdlcyBwcmluY2lwYXV4IHF1ZSBqZSBwcmF0aXF1YWlzLiBKJ2FpIOlnYWxlbWVudCBwdSBhcHBsaXF16SB1biBwcmluY2lwZSBkZSBtaW5pbWFsaXNtZSBhZmluIGRlIG1lIHLpYXByb3ByaWVyIG1vbiBjbGF2aWVyLgoKIVttZXMgc3RhdHMgbW9ua2V5dHlwZXNdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE1MjQ2MDExOTg5MzYxNjQvdW5rbm93bi5wbmcpCgoKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE1MjU2MDM4MjYzMzU4MDQvdW5rbm93bi5wbmcpCgoKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE1MjU0MTMxNTc0ODY2NDMvdW5rbm93bi5wbmcpCgoKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE1MjUyMTQxNzk3MTMwODUvdW5rbm93bi5wbmcpCgojIyMgUGlzdGUgZCdhbelsaW9yYXRpb24KLSBsaWVyIFRleHQtUGFyc2VyIOAgdW5lIGNvcGllIGR1IGZpY2hpZXIgZGUgY29uZmlndXJhdGlvbiBhZmluIGQnYXZvaXIgbGUgY2xhdmllciBsZSBwbHVzIHBlcnRpbmVudCBwb3NzaWJsZS4=",
+			"techs":["fa-brands fa-windows","fa-brands fa-linux"],
+			"imageURL":"img/keyboard.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/xkb-fr-bepo",
+			"URL":"clavier-bepo"
+		},
+		"le-pouvoir-du-vote": {
+			"translatable": {
+				"title": "The Power of the Vote",
+				"subtitle": "Website",
+				"year": "2020",
+				"content": "School project, static website to raise awareness of the right to vote in France.",
+				"imageAlt": "The French flag flying."
+			},
+			"extendedContent": "IyBMZSBkcm9pdCBkZSB2b3RlCiMjIE9iamVjdGlmClByb2pldCBkJ+ljb2xlIHF1aSBjb25zaXN0ZSDgIGZhaXJlIGRlIGxhIHNlbnNpYmlsaXNhdGlvbiBzdXIgbGUgZHJvaXQgZGUgdm90ZSBlbiBmcmFuY2UuCkhUTUwsIENTUywgdmVyc2lvbm5pbmcgR2l0LCBjb29w6XJhdGlvbiBlbiDpcXVpcGUgZGUgMiwgdXNhZ2UgZGUgc3RhdGlzdGlxdWVzLgpfX18KIyMgQ29udGV4dGUKRGFucyBsZSBjYWRyZSBkJ3VuIHByb2pldCBzY29sYWlyZSBqJ2FpIGTpY2lk6SBkJ29ldXZyZXIgcG91ciBsYSBk6W1vY3JhdGllIGVuIHRyYXZhaWxsYW50IOAgY29uY2V2b2lyIHVuIHNpdGUgd2ViIHF1aSBwculzZW50ZSBkZXMgc3RhdGlzdGlxdWVzIGV0IGTpZmluaXRpb25zIHN1ciBsZSBkcm9pdCBkZSB2b3RlIGVuIEZyYW5jZS4KX19fCiMjIFJlc3NvdXJjZXMKLSAqKlZpc3VhbCBTdHVkaW8gQ29kZSoqCi0gRW1tZXQKLSBGaXJlZm94CgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQotIEFsbOlnZXIgbGUgc2l0ZQotIGVtYmFycXVlciBsZXMgZ3JhcGhzCi0gYW3pbGlvcmVyIGxlIG9uZS1wYWdlCgoKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzY2NzQ0Mzc3ODQ3ODQwNzY4MC85NTE5NDQ5MTAwNzkxNjAzNjAvdW5rbm93bi5wbmcpCgohW10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTUxOTQ1NTEwMjcxNDc1NzYyLzk1MTk0NTkwODE5MzQ2MDI1NC91bmtub3duLnBuZykKCiFbXShodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdHRhY2htZW50cy85NTE5NDU1MTAyNzE0NzU3NjIvOTUxOTQ2MTQzMjM4MDc0Mzc5L3Vua25vd24ucG5nKQoKIVtdKGh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F0dGFjaG1lbnRzLzk1MTk0NTUxMDI3MTQ3NTc2Mi85NTE5NDY0NDk5NDIzODA2MjQvdW5rbm93bi5wbmcpCgohW10oaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvOTUxOTQ1NTEwMjcxNDc1NzYyLzk1MTk0NjcxNzA2MDgwNDYzOC91bmtub3duLnBuZyk=",
+			"techs":["fa-brands fa-html5","fa-brands fa-css3-alt"],
+			"imageURL":"img/france.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/le-pouvoir-du-vote",
+			"URL":"le-pouvoir-du-vote"
+		}
+	}
 }
