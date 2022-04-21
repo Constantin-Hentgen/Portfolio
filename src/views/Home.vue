@@ -23,7 +23,6 @@
 			</header>
 		</transition>
 
-
 	<transition name="fade" appear>
 		<div
 		class="

@@ -154,7 +154,7 @@
 	}
 </script>
 
-<style scoped>
+<style>
 	#github:hover {
 		outline: black 1px solid;
 		border-radius: 10px;
