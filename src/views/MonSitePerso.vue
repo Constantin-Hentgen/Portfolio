@@ -10,14 +10,11 @@
 				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{$t("projects.mon-site-perso.translatable.title")}} · </h1>
 				
 				<div class="flex justify-center items-center gap-1">
-					<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
+					<i v-for="(tech, index) in $t(`projects.${this.name}.techs`)" :key="index" :class=tech ></i>
 				</div>
 			</a>
 
-			<p>{{$t(`projects.${this.name}.extendedContent`)}}</p>
-
 			<div class="article w-full" v-html="article"></div>
-			<!-- <div class="article w-full" v-html="marked(atob($t(projects.name.extendedContent)))"></div> -->
 		</main>
 	</transition>
 
@@ -38,38 +35,19 @@
 		},
 		data() {
 			return {
-				id: 1,
 				name: this.$route.name,
-				project: "",
+				project: this.$t(`projects.${this.$route.name}`),
+				source: this.$t(`projects.${this.$route.name}.extendedContent`),
 				article: ""
 			}
 		},
-		created(){
-			fetch("/data.json")
-			.then((res) => {
-				if (res.status === 200){
-					res.json().then((data) => {
-						let proj = data.projects
-	
-						let project = this.project = proj.filter((project) => {
-								return project.id === this.id
-						})	
-						this.project = project[0]
-						this.article = marked(atob(this.project.extendedContent))
-					})
-				} else {
-					alert('else')
-				}
-			})
-			.catch(() => {
-				///Error handler
-			})
+		created() {
+			this.article = marked(atob(this.source))
 		}
 	}
 </script>
 
 <style scoped>
-
 	#github:hover {
 		outline: black 1px solid;
 		border-radius: 10px;
@@ -115,5 +93,4 @@
 	.article :deep() ul,li {
 		list-style-type: circle;
 	}
-
 </style>

@@ -31,8 +31,6 @@
 	</header>
 	</transition>
 
-	<!-- <h1 v-for="(project, index) in $t('projects')" :key="index">{{project.translatable.title}}</h1> -->
-
 	<transition name="fade" appear>
 		<main class="mt-10 md:mt-24 space-y-10">
 			<Card v-for="(project, index) in $t('projects')" :key="index"
@@ -67,17 +65,10 @@
 		},
 		data() {
 			return {
-				sync: true,
-				bank: [],
-				// bank_i18: $t("projects"),
+				bank: this.$t("projects"),
 				langs: ['en','fr']
 				// lang: navigator.language.split('-')[0],
 			}
-		},
-		created() {
-			fetch("/data.json")
-			.then(response => response.json())
-			.then(data => (this.bank = data))
 		}
 	}
 </script>
