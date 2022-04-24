@@ -27,70 +27,67 @@ export default new Router({
         {
           path: 'about',
           name: 'about',
-          // route level code-splitting
-          // this generates a separate chunk (about.[hash].js) for this route
-          // which is lazy-loaded when the route is visited.
-          component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+          component: () => import('./views/About.vue')
         },
         {
           path: 'contact',
           name: 'contact',
-          component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
+          component: () => import('./views/Contact.vue')
         },
         {
           path: 'mon-site-perso',
           name: 'mon-site-perso',
-          component: () => import(/* webpackChunkName: "contact" */ './views/MonSitePerso.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'horsensei',
           name: 'horsensei',
-          component: () => import(/* webpackChunkName: "contact" */ './views/Horsensei.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'prime-explo',
           name: 'prime-explo',
-          component: () => import(/* webpackChunkName: "contact" */ './views/PrimeExplo.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'citadelles',
           name: 'citadelles',
-          component: () => import(/* webpackChunkName: "contact" */ './views/Citadelles.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'vue-weather',
           name: 'vue-weather',
-          component: () => import(/* webpackChunkName: "contact" */ './views/VueWeather.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'task-manager',
           name: 'task-manager',
-          component: () => import(/* webpackChunkName: "contact" */ './views/TaskManager.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'touyube',
           name: 'touyube',
-          component: () => import(/* webpackChunkName: "contact" */ './views/Touyube.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'text-parser',
           name: 'text-parser',
-          component: () => import(/* webpackChunkName: "contact" */ './views/TextParser.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'php-experiment',
           name: 'php-experiment',
-          component: () => import(/* webpackChunkName: "contact" */ './views/PhpExperiment.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'clavier-bepo',
           name: 'clavier-bepo',
-          component: () => import(/* webpackChunkName: "contact" */ './views/ClavierBepo.vue')
+          component: () => import('./views/Project.vue')
         },
         {
           path: 'le-pouvoir-du-vote',
           name: 'le-pouvoir-du-vote',
-          component: () => import(/* webpackChunkName: "contact" */ './views/LePouvoirDuVote.vue')
+          component: () => import('./views/Project.vue')
         }
       ]
     }
