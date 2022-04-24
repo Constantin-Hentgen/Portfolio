@@ -93,7 +93,6 @@
 				bank: this.$t("projects"),
 				langs: ['en','fr'],
       	menuOpen: false,
-				// lang: navigator.language.split('-')[0],
 			}
 		},
 		methods: {
