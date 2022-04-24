@@ -22,9 +22,6 @@
             @click.prevent="setLocale('en')"
             ref="account"
             class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.up.exact.prevent=""
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.down.exact.prevent="focusNext(true)"
             @keydown.esc.exact="hideDropdown"
           >
             <img src="/flag_en.svg" alt="english flag" class="h-8 w-8">
@@ -37,10 +34,6 @@
             href="#"
             @click.prevent="setLocale('fr')"
             class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.shift.tab="focusPrevious(false)"
-            @keydown.up.exact.prevent="focusPrevious(true)"
-            @keydown.down.exact.prevent=""
-            @keydown.tab.exact="hideDropdown"
             @keydown.esc.exact="hideDropdown"
           >
             <img src="/flag_fr.svg" alt="french flag" class="h-8 w-8">
@@ -86,24 +79,6 @@ export default {
     hideDropdown() {
       this.isVisible = false
       this.focusedIndex = 0
-    },
-    startArrowKeys() {
-      if (this.isVisible) {
-        // this.$refs.account.focus()
-        this.$refs.dropdown.children[0].children[0].focus()
-      }
-    },
-    focusPrevious(isArrowKey) {
-      this.focusedIndex = this.focusedIndex - 1
-      if (isArrowKey) {
-        this.focusItem()
-      }
-    },
-    focusNext(isArrowKey) {
-      this.focusedIndex = this.focusedIndex + 1
-      if (isArrowKey) {
-        this.focusItem()
-      }
     },
     focusItem() {
       this.$refs.dropdown.children[this.focusedIndex].children[0].focus()

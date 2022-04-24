@@ -82,7 +82,7 @@
 
 				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{$t("projects.mon-site-perso.translatable.title")}} · </h1>
 				
-				<div class="flex justify-center items-center gap-1">
+				<div class="flex justify-center items-center gap-1" style="font-size: 2rem;">
 					<i v-for="(tech, index) in $t(`projects.${this.name}.techs`)" :key="index" :class=tech ></i>
 				</div>
 			</a>
