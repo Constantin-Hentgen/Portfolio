@@ -10,8 +10,8 @@
 			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint."
 		},
 		"footer": {
-			"codedWith": "coded with",
-			"in": "in"
+			"codedIn": "coded in",
+			"with": "with"
 		},
 		"student": "engineer student",
 		"description": "I am a first year student in computer engineering. You will find all my projects below.",

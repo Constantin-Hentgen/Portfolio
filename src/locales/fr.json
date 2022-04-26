@@ -10,8 +10,8 @@
 			"content": "frLorem ipsum dolor sit amet <a href='#' class='text-blue-500'>consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint."
 		},
 		"footer": {
-			"codedWith": "codé avec",
-			"in": "en"
+			"codedIn": "codé en",
+			"with": "avec"
 		},
 		"student": "étudiant ingénieur",
 		"description": "Je suis un étudiant de première année en ingénierie informatique. Vous trouverez tous mes projets ci-dessous.",
