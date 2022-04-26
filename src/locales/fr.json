@@ -74,20 +74,6 @@
 			"github":"https://github.com/Constantin-Hentgen/Citadelles",
 			"URL":"citadelles"
 		},
-		"vue-weather": {
-			"translatable": {
-				"title": "Vue-Weather",
-				"subtitle": "Application météo",
-				"year": "2021",
-				"content": "Introduction au framework VueJS avec appel API OpenWeather.",
-				"imageAlt":"Une personne montrant une application de météo sur son téléphone."
-			},
-			"extendedContent": "IyBBcHAgbel06W8KIyMgT2JqZWN0aWYKTW9uIG9iamVjdGlmIOl0YWl0IGRlIGTpY291dnJpciBjb21tZW50IGZvbmN0aW9ubmUgZGVzIGFwcGVscyAqKlJFU1QgQVBJKiogIGVuICoqVnVlLkpTKiouCl9fXwojIyBDb250ZXh0ZQpKZSBzdWlzIGFsb3JzIHVuIGTpYnV0YW50IGVuICoqVnVlLkpTKiosIGplIG4nYWkgZmFpdCBxdSd1biBzZXVsIHByb2pldCBhdmVjIGNldHRlIHRlY2hub2xvZ2llLiBKZSBzdWlzIGNlcGVuZGFudCDgIGwnYWlzZSBhdmVjIGxlcyBsYW5ndWFnZXMgd2ViIGV0IHBvdXIgZmFpcmUgZmFjZSDgIGxhIGRpZmZpY3VsdOkgZGUgbCdvcmlnaW5hbGl06SBkZSBsYSBzeW50YXhlICoqSmF2YVNjcmlwdCoqIGRhbnMgY2UgY29udGV4dGUsIGplIGTpY2lkZSBkZSBzdWl2cmUgdW4gdHV0b3JpZWwuCl9fXwojIyBSZXNzb3VyY2VzClBvdXIgculhbGlzZXIgY2UgcHJvamV0IGonYWkgdXRpbGlz6SAqKlZpc3VhbCBTdHVkaW8gQ29kZSoqIGFpbnNpIHF1J3VuIHR1dG9yaWVsIFlvdVR1YmUuCl9fXwojIyBSZXRvdXIgZCdleHDpcmllbmNlClRy6HMgZW5yaWNoaXNzYW50IGNhciBwcmVtaWVyIGFwcGVsICoqUkVTVCBBUEkqKiBldCDpZ2FsZW1lbnQgcHJlbWllciBjb250YWN0IGF2ZWMgZGVzIGRvbm7pZXMgYXUgZm9ybWF0ICoqSlNPTioqLgoKIyMjIFBpc3RlIGQnYW3pbGlvcmF0aW9uCi0gUGx1cyBkZSBkYXRhCi0gRmFpcmUgdW4gaGlzdG9yaXF1ZSwgYXZlYyBkZXMgZ3JhcGhzID8KCiFbXShodHRwczovL3VzZXItaW1hZ2VzLmdpdGh1YnVzZXJjb250ZW50LmNvbS80ODM2NjAwMC8xNDQ2NTYwNzktMDMyZThhZDUtNGE1OS00YmZiLTljODItMDllODRlYzVlNzA4LnBuZyk=",
-			"techs":["fa-brands fa-vuejs"],
-			"imageURL":"img/app.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/vue-weather",
-			"URL":"vue-weather"
-		},
 		"task-manager": {
 			"translatable": {
 				"title": "Task Manager",
