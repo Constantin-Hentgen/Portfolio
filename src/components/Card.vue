@@ -6,29 +6,29 @@
 				class="
 					mx-auto
 					mb-10
-					w-full
-					flex 
 					bg-white
 					rounded-3xl
 					p-2
 					shadow-2xl 
 					cursor-pointer 
 					hover:to-blue-500
-					flex-col
-					md:w-3/4
+					flex
+					w-11/12
+					sm:w-5/6
+					md:w-4/5
+					lg:w-3/4
 					xl:w-1/2
-					md:flex-row
 					space-y-5
 				">
-				
+
 			<div class="flex h-44 w-full">
-				<img class="w-44 aspect-square object-cover object-center rounded-2xl mr-2 2xl:mr-10" :src="imageURL" :alt="imageAlt">
+				<img class="h-44 w-36 sm:w-52 sm:h-44 object-cover object-center rounded-2xl mr-2 2xl:mr-10" :src="imageURL" :alt="imageAlt">
 	
 				<div class="flex w-full justify-evenly space-y-1 flex-col">
 					<div class="flex flex-row justify-between">
 						<h1 class="text-myBlue-900 font-bold text-2xl md:text-3xl"> {{ title }} </h1>
-						<div class="space-x-3" style="font-size: 2rem;">
-							<i v-for="(tech, index) in techs" :key="index" :class=tech ></i>
+						<div class="space-x-3 hidden sm:flex sm:text-3xl">
+							<i v-for="(tech, index) in techs" :key="index" :class=tech></i>
 						</div>
 		
 					</div>

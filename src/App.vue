@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 min-h-screen text-lg">
 			<Header />
-			<router-view />
+			<router-view class="mt-20 w-full"/>
 			<Footer />
   </div>
 </template>

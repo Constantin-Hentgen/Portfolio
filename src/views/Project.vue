@@ -1,7 +1,7 @@
 <template>
   <div>
 		<main class="w-full flex-col xl:w-1/2 m-auto mt-14 md:mt-14 space-y-8">
-			<a id="github" :href="project.github"  class="flex justify-center space-x-2 cursor-pointer p-2">
+			<a id="github" :href="project.github" target="_blank"  class="flex justify-center space-x-2 cursor-pointer p-2">
 				<div class="flex flex-row space-x-4 mt-1">
 					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{$t("projects.mon-site-perso.translatable.year")}} </p>
 				</div>
@@ -43,6 +43,17 @@
 </script>
 
 <style lang="postcss">
+	#github {
+		border: transparent 1px solid;
+		transition: ease-in-out;
+		transition-duration: 0.3s;
+	}
+
+	#github:hover {
+		border: #21243D 1px solid;
+		border-radius: 50px;
+	}
+
 	.article {
 		color: #21243D;
 	}
