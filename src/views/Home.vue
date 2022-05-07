@@ -1,9 +1,11 @@
 <template>
   <div>
+		<Header />
 		<div
 		class="
 			w-11/12
 			m-auto
+			pt-10
 			md:mt-20
 			flex-col
 			space-y-5
@@ -48,11 +50,13 @@
 
 <script>
 import Card from '@/components/Card.vue'
+import Header from '@/components/Header.vue'
 
 export default {
 	name: 'Home',
 	components: {
-		Card
+		Card,
+		Header
 	},
 	data() {
 		return {

@@ -29,15 +29,14 @@
 						<h1 class="text-myBlue-900 font-bold text-2xl md:text-3xl"> {{ title }} </h1>
 						<div class="space-x-3 hidden sm:flex sm:text-3xl">
 							<i v-for="(tech, index) in techs" :key="index" :class=tech></i>
-						</div>
-		
+						</div>		
 					</div>
 	
 					<div class="flex">
-						<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-full px-2"> {{ year }} </h3>
-						<h2 class="text-sm md:text-lg ml-2 text-gray-500 font-light"> {{ subtitle }} </h2>
+						<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-full px-2 text-sm sm:text-base md:text-lg"> {{ year }} </h3>
+						<h2 class="text-sm md:text-lg h-3 ml-2 text-gray-500 font-light"> {{ subtitle }} </h2>
 					</div>
-					<p> {{ content }} </p>
+					<p class="text-sm sm:text-base md:text-lg"> {{ content }} </p>
 				</div>
 			</div>
 		</div>
