@@ -59,6 +59,8 @@
 	}
 
 	.article h1 {
+		margin-top:60px;
+		margin-bottom:30px;
 		font-size: 2em;
 		font-weight: 800;
 	}

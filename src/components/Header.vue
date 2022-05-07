@@ -17,11 +17,11 @@ import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 export default {
 	name: 'Header',
 	components: {
-  	LanguageSwitcher,
+		LanguageSwitcher,
 	},
 	data() {
 		return {
-    	menuOpen: false,
+			menuOpen: false,
 		}
 	},
 	methods: {
