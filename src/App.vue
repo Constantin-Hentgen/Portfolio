@@ -19,6 +19,8 @@ export default {
 }
 </script>
 
+<style src="@/fontawesome-free/css/all.min.css"></style>
+
 <style src="@/assets/css/tailwind.css">
 	#github:hover {
 		outline: black 1px solid;

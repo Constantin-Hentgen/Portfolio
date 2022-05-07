@@ -4,14 +4,6 @@ import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
 
-
-
-
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all.js'
-
-
-
 Vue.config.productionTip = false
 
 // use beforeEach route guard to set the language
@@ -27,8 +19,6 @@ router.beforeEach((to, from, next) => {
   i18n.locale = language
   next()
 })
-
-
 
 new Vue({
   router,
