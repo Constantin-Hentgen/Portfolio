@@ -44,7 +44,7 @@
 							</a>
 						</li>
 					</ul>
-  			</div>
+				</div>
 
 				<router-link :to="`/${$i18n.locale}`" class="hover:text-gray-600 uppercase">
 					{{$t("landing-page.nav.home")}}
@@ -69,7 +69,6 @@
 		</main>
 	</div>
 </template>
-
 <script>
 	import { mixin as clickaway } from 'vue-clickaway'
 	import { marked } from 'marked'
@@ -77,7 +76,7 @@
 
 	export default {
 		name: 'Project',
-  	mixins: [ clickaway ],
+		mixins: [ clickaway ],
 		components: {
 			LanguageSwitcher,
 		},
@@ -89,7 +88,7 @@
 				article: "",
 				menuOpen: false, 
 				isVisible: false,
-      	focusedIndex: 0,
+				focusedIndex: 0,
 			}
 		},
 		created() {
@@ -99,9 +98,9 @@
 			fetchArticle() {
 				this.article = marked(atob(this.$t(`projects.${this.$route.name}.extendedContent`)))
 			},
-    	toggleMenu() {
-    	  this.menuOpen = !this.menuOpen
-    	},
+			toggleMenu() {
+				this.menuOpen = !this.menuOpen
+			},
 			toggleVisibility() {
 				this.isVisible = !this.isVisible
 			},
