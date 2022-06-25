@@ -22,7 +22,7 @@
 						<li>
 							<a
 								href="#"
-								@click.prevent="setLocale('en'), fetchArticle()"
+								@click.prevent="setLocale('en'), fetchContent()"
 								ref="account"
 								class="flex items-center px-3 py-3 hover:bg-gray-200"
 								@keydown.esc.exact="hideDropdown"
@@ -35,7 +35,7 @@
 						<li>
 							<a
 								href="#"
-								@click.prevent="setLocale('fr'), fetchArticle()"
+								@click.prevent="setLocale('fr'), fetchContent()"
 								class="flex items-center px-3 py-3 hover:bg-gray-200"
 								@keydown.esc.exact="hideDropdown"
 							>
@@ -58,7 +58,7 @@
 					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{project.translatable.year}} </p>
 				</div>
 
-				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{project.translatable.title}} · </h1>
+				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{title}} · </h1>
 
 				<div class="flex justify-center items-center gap-1" style="font-size: 2rem;">
 					<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
@@ -85,6 +85,7 @@
 				name: this.$route.name,
 				project: this.$t(`projects.${this.$route.name}`),
 				source: this.$t(`projects.${this.$route.name}.extendedContent`),
+				title: "",
 				article: "",
 				menuOpen: false, 
 				isVisible: false,
@@ -92,11 +93,14 @@
 			}
 		},
 		created() {
-			this.fetchArticle()
+			this.fetchContent()
 		},
 		methods: {
-			fetchArticle() {
+			fetchContent() {
 				this.article = marked(atob(this.$t(`projects.${this.$route.name}.extendedContent`)))
+				this.title = this.$t(`projects.${this.$route.name}.translatable.title`)
+			},
+			fetchTitle() {
 			},
 			toggleMenu() {
 				this.menuOpen = !this.menuOpen
