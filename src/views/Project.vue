@@ -55,13 +55,13 @@
 		<main class="w-full flex-col xl:w-1/2 m-auto mt-14 md:mt-14 space-y-8">
 			<a id="github" :href="project.github" target="_blank"  class="flex justify-center space-x-2 cursor-pointer p-2">
 				<div class="flex flex-row space-x-4 mt-1">
-					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{$t("projects.mon-site-perso.translatable.year")}} </p>
+					<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{project.translatable.year}} </p>
 				</div>
 
-				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{$t("projects.mon-site-perso.translatable.title")}} · </h1>
+				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{project.translatable.title}} · </h1>
 
 				<div class="flex justify-center items-center gap-1" style="font-size: 2rem;">
-					<i v-for="(tech, index) in $t(`projects.${this.name}.techs`)" :key="index" :class=tech ></i>
+					<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
 				</div>
 			</a>
 
