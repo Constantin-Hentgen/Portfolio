@@ -64,7 +64,6 @@ export default {
 	},
 	data() {
 		return {
-			bank: this.$t("projects"),
 			display: false
 		}
 	},
