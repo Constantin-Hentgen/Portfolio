@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="display">
 		<Header />
 		<div
 		class="
@@ -46,22 +46,32 @@
 			/>
 		</main>
 	</div>
+
+	<Spinner v-else/>
 </template>
 
 <script>
 import Card from '@/components/Card.vue'
 import Header from '@/components/Header.vue'
+import Spinner from '@/components/Spinner.vue'
 
 export default {
 	name: 'Home',
 	components: {
 		Card,
-		Header
+		Header,
+		Spinner
 	},
 	data() {
 		return {
 			bank: this.$t("projects"),
+			display: false
 		}
+	},
+	created() {
+		setTimeout(() => {
+			this.display = true;
+		}, 2000);
 	}
 }
 </script>
