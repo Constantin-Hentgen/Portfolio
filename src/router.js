@@ -78,11 +78,16 @@ export default new Router({
           path: 'le-pouvoir-du-vote',
           name: 'le-pouvoir-du-vote',
           component: () => import('./views/Project.vue')
+        },
+        {
+          path: 'cv',
+          name: 'cv',
+          component: () => import('./views/Cv.vue')
         }
       ]
     }
   ],
-	scrollBehavior (to, from, savedPosition) {
+	scrollBehavior () {
 		return { x: 0, y: 0 };
 	}
 })
