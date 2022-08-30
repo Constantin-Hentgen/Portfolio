@@ -72,14 +72,10 @@
 <script>
 	import { mixin as clickaway } from 'vue-clickaway'
 	import { marked } from 'marked'
-	import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 
 	export default {
 		name: 'Project',
 		mixins: [ clickaway ],
-		components: {
-			LanguageSwitcher,
-		},
 		data() {
 			return {
 				name: this.$route.name,
