@@ -1,31 +1,36 @@
 <template>
-	<router-view/>
+  <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 min-h-screen text-lg">
+			<router-view class="w-full"/>
+			<Footer />
+  </div>
 </template>
 
-<style lang="postcss">
+<script>
+import Footer from '@/components/Footer.vue'
 
-	@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+export default {
+  name: 'app',
+	components: {
+		Footer
+	},
+}
+</script>
 
-	html {
-		scroll-behavior: smooth;
+<style src="@/fontawesome-free/css/all.min.css"></style>
+
+<style src="@/assets/css/tailwind.css">
+	#github:hover {
+		outline: black 1px solid;
+		border-radius: 10px;
 	}
 
-	body {
-		@apply bg-myBlue-200 w-full h-full;
-	}
-
-	body > * {
-		@apply font-Inter;
-	}
-
-	#app {
-		@apply w-full h-full p-5;
-	}
-
+	.dropdown-fade-enter-active, .dropdown-fade-leave-active {
+    transition: all .1s ease-in-out;
+  }
+  .dropdown-fade-enter, .dropdown-fade-leave-to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
 </style>
 
-<style>
-	* {
-		-webkit-tap-highlight-color: transparent;
-	}
-</style>
+
