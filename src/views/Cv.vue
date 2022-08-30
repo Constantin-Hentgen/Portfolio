@@ -14,11 +14,6 @@
 		name: 'cv',
 		components: {
 			Header
-		},
-		data() {
-			return {
-				source1: './static/cv.pdf'
-			}
 		}
 	}
 </script>
