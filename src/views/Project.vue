@@ -30,9 +30,6 @@
 				name: this.$route.name,
 				project: this.$t(`projects.${this.$route.name}`),
 				article: this.fetchContent(),
-				menuOpen: false, 
-				isVisible: false,
-				focusedIndex: 0,
 			}
 		},
 		created() {
@@ -41,26 +38,6 @@
 		methods: {
 			fetchContent() {
 				this.article = marked(atob(this.$t(`projects.${this.$route.name}.extendedContent`)))
-			},
-			toggleMenu() {
-				this.menuOpen = !this.menuOpen
-			},
-			toggleVisibility() {
-				this.isVisible = !this.isVisible
-			},
-			hideDropdown() {
-				this.isVisible = false
-				this.focusedIndex = 0
-			},
-			focusItem() {
-				this.$refs.dropdown.children[this.focusedIndex].children[0].focus()
-			},
-			setLocale(locale) {
-				this.$i18n.locale = locale
-				this.$router.push({
-					params: { lang: locale }
-				})
-				this.hideDropdown()
 			}
 		}
 	}
