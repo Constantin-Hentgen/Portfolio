@@ -11,8 +11,66 @@
 			"with": "with"
 		},
 		"student": "engineer student",
-		"description": "I am a first year student in computer engineering. You will find all my projects below.",
+		"description": "I am a first year student in a Cybersecurity Engineering Master degree. You will find all my projects below.",
 		"cv": "my CV"
+	},
+	"experiences": {
+		"worker-internship": {
+			"translatable": {
+				"title": "Full stack developer",
+				"subtitle": "1 month internship",
+				"year": "2022",
+				"content": "My personal website built with VueJS and TailwindCSS.",
+				"imageAlt": "A screen that displays colored lines of code."
+			},
+			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
+			"techs":["fa-brands fa-symfony","fa-brands fa-js-square","fa-solid fa-database"],
+			"imageURL":"img/coding.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
+		},
+		"student-job": {
+			"translatable": {
+				"title": "Worker at Truffaut",
+				"subtitle": "2 months student job",
+				"year": "2021",
+				"content": "My personal website built with VueJS and TailwindCSS.",
+				"imageAlt": "A screen that displays colored lines of code."
+			},
+			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
+			"techs":["fa-solid fa-store"],
+			"imageURL":"img/coding.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
+		},
+		"school-support": {  
+			"translatable": {
+				"title": "IT support at School",
+				"subtitle": "1 month internship",
+				"year": "2021",
+				"content": "My personal website built with VueJS and TailwindCSS.",
+				"imageAlt": "A screen that displays colored lines of code."
+			},
+			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
+			"techs":["fa-solid fa-school"],
+			"imageURL":"img/coding.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
+		},
+		"canalplus": {  
+			"translatable": {
+				"title": "Tenth grade internship",
+				"subtitle": "Website",
+				"year": "2017",
+				"content": "My personal website built with VueJS and TailwindCSS.",
+				"imageAlt": "A screen that displays colored lines of code."
+			},
+			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
+			"techs":["fa-solid fa-tv"],
+			"imageURL":"img/coding.jpeg",
+			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
+			"URL":"mon-site-perso"
+		}
 	},
 	"projects": {
 		"mon-site-perso": {

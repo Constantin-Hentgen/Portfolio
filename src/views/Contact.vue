@@ -44,14 +44,12 @@
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
 import Header from '@/components/Header.vue'
 import Spinner from '@/components/Spinner.vue'
 
 export default {
 	name: 'Home',
 	components: {
-		Card,
 		Header,
 		Spinner
 	},

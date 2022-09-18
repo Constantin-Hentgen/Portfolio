@@ -7,8 +7,8 @@
 			<a href="https://github.com/Constantin-Hentgen" target="_blank">
 				<i class="fa-brands fa-github-square"></i>
 			</a>
-			<a href="https://discord.com/users/357214102361341967" target="_blank">
-				<i class="fa-brands fa-discord"></i>
+			<a href="" target="_blank">
+				<i class="fas fa-envelope"></i>
 			</a>
 		</div>
 		<p class="m-auto text-center"> {{ $t("landing-page.footer.codedIn") }} <i class="fa-brands fa-vuejs"></i> {{ $t("landing-page.footer.with") }} <i class="fas fa-heart"></i> </p>

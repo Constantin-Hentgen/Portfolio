@@ -2,7 +2,7 @@
   <div>
 		<header class="bg-white z-10 opacity-75 w-full shadow-md sticky top-0">
 			<nav class="container w-full lg:w-1/2 mx-auto px-8 flex flex-row bg-transparent font-bold justify-center lg:justify-between space-x-5 items-center py-8">
-				<div class="w-3/4 flex justify-evenly">
+				<div class="w-2/3 flex justify-evenly">
 					<router-link :to="`/${$i18n.locale}`" class="hover:text-gray-600 uppercase">
 						<i class="fas fa-home"></i>
 						{{$t("landing-page.nav.home")}}
@@ -10,10 +10,6 @@
 					<router-link :to="`/${$i18n.locale}/projects`" class="hover:text-gray-600 uppercase">
 						<i class="fas fa-diagram-project"></i>
 						{{$t("landing-page.nav.projects")}}
-					</router-link>
-					<router-link :to="`/${$i18n.locale}/skills`" class="hover:text-gray-600 uppercase">
-						<i class="fas fa-person-chalkboard"></i>
-						{{$t("landing-page.nav.skills")}}
 					</router-link>
 					<router-link :to="`/${$i18n.locale}/experience`" class="hover:text-gray-600 uppercase">
 						<i class="fas fa-briefcase"></i>

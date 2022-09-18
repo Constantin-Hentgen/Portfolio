@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import i18n from './i18n'
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
-import Skills from './views/Skills.vue'
 import Experience from './views/Experience.vue'
+import NotFound from './views/NotFound.vue'
 
 Vue.use(Router)
 
@@ -16,6 +16,10 @@ export default new Router({
       path: '/',
       redirect: `/${i18n.locale}`
     },
+		{
+			path: '*',
+			component: NotFound
+		},
     {
       path: '/:lang/',
       component: {
@@ -31,11 +35,6 @@ export default new Router({
 					path: 'projects',
 					name: 'projects',
 					component: Projects
-				},
-				{
-					path: 'skills',
-					name: 'skills',
-					component: Skills
 				},
 				{
 					path: 'experience',
@@ -104,11 +103,6 @@ export default new Router({
 							path: 'le-pouvoir-du-vote',
 							name: 'le-pouvoir-du-vote',
 							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'cv',
-							name: 'cv',
-							component: () => import('./views/Cv.vue')
 						}
 					]
 				},
