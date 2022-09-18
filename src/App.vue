@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen">
+		<Header />
 			<router-view class="w-full"/>
 			<Footer />
   </div>
@@ -7,11 +8,13 @@
 
 <script>
 import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
 
 export default {
   name: 'app',
 	components: {
-		Footer
+		Footer,
+		Header
 	},
 }
 </script>

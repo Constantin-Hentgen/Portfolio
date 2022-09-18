@@ -1,74 +1,20 @@
 <template>
   <div>
 		<transition name="fade" appear>
-			<header class="bg-white z-10 opacity-75 w-full shadow-md sticky top-0">
-				<nav class="container mx-auto px-8 flex flex-row bg-transparent font-bold justify-center space-x-5 items-center py-8">
-					<div class="relative">
-						<button
-							href="#"
-							class="flex items-center focus:outline-none bg-white"
-							@click="toggleVisibility"
-							@keydown.space.exact.prevent="toggleVisibility"
-							@keydown.esc.exact="hideDropdown"
-							@keydown.shift.tab="hideDropdown"
-							@keydown.up.exact.prevent="startArrowKeys"
-							@keydown.down.exact.prevent="startArrowKeys"
-						>
-							<img :src="`/flag_${$i18n.locale}.svg`" alt="flag" class="w-8 h-8">
-							<span class="ml-2">{{ $i18n.locale.toUpperCase() }}</span>
-							<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
-						</button>
-	
-						<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 lg:z-20">
-							<li>
-								<a
-									href="#"
-									@click.prevent="setLocale('en'), fetchContent()"
-									ref="account"
-									class="flex items-center px-3 py-3 hover:bg-gray-200"
-									@keydown.esc.exact="hideDropdown"
-								>
-									<img src="/flag_en.svg" alt="english flag" class="h-8 w-8">
-									<span class="ml-2">English</span>
-								</a>
-							</li>
-	
-							<li>
-								<a
-									href="#"
-									@click.prevent="setLocale('fr'), fetchContent()"
-									class="flex items-center px-3 py-3 hover:bg-gray-200"
-									@keydown.esc.exact="hideDropdown"
-								>
-									<img src="/flag_fr.svg" alt="french flag" class="h-8 w-8">
-									<span class="ml-2">French</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-	
-					<router-link :to="`/${$i18n.locale}`" class="hover:text-gray-600 uppercase">
-						{{$t("landing-page.nav.home")}}
-					</router-link>
-				</nav>
-			</header>
-		</transition>
-
-		<transition name="fade" appear>
 			<main class="w-full flex-col xl:w-1/2 m-auto mt-14 md:mt-14 space-y-8">
 				<a id="github" :href="project.github" target="_blank"  class="flex justify-center space-x-2 cursor-pointer p-2">
 					<div class="flex flex-row space-x-4 mt-1">
 						<p class="bg-myBlue-900 text-white text-center h-auto my-auto p-2 rounded-xl font-bold"> {{project.translatable.year}} </p>
 					</div>
 	
-					<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{title}} · </h1>
+					<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> · {{ $t(`projects.${this.$route.name}.translatable.title`) }} · </h1>
 	
 					<div class="flex justify-center items-center gap-1" style="font-size: 2rem;">
 						<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
 					</div>
 				</a>
-	
-				<div class="article w-11/12 md:w-2/3 xl:w-full mx-auto" v-html="article"></div>
+
+				<div id="article" class="article w-11/12 md:w-2/3 xl:w-full mx-auto" v-html="article"></div>
 			</main>
 		</transition>
 	</div>
@@ -83,9 +29,7 @@
 			return {
 				name: this.$route.name,
 				project: this.$t(`projects.${this.$route.name}`),
-				source: this.$t(`projects.${this.$route.name}.extendedContent`),
-				title: "",
-				article: "",
+				article: this.fetchContent(),
 				menuOpen: false, 
 				isVisible: false,
 				focusedIndex: 0,
@@ -97,7 +41,6 @@
 		methods: {
 			fetchContent() {
 				this.article = marked(atob(this.$t(`projects.${this.$route.name}.extendedContent`)))
-				this.title = this.$t(`projects.${this.$route.name}.translatable.title`)
 			},
 			toggleMenu() {
 				this.menuOpen = !this.menuOpen

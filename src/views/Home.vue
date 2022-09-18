@@ -1,9 +1,5 @@
 <template>
-	<div>
-		<transition name="fade" class="toFade" appear>
-			<Header />
-		</transition>
-	
+	<div>	
 		<div v-if="display" class="toFade">
 			<transition name="fade" appear>
 				<div
@@ -33,13 +29,11 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
 import Spinner from '@/components/Spinner.vue'
 
 export default {
 	name: 'Home',
 	components: {
-		Header,
 		Spinner
 	},
 	data() {
