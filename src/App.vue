@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg">
+  <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen">
 			<router-view class="w-full"/>
 			<Footer />
   </div>

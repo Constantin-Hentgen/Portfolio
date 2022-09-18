@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<router-link :to="`/${$i18n.locale}/${URL}`">
+		<router-link :to="`/${$i18n.locale}/project/${URL}`">
 			<div
 				id="card"
 				class="

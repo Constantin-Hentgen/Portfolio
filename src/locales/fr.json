@@ -1,7 +1,10 @@
 {
 	"landing-page": {
 		"nav": {
-			"home": "Accueil"
+			"home": "Accueil",
+			"projects": "Projets",
+			"skills": "Compétences",
+			"experience": "Expérience"
 		},
 		"footer": {
 			"codedIn": "codé en",
