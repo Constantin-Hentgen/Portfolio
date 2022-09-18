@@ -21,19 +21,19 @@ export default new Router({
 			component: NotFound
 		},
     {
-      path: '/fr',
+      path: '/:lang/',
       component: {
         render (c) { return c('router-view') }
       },
       children: [
         {
           path: '/',
-          name: 'accueil',
+          name: 'home',
           component: Home
         },
 				{
-					path: 'projets',
-					name: 'projets',
+					path: 'projects',
+					name: 'projects',
 					component: Projects
 				},
 				{
@@ -42,8 +42,8 @@ export default new Router({
 					component: Experience
 				},
 				{
-					path: 'projet',
-					name: 'projet',
+					path: 'project',
+					name: 'project',
 					component: {
 						render (c) { return c('router-view') }
 					},
@@ -102,95 +102,6 @@ export default new Router({
 						{
 							path: 'le-pouvoir-du-vote',
 							name: 'le-pouvoir-du-vote',
-							component: () => import('./views/Project.vue')
-						}
-					]
-				},
-      ]
-    },
-
-    {
-      path: '/en',
-      component: {
-        render (c) { return c('router-view') }
-      },
-      children: [
-        {
-          path: '/',
-          name: 'home',
-          component: Home
-        },
-				{
-					path: 'projects',
-					name: 'projects',
-					component: Projects
-				},
-				{
-					path: 'experience',
-					name: 'experience',
-					component: Experience
-				},
-				{
-					path: 'project',
-					name: 'project',
-					component: {
-						render (c) { return c('router-view') }
-					},
-					children: [
-
-						{
-							path: 'my-personal-website',
-							name: 'my-personal-website',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'horsensei',
-							name: 'horsensei',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'prime-explo',
-							name: 'prime-explo',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'citadelles',
-							name: 'citadelles',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'vue-weather',
-							name: 'vue-weather',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'task-manager',
-							name: 'task-manager',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'touyube',
-							name: 'touyube',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'text-parser',
-							name: 'text-parser',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'php-experiment',
-							name: 'php-experiment',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'bepo-keyboard',
-							name: 'bepo-keyboard',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'the-power-of-the-vote',
-							name: 'the-power-of-the-vote',
 							component: () => import('./views/Project.vue')
 						}
 					]
