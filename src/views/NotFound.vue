@@ -1,9 +1,5 @@
 <template>
-	<div>
-		<transition name="fade" class="toFade" appear>
-			<Header />
-		</transition>
-	
+	<div>	
 		<div v-if="display" class="toFade grid place-items-center">
 			<img src="../assets/404.svg" alt="404 error page not found" class="w-1/4">
 		</div>
@@ -13,13 +9,11 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
 import Spinner from '@/components/Spinner.vue'
 
 export default {
 	name: 'Home',
 	components: {
-		Header,
 		Spinner
 	},
 	data() {

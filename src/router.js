@@ -21,7 +21,7 @@ export default new Router({
 			component: NotFound
 		},
     {
-      path: '/:lang/',
+      path: `/${i18n.locale}`,
       component: {
         render (c) { return c('router-view') }
       },
