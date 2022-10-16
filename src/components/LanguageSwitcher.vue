@@ -1,26 +1,26 @@
 <template>
-  <div class="relative flex justify-center">
-		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-myBlue-200 shadow overflow-hidden rounded-xl border-2 border-myBlue-900 w-48 mt-2 py-1 lg:z-20">
-      <li v-if="$i18n.locale != 'en'">
-        <a
-          @click.prevent="setLocale('en'), fetchContent()"
-          class="flex items-center px-3 py-3 hover:underline"
-          @keydown.esc.exact="hideDropdown"
-        >
-          <span class="ml-2">English</span>
-        </a>
-      </li>
-
-      <li>
-        <a v-if="$i18n.locale != 'fr'"
-          @click.prevent="setLocale('fr'), fetchContent()"
-          class="flex items-center px-3 py-3 hover:underline"
-          @keydown.esc.exact="hideDropdown"
-        >
-          <span class="ml-2">Français</span>
-        </a>
-      </li>
-    </ul>
+	<div class="relative flex justify-center">
+		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute left-0 bottom-10 normal-case z-30 font-normal xs:left-0 lg:right-0 text-myBlue-200 bg-myBlue-900 shadow overflow-hidden rounded-md w-28 mt-2 py-1 lg:z-20">
+			<li v-if="$i18n.locale != 'en'">
+				<a
+					@click.prevent="setLocale('en'), fetchContent()"
+					class="flex items-center px-3 py-3 hover:underline"
+					@keydown.esc.exact="hideDropdown"
+				>
+					<span class="ml-2">English</span>
+				</a>
+			</li>
+	
+			<li>
+				<a v-if="$i18n.locale != 'fr'"
+					@click.prevent="setLocale('fr'), fetchContent()"
+					class="flex items-center px-3 py-3 hover:underline"
+					@keydown.esc.exact="hideDropdown"
+				>
+					<span class="ml-2">Français</span>
+				</a>
+			</li>
+		</ul>
     <button
       href="#"
       class="flex items-center focus:outline-none bg-transparent"

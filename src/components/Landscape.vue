@@ -22,7 +22,7 @@
 				">
 
 			<div class="flex h-44 w-full">
-				<img class="h-44 w-36 sm:w-52 sm:h-44 object-cover object-center rounded-2xl mr-2 2xl:mr-10" :src="imageURL" :alt="imageAlt">
+				<img class="h-44 w-36 sm:w-52 sm:h-44 object-cover object-center rounded-md mr-2 2xl:mr-10" :src="imageURL" :alt="imageAlt">
 	
 				<div class="flex w-full justify-evenly space-y-1 flex-col">
 					<div class="flex flex-row justify-between">
