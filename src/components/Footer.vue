@@ -1,5 +1,5 @@
 <template>
-	<footer class="main flex flex-col sm:flex-row justify-around w-full mb-5 mt-10 text-myBlue-900">
+	<footer class="main flex flex-col sm:flex-row justify-evenly w-full mb-5 mt-20 text-myBlue-900">
 		<LanguageSwitcher />
 
 		<div class="space-x-5 text-3xl text-center">

@@ -1,16 +1,6 @@
 <template>
 	<div class="relative flex justify-center">
 		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute left-0 bottom-10 normal-case z-30 font-normal xs:left-0 lg:right-0 text-myBlue-200 bg-myBlue-900 shadow overflow-hidden rounded-md w-28 mt-2 py-1 lg:z-20">
-			<li v-if="$i18n.locale != 'en'">
-				<a
-					@click.prevent="setLocale('en'), fetchContent()"
-					class="flex items-center px-3 py-3 hover:underline"
-					@keydown.esc.exact="hideDropdown"
-				>
-					<span class="ml-2">English</span>
-				</a>
-			</li>
-	
 			<li>
 				<a v-if="$i18n.locale != 'fr'"
 					@click.prevent="setLocale('fr'), fetchContent()"
@@ -18,6 +8,16 @@
 					@keydown.esc.exact="hideDropdown"
 				>
 					<span class="ml-2">Français</span>
+				</a>
+			</li>
+
+			<li v-if="$i18n.locale == 'fr'">
+				<a
+					@click.prevent="setLocale('en'), fetchContent()"
+					class="flex items-center px-3 py-3 hover:underline"
+					@keydown.esc.exact="hideDropdown"
+				>
+					<span class="ml-2">English</span>
 				</a>
 			</li>
 		</ul>
@@ -31,7 +31,8 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      <span class="ml-2">{{ $i18n.locale.toUpperCase() }}</span>
+      <span class="ml-2" v-if="['en','fr'].includes($i18n.locale)">{{ $i18n.locale.toUpperCase() }}</span>
+      <span class="ml-2" v-else>EN</span>
       <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
     </button>
   </div>
