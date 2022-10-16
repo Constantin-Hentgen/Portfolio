@@ -8,11 +8,11 @@
 
 				<router-link :to="`/${$i18n.locale}`" id="info"> Constantin Hentgen </router-link>
 
-				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
+				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
 			</div>
 		</header>
   </div>

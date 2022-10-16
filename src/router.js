@@ -23,7 +23,7 @@ export default new Router({
 			component: NotFound
 		},
     {
-      path: '/:lang/',
+      path: '/:locale/',
       component: {
         render (c) { return c('router-view') }
       },
