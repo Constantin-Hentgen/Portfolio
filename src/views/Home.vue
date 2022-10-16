@@ -2,16 +2,15 @@
 	<div
 	class="
 		w-11/12
-		m-auto
-		pt-10
-		md:mt-20
-		flex-col
-		space-y-5
-		justify-center
-		md:space-x-10
 		md:w-3/4
 		xl:w-1/2
-		lg:mt-0
+
+		m-auto
+		mt-24
+		flex-col
+		justify-center
+		space-y-5
+		md:space-x-10
 	">
 		<img class="w-48 h-48 mx-auto md:w-60 md:h-60 shadow-2xl rounded-full pp" src="../assets/pp.jpeg" alt="picture of the webmaster">
 		<h1 class="text-3xl  md:text-5xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, {{ $t('landing-page.student') }}</h1>

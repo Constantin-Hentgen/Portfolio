@@ -4,7 +4,9 @@
 			"home": "Home",
 			"projects": "Projects",
 			"skills": "Skills",
-			"experience": "Experience"
+			"experience": "Experience",
+			"commitment": "Commitment",
+			"professional": "Career Plan"
 		},
 		"footer": {
 			"codedIn": "coded in",

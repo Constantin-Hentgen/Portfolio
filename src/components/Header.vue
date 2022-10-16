@@ -1,66 +1,49 @@
 <template>
   <div>
-		<header class="bg-myBlue-900 z-10 w-full shadow-md sticky top-0 pl-10">
-			<div class="topnav w-full bg-myBlue-900" id="myTopnav">
-				<a href="javascript:void(0);" class="icon" v-on:click="toggleNav()">
+		<header class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
+			<div class="topnav w-full bg-myBlue-900  pl-10 text-myBlue-200 font-semibold" id="myTopnav">
+				<a class="icon" v-on:click="toggleNav()">
 					<i class="fa fa-bars"></i>
 				</a>
-				<router-link :to="`/${$i18n.locale}`" id="home" class="hover:text-gray-600 uppercase"> {{$t("landing-page.nav.home")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/projects`" id="projects" class="hover:text-gray-600 uppercase">	{{$t("landing-page.nav.projects")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/experience`" id="experience" class="hover:text-gray-600 uppercase">	{{$t("landing-page.nav.experience")}} </router-link>
+
+				<router-link :to="`/${$i18n.locale}`" id="info"> Constantin Hentgen </router-link>
+
+				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white hover:text-myBlue-900 uppercase focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
 			</div>
 		</header>
   </div>
 </template>
 
 <script>
+import router from '../router';
+
 export default {
 	name: 'Header',
 	data() {
 		return {
 			menuOpen: false,
-			navBank: ['home', 'projects', 'experience'],
-			navIndex : 0 // si = 0 alors bind la classe highlight (définition à faire sur l’élément directement)
+			navBank: ['home', 'projects', 'experience']
 		}
 	},
 	methods: {
-    toggleMenu() {
-      this.menuOpen = !this.menuOpen
-    },
-
 		toggleNav() {
 			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
+			var y = document.getElementById("info");
+			var routerView = document.getElementById('main');
+			if (!x.className.includes("responsive")) {
+				x.className += " responsive pt-1 pb-1";
+				y.style.display = "none";
+				routerView.style.filter = "blur(5px)";
 			} else {
-				x.className = "topnav";
+				x.className = "topnav w-full bg-myBlue-900  pl-10 text-white font-semibold";
+				y.style.display = "block";
+				routerView.style.filter = "blur(0px)";
 			}
-		}
-	},
-	computed: {
-		highlight() {
-			// identifier le path actif
-			let pageUrl = this.$route.name;
-
-			// identifier chacuns des éléments du menu [par les id HTML]
-
-			switch (pageUrl) {
-				case 'home':
-					this.navIndex = 0;
-					break;
-				case 'projects':
-					this.navIndex = 1;
-					break;
-				case 'experience':
-					this.navIndex = 2;
-					break;
-				default:
-					console.log('Page unknown');
-			}
-
-			console.log(this.navIndex);
-			// affecter la classe css highlight à l’élément correspondant
-		}
+		},
 	}
 }
 </script>
@@ -73,54 +56,45 @@ export default {
 	opacity: 0;
 	transform: translateY(-12px);
 }
-.highlight {
-	color: white;
-	background: black;
-}
-
 
 /* NEW TOP NAV */
 
-
 .topnav {
   overflow: hidden;
-	transition: width 2s linear 1s;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#info {
+	display: none;
 }
 
-.topnav a.active {
-  color: white;
-}
-
-.topnav .icon {
+.topnav .icon, .topnav .info {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
+  .topnav .info {
+    float: left;
+    display: block;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {
 		position: relative;
+	}
+	#info {
+		display: block;
 	}
   .topnav.responsive .icon {
     position: absolute;
@@ -132,6 +106,16 @@ export default {
     display: block;
     text-align: left;
   }
+}
+
+@media screen and (min-width: 751px) {
+	#myTopnav {
+		display: flex;
+		justify-content: center;
+	}
+	#info {
+		display: none !important;
+	}
 }
 </style>
 

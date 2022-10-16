@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Card from '@/components/HorizontalCard.vue'
+import Card from '@/components/Landscape.vue'
 
 export default {
 	name: 'Home',

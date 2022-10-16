@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative flex justify-center">
 		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-myBlue-200 shadow overflow-hidden rounded-xl border-2 border-myBlue-900 w-48 mt-2 py-1 lg:z-20">
       <li v-if="$i18n.locale != 'en'">
         <a

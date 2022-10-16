@@ -7,7 +7,7 @@
 					mx-auto
 					mb-10
 					bg-white
-					rounded-3xl
+					rounded-md
 					p-2
 					shadow-2xl 
 					cursor-pointer 
@@ -33,7 +33,7 @@
 					</div>
 	
 					<div class="flex">
-						<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-full px-2 text-sm sm:text-base md:text-lg"> {{ year }} </h3>
+						<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-md px-2 text-sm sm:text-base md:text-lg"> {{ year }} </h3>
 						<h2 class="text-sm md:text-lg h-3 ml-2 text-gray-500 font-light"> {{ subtitle }} </h2>
 					</div>
 					<p class="text-sm sm:text-base md:text-lg"> {{ content }} </p>

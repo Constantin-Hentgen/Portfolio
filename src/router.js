@@ -4,6 +4,8 @@ import i18n from './i18n'
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
 import Experience from './views/Experience.vue'
+import Commitment from './views/Commitment.vue'
+import Professional from './views/Professional.vue'
 import NotFound from './views/NotFound.vue'
 
 Vue.use(Router)
@@ -40,6 +42,16 @@ export default new Router({
 					path: 'experience',
 					name: 'experience',
 					component: Experience
+				},
+				{
+					path: 'commitment',
+					name: 'commitment',
+					component: Commitment
+				},
+				{
+					path: 'professional',
+					name: 'professional',
+					component: Professional
 				},
 				{
 					path: 'project',

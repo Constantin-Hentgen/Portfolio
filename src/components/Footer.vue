@@ -1,20 +1,17 @@
 <template>
-	<footer class="flex justify-around w-full mb-5 mt-5">
+	<footer class="main flex flex-col sm:flex-row justify-around w-full mb-5 mt-10 text-myBlue-900">
 		<LanguageSwitcher />
 
-		<div class="space-x-5 text-3xl">
+		<div class="space-x-5 text-3xl text-center">
 			<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
 				<i class="fa-brands fa-linkedin"></i>
 				</a>
 			<a href="https://github.com/Constantin-Hentgen" target="_blank">
 				<i class="fa-brands fa-github-square"></i>
 			</a>
-			<a href="" target="_blank">
-				<i class="fas fa-envelope"></i>
-			</a>
 		</div>
 
-		<p> {{ $t("landing-page.footer.codedIn") }} <i class="fa-brands fa-vuejs"></i> {{ $t("landing-page.footer.with") }} <i class="fas fa-heart"></i> </p>
+		<p class="text-center"> {{ $t("landing-page.footer.codedIn") }} <i class="fa-brands fa-vuejs"></i> {{ $t("landing-page.footer.with") }} <i class="fas fa-heart"></i> </p>
 	</footer>
 </template>
 
