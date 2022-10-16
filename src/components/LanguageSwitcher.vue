@@ -1,27 +1,12 @@
 <template>
   <div class="relative">
-    <button
-      href="#"
-      class="flex items-center focus:outline-none bg-transparent"
-      @click="toggleVisibility"
-      @keydown.space.exact.prevent="toggleVisibility"
-      @keydown.esc.exact="hideDropdown"
-      @keydown.shift.tab="hideDropdown"
-      @keydown.up.exact.prevent="startArrowKeys"
-      @keydown.down.exact.prevent="startArrowKeys"
-    >
-      <img :src="`/flag_${$i18n.locale}.svg`" alt="flag" class="w-8 h-8">
-      <span class="ml-2">{{ $i18n.locale.toUpperCase() }}</span>
-      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
-    </button>
-    <ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-myBlue-200 shadow overflow-hidden rounded-xl border-2 border-myBlue-900 w-48 mt-2 py-1 lg:z-20">
+		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-myBlue-200 shadow overflow-hidden rounded-xl border-2 border-myBlue-900 w-48 mt-2 py-1 lg:z-20">
       <li v-if="$i18n.locale != 'en'">
         <a
           @click.prevent="setLocale('en'), fetchContent()"
           class="flex items-center px-3 py-3 hover:underline"
           @keydown.esc.exact="hideDropdown"
         >
-          <img src="/flag_en.svg" alt="english flag" class="h-8 w-8">
           <span class="ml-2">English</span>
         </a>
       </li>
@@ -32,11 +17,23 @@
           class="flex items-center px-3 py-3 hover:underline"
           @keydown.esc.exact="hideDropdown"
         >
-          <img src="/flag_fr.svg" alt="french flag" class="h-8 w-8">
-          <span class="ml-2">French</span>
+          <span class="ml-2">Français</span>
         </a>
       </li>
     </ul>
+    <button
+      href="#"
+      class="flex items-center focus:outline-none bg-transparent"
+      @click="toggleVisibility"
+      @keydown.space.exact.prevent="toggleVisibility"
+      @keydown.esc.exact="hideDropdown"
+      @keydown.shift.tab="hideDropdown"
+      @keydown.up.exact.prevent="startArrowKeys"
+      @keydown.down.exact.prevent="startArrowKeys"
+    >
+      <span class="ml-2">{{ $i18n.locale.toUpperCase() }}</span>
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"></path></svg>
+    </button>
   </div>
 </template>
 
@@ -82,12 +79,12 @@ export default {
 </script>
 
 <style scoped>
-  .dropdown-fade-enter-active, .dropdown-fade-leave-active {
-    transition: all .1s ease-in-out;
-  }
-  .dropdown-fade-enter, .dropdown-fade-leave-to {
-    opacity: 0;
-    transform: translateY(-12px);
-  }
+.dropdown-fade-enter-active, .dropdown-fade-leave-active {
+	transition: all .1s ease-in-out;
+}
+.dropdown-fade-enter, .dropdown-fade-leave-to {
+	opacity: 0;
+	transform: translateY(12px);
+}
 </style>
 
