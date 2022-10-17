@@ -1,18 +1,19 @@
 <template>
   <div>
-		<header class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
+		<header v-on:click="blurer()" id="xprime" class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
 			<div class="topnav w-full bg-myBlue-900  pl-10 text-myBlue-200 font-semibold" id="myTopnav">
 				<a class="icon" v-on:click="toggleNav()">
-					<i class="fa fa-bars"></i>
+					<i v-if="!navOpen" class="fa fa-bars"></i>
+					<i v-else class="fas fa-xmark text-xl"></i>
 				</a>
 
 				<router-link :to="`/${$i18n.locale}`" id="info"> Constantin Hentgen </router-link>
 
-				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
+				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
 			</div>
 		</header>
   </div>
@@ -24,24 +25,59 @@ export default {
 	data() {
 		return {
 			menuOpen: false,
+			navOpen: false,
 			navBank: ['home', 'projects', 'experience']
 		}
 	},
 	methods: {
 		toggleNav() {
 			var x = document.getElementById("myTopnav");
+			var xprime = document.getElementById("xprime");
 			var y = document.getElementById("info");
-			var routerView = document.getElementById('main');
+
 			if (!x.className.includes("responsive")) {
+				this.navOpen = true;
+				xprime.animate(
+					[
+						{ transform: 'translateY(-400px)' },
+						{ transform: 'translateY(0px)' }
+					],
+					{
+						duration: 225
+					}
+				);
 				x.className += " responsive pt-1 pb-1";
+
 				y.style.display = "none";
-				routerView.style.filter = "blur(5px)";
 			} else {
+				this.navOpen = false;
+
+				x.animate(
+					[
+						{ transform: 'translateX(-500px)'},
+						{ transform: 'translateY(0)' }
+					],
+					{
+						duration: 200
+					}
+				);
+
+				// le nouveau afit 400px de trop et il se fait resize
+
 				x.className = "topnav w-full bg-myBlue-900  pl-10 text-white font-semibold";
 				y.style.display = "block";
-				routerView.style.filter = "blur(0px)";
 			}
 		},
+
+		blurer () {
+			var content = document.getElementById('content');
+
+			if (this.navOpen) {
+				content.style.filter = "blur(3px)";
+			} else {
+				content.style.filter = "blur(0px)";
+			}
+		}
 	}
 }
 </script>
@@ -88,17 +124,21 @@ export default {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
 		position: relative;
 	}
+
 	#info {
 		display: block;
 	}
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;

@@ -27,7 +27,7 @@
 					</div>		
 				</div>
 
-				<img class="h-44 w-full object-cover object-center" :src="imageURL" :alt="imageAlt">
+				<img class="h-44 w-full object-cover object-center" :src="'/' + imageURL" :alt="imageAlt">
 
 				<div class="flex">
 					<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-md px-2 text-sm sm:text-base md:text-lg"> {{ year }} </h3>

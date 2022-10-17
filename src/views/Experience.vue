@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<main class="mt-10 md:mt-24 flex flex-wrap justify-evenly">
+		<main class="mt-20 md:mt-24 flex flex-wrap gap-x-5 place-content-center">
 			<Card v-for="(project, index) in $t('experiences')" :key="index"
 				:title="project.translatable.title"
 				:year="project.translatable.year"

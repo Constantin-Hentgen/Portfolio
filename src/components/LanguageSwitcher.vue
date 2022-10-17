@@ -1,6 +1,6 @@
 <template>
 	<div class="relative flex justify-center">
-		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute left-0 bottom-10 normal-case z-30 font-normal xs:left-0 lg:right-0 text-myBlue-200 bg-myBlue-900 shadow overflow-hidden rounded-md w-28 mt-2 py-1 lg:z-20">
+		<ul v-on-clickaway="hideDropdown" v-if="isVisible" ref="dropdown" class="absolute md:left-0 bottom-10 normal-case z-30 font-normal xs:left-0 lg:right-0 text-myBlue-200 bg-myBlue-900 shadow overflow-hidden rounded-md w-28 mt-2 py-1 lg:z-20">
 			<li>
 				<a v-if="$i18n.locale != 'fr'"
 					@click.prevent="setLocale('fr'), fetchContent()"

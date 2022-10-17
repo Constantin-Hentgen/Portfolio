@@ -5,7 +5,7 @@
 		</transition>
 
 		<transition name="slideDown" appear>
-			<router-view />
+			<router-view id="content"/>
 		</transition>
 
 		<transition name="slideUp" appear>

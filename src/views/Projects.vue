@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition name="fade" appear>
-			<main class="mt-10 md:mt-24 space-y-10">
+			<main class="mt-20 md:mt-24 space-y-10">
 				<Card v-for="(project, index) in $t('projects')" :key="index"
 					:title="project.translatable.title" 
 					:year="project.translatable.year"
