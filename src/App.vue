@@ -1,8 +1,16 @@
 <template>
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen flex flex-col justify-between">
-		<Header />
-		<router-view id="main" class="w-full"/>
-		<Footer />
+		<transition name="fadeDown" appear>
+			<Header />
+		</transition>
+
+		<transition name="slideDown" appear>
+			<router-view />
+		</transition>
+
+		<transition name="slideUp" appear>
+			<Footer />
+		</transition>
   </div>
 </template>
 
@@ -19,5 +27,6 @@ export default {
 }
 </script>
 
-<style src="@/fontawesome-free/css/all.min.css"></style>
-<style src="@/assets/css/tailwind.css">
+<style src="@/fontawesome-free/css/all.min.css"/>
+<style src="@/assets/css/vue2-animate.css" />
+<style src="@/assets/css/tailwind.css" />

@@ -5,8 +5,7 @@
 		md:w-3/4
 		xl:w-1/2
 
-		m-auto
-		mt-24
+		mx-auto
 		flex-col
 		justify-center
 		space-y-5
