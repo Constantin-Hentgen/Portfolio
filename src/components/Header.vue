@@ -1,19 +1,19 @@
 <template>
   <div>
-		<header v-on:click="blurer()" id="xprime" class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
-			<div class="topnav w-full bg-myBlue-900  pl-10 text-myBlue-200 font-semibold" id="myTopnav">
-				<a class="icon" v-on:click="toggleNav()">
+		<header id="xprime" class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
+			<div class="topnav w-full bg-myBlue-900 md:flex md:justify-center  pl-10 md:pl-0 text-myBlue-200 font-semibold" id="myTopnav">
+				<a class="icon" v-on:click="toggleNav(), blurer()">
 					<i v-if="!navOpen" class="fa fa-bars"></i>
 					<i v-else class="fas fa-xmark text-xl"></i>
 				</a>
 
 				<router-link :to="`/${$i18n.locale}`" id="info"> Constantin Hentgen </router-link>
 
-				<router-link :to="`/${$i18n.locale}`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/professional`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/experience`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/commitment`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/projects`" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
+				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/professional`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/experience`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
 			</div>
 		</header>
   </div>
@@ -24,7 +24,6 @@ export default {
 	name: 'Header',
 	data() {
 		return {
-			menuOpen: false,
 			navOpen: false,
 			navBank: ['home', 'projects', 'experience']
 		}
@@ -46,7 +45,7 @@ export default {
 						duration: 225
 					}
 				);
-				x.className += " responsive pt-1 pb-1";
+				x.className += " responsive";
 
 				y.style.display = "none";
 			} else {
@@ -77,12 +76,20 @@ export default {
 			} else {
 				content.style.filter = "blur(0px)";
 			}
+		},
+
+		testJs () {
+			alert('caca');
 		}
 	}
 }
 </script>
 
-<style scoped>
+<style>
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 .dropdown-fade-enter-active, .dropdown-fade-leave-active {
 	transition: all .1s ease-in-out;
 }

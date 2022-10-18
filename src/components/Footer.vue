@@ -10,7 +10,7 @@
 				<i class="fa-brands fa-github"></i>
 			</a>
 		</div>
-
+		
 		<p class="text-center"> {{ $t("landing-page.footer.codedIn") }} <i class="fa-brands fa-vuejs"></i> {{ $t("landing-page.footer.with") }} <i class="fas fa-heart-pulse"></i> </p>
 	</footer>
 </template>
@@ -22,6 +22,6 @@ export default {
   name: 'Card',
 	components: {
 		LanguageSwitcher,
-	},
+	}
 }
 </script>
