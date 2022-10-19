@@ -2,7 +2,7 @@
   <div>
 		<header id="xprime" class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
 			<div class="topnav w-full bg-myBlue-900 md:flex md:justify-center  pl-10 md:pl-0 text-myBlue-200 font-semibold" id="myTopnav">
-				<a class="icon" v-on:click="toggleNav(), blurer()">
+				<a class="icon" v-on:click="toggleNav()">
 					<i v-if="!navOpen" class="fa fa-bars"></i>
 					<i v-else class="fas fa-xmark text-xl"></i>
 				</a>
@@ -24,8 +24,7 @@ export default {
 	name: 'Header',
 	data() {
 		return {
-			navOpen: false,
-			navBank: ['home', 'projects', 'experience']
+			navOpen: false
 		}
 	},
 	methods: {
@@ -36,20 +35,24 @@ export default {
 
 			if (!x.className.includes("responsive")) {
 				this.navOpen = true;
-				xprime.animate(
-					[
-						{ transform: 'translateY(-400px)' },
-						{ transform: 'translateY(0px)' }
-					],
-					{
-						duration: 225
-					}
-				);
-				x.className += " responsive";
-
+				if (window.innerWidth < 700) {
+					xprime.animate(
+						[
+							{ transform: 'translateY(-400px)' },
+							{ transform: 'translateY(0px)' }
+						],
+						{
+							duration: 225
+						}
+					);
+					content.style.filter = "blur(3px)";
+					x.className += " responsive";
+				}
+				
 				y.style.display = "none";
 			} else {
 				this.navOpen = false;
+				content.style.filter = "blur(0px)";
 
 				x.animate(
 					[
@@ -66,20 +69,6 @@ export default {
 				x.className = "topnav w-full bg-myBlue-900  pl-10 text-white font-semibold";
 				y.style.display = "block";
 			}
-		},
-
-		blurer () {
-			var content = document.getElementById('content');
-
-			if (this.navOpen) {
-				content.style.filter = "blur(3px)";
-			} else {
-				content.style.filter = "blur(0px)";
-			}
-		},
-
-		testJs () {
-			alert('caca');
 		}
 	}
 }

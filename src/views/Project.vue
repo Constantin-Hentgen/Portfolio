@@ -56,11 +56,6 @@
 		transition-duration: 0.3s;
 	}
 
-	#github:hover {
-		border: #21243D 1px solid;
-		border-radius: 50px;
-	}
-
 	.article {
 		color: #21243D;
 	}

@@ -1,11 +1,16 @@
 <template>
-	<div>
+	<div  class="
+		w-full
+		sm:w-5/6
+		md:w-4/5
+		lg:w-3/4
+		xl:w-1/2 mx-auto
+	">
 		<router-link :to="`/${$i18n.locale}/project/${URL}`">
 			<div
 				id="card"
 				class="
 					mx-auto
-					mb-10
 					bg-white
 					rounded-md
 					p-2
@@ -14,12 +19,10 @@
 					cursor-pointer 
 					hover:to-blue-500
 					flex
-					w-11/12
-
-					sm:w-5/6
-					md:w-4/5
-					lg:w-3/4
-					xl:w-1/2
+					
+					border-2 border-myBlue-900
+					
+					w-full
 					space-y-5
 				">
 
