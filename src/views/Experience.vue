@@ -19,7 +19,7 @@
 import Card from '@/components/Portrait.vue'
 
 export default {
-	name: 'Home',
+	name: 'Experience',
 	components: {
 		Card
 	}

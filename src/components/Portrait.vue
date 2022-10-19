@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  name: 'Card',
+  name: 'Portrait',
   props: {
 		id: Number,
 		techs: Array,

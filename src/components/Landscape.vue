@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: 'Card',
+  name: 'Landscape',
   props: {
 		id: Number,
 		techs: Array,

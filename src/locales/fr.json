@@ -4,14 +4,16 @@
 			"home": "Accueil",
 			"projects": "Projets",
 			"skills": "Compétences",
-			"experience": "Expérience"
+			"experience": "Expérience",
+			"commitment": "Engagements",
+			"professional": "Ambitions"
 		},
 		"footer": {
 			"codedIn": "codé en",
 			"with": "avec"
 		},
-		"student": "étudiant ingénieur",
-		"description": "Je suis un étudiant en deuxième année de cycle ingénieur en Cybersécurité. Vous trouverez tous mes projets ci-dessous.",
+		"student": "étudiant ingénieur en cybersécurité",
+		"description": "Fasciné par le fonctionnement des systèmes d’informations et en particulier par la sécurité, j’étudie et les différents moyens d’attaque et de défense afin de mieux protéger les organisations.",
 		"cv": "mon CV"
 	},
 	"experiences": {
