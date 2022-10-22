@@ -4,7 +4,7 @@
 			"home": "Accueil",
 			"projects": "Projets",
 			"skills": "Compétences",
-			"experience": "Expérience",
+			"experience": "Expériences",
 			"commitment": "Engagements",
 			"professional": "Ambitions"
 		},
@@ -13,65 +13,68 @@
 			"with": "avec"
 		},
 		"student": "étudiant ingénieur en cybersécurité",
-		"description": "Fasciné par le fonctionnement des systèmes d’informations et en particulier par la sécurité, j’étudie et les différents moyens d’attaque et de défense afin de mieux protéger les organisations.",
-		"cv": "mon CV"
+		"description": "Fasciné par le fonctionnement des systèmes d’informations et en particulier par la sécurité, j’étudie et les différents moyens d’attaque et de défense afin de mieux protéger les organisations."
+	},
+	"ambitions" : {
+		"translatable": {
+			"title": "Ambitions"
+			},
+		"extendedContent": "IyBBbWJpdGlvbnMgcHJvZmVzc2lvbm5lbGxlcwoKIyMgSG9yaXpvbiA1IGFucwpKZSBjb21wdGUgdHJhdmFpbGxlciBkYW5zIGxhIHPpY3VyaXTpIGluZm9ybWF0aXF1ZSA6IG9yaWVudOkgYXR0YXF1ZSBvdSBwcul2ZW50aW9uIGQnYXR0YXF1ZS4KX19fCgojIyBFbnZpcm9ubmVtZW50IGRlIHRyYXZhaWwKSidhaSBwb3VyIHNvdWhhaXQgZGUgdHJhdmFpbGxlciBkYW5zIHVuIGNhZHJlIGludGVybmF0aW9uYWwgY2FyIGonYWltZSBwcmF0aXF1ZXIgbGVzIGxhbmd1ZXMgZXQgbSdpbnTpcmVzc2UgYXV4IHBlcnNvbm5lcyBldCBsZXVyIGN1bHR1cmUu"
+	},
+	"commitment": {
+		"translatable": {
+			"title": "Mes engagements"
+		},
+		"extendedContent": "IyBMZSBjbHViIFdFSVMKCkZhY2lsaXRlciBsJ2ludOlncmF0aW9uIGRlcyDpdHVkaWFudHMgaW50ZXJuYXRpb25hdXggYXUgc2VpbiBkdSBjYW1wdXMgZCdBbmdlcnMgZGUgbCdFU0FJUCDpY29sZSBkJ2luZ+luaWV1cnMuCgpMJ0VTQUlQIGVzdCB1bmUg6WNvbGUgZCdpbmfpbmlldXJzIHF1aSBhY2N1ZWlsbGUgY2hhcXVlIGFubullIGRlIG5vbWJyZXV4IOl0dWRpYW50cyBpbnRlcm5hdGlvbmF1eC4gQ2VydGFpbnMg6XR1ZGlhbnRzIG9udCBhaW5zaSBjcunpIHVuIGNsdWIgYWZmaWxp6SBkaXJlY3RlbWVudCBhdSBCREUgYWZpbiBkZSBy6WFsaXNlciBkZXMg6XZlbmVtZW50cyBpbnRlcm5hdGlvbmF1eCBlbnRyZSDpdHVkaWFudHMuCgpQYXJtaSBsZXMgZGlmZulyZW50cyBvdXRpbHMgcXVlIGonYWkgcHUgdXRpbGlzZXIsIG9uIHJldHJvdXZlIG5vdGFtbWVudCA6CgotIFRyZWxsbwotIFdoYXRzYXBwLCBUZWxlZ3JhbSwgTWljcm9zb2Z0IFRlYW1zCi0gRXhjZWwKCkR1cmFudCBjZXMgNCBhbm7pZXMgYXUgc2VpbiBkZSBjZSBjbHViLCBqJ2FpIHB1IGVuIGFwcHJlbmRyZSBiZWF1Y291cCBzdXIgbGVzIHJhcHBvcnRzIGludGVyY3VsdHVyZWxzIGFpbnNpIHF1ZSBzdXIgbGUgZm9uY3Rpb25uZW1lbnQgZCd1bmUgb3JnYW5pc2F0aW9uLiBFbiBlZmZldCwgaidhaSBwdSBjb21wcmVuZHJlIGV0IHLpYWxpc2VyIGRlcyBjb2xsYWJvcmF0aW9ucyBhaW5zaSBxdWUgcmVwculzZW50ZXIgdW5lIG9yZ2FuaXNhdGlvbiBhdSB0cmF2ZXJzIGRlIHLpdW5pb25zIGV0IGF1dHJlcyDpdmVuZW1lbnRzLgoKX19fCgojIExlIHNjb3V0aXNtZQoKSidhaSDpdOkgc2NvdXQgcGVuZGFudCA4IGFucy4gSidhaSBwYXJ0aWNpcOkg4CBsJ0V1cm9qYW0sIGonYWkgculhbGlz6SBkZXMgYWN0aW9ucyBodW1hbmF0YWlyZXMuIENlIHF1ZSBsZSBzY291dGlzbWUgbSdhIGFwcG9ydOkgZGUgbWlldXggc29udCBzZXMgdmFsZXVycyA6IGwnZXNwcml0IGRlIGZyYXRlcm5pdOksIGxlIGdv+3QgZGUgbCdlZmZvcnQgYWluc2kgcXUndW4gb3B0aW1pc21lIG9tbmlwculzZW50Lg=="
 	},
 	"experiences": {
-		"worker-internship": {
+		"fullstack-dev": {
 			"translatable": {
-				"title": "Full stack developer",
-				"subtitle": "1 month internship",
+				"title": "Développeur fullstack",
+				"subtitle": "stage d’un mois",
 				"year": "2022",
-				"content": "My personal website built with VueJS and TailwindCSS.",
-				"imageAlt": "A screen that displays colored lines of code."
+				"content": "Intégration d’un tableau croisé dynamique dans une interface d’administration...",
+				"imageAlt": "Un écran affichant des lignes colorées."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":["fa-brands fa-symfony","fa-brands fa-js-square","fa-solid fa-database"],
+			"extendedContent": "IyBE6XZlbG9wcGVtZW50IHdlYgoKIyMgT2JqZWN0aWYKUmVwcm9kdWlyZSB1biBlbnZpcm9ubmVtZW50IHBy6WNpcyBldCBk6XRlcm1pbmVyIHNpIGwnaW506WdyYXRpb24gZCd1bmUgc29sdXRpb24gZGUgdGFibGVhdSBjcm9pc+kgZHluYW1pcXVlIGVzdCBwb3NzaWJsZSwgc2kgYydlc3QgbGUgY2FzIGFsb3JzIGwnaW506WdyZXIuCl9fXwoKIyMgQ29udGV4dGUKU3RhZ2UgZCd1biBtb2lzIOAgbGEgZmluIGRlIG1hIHByZW1p6HJlIGFubullIGRlIGN5Y2xlIGluZ+luaWV1ciwg4CBsJ2lzc3VlIGRlIG1vbiBFcmFzbXVzIGF1IERhbmVtYXJrLgpfX18KIyMgUmVzc291cmNlcwoKIyMjIE91dGlscwotIEdpdGh1YgotIFZpc3VhbCBTdHVkaW8gQ29kZQotIE1hYyBPUwoKIyMjIFRlY2hub2xvZ2llcwotIFN5bWZvbnkKCS0gRWFzeWFkbWluCgktIERvY3RyaW5lCi0gSmF2YXNjcmlwdAoJLSBQaXZvdHRhYmxlLmpzCl9fXwoKIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQpKJ2FpIGJlYXVjb3VwIGFwcHJpcyBsb3JzIGRlIGNlIHN0YWdlLCBlbiBlZmZldCBqJ2FpIGV1IGxhIGNoYW5jZSBkJ3V0aWxpc2VyIGRlcyB0ZWNobm9sb2dpZXMgcXVlIGplIG4nYXZhaXMganVzcXUnYWxvcnMgamFtYWlzIGwnb3Bwb3J0dW5pdOkgZCdhcHByZW5kcmUu",
 			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"URL":"fullstack-dev"
 		},
 		"student-job": {
 			"translatable": {
-				"title": "Worker at Truffaut",
-				"subtitle": "2 months student job",
+				"title": "Saisonnier à Truffaut",
+				"subtitle": "Job étudiant de 2 mois",
 				"year": "2021",
-				"content": "My personal website built with VueJS and TailwindCSS.",
-				"imageAlt": "A screen that displays colored lines of code."
+				"content": "Travail saisonnier pour financer mon Erasmus au Danemark...",
+				"imageAlt": "Un écran affichant des lignes colorées."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":[],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBKb2Ig6XR1ZGlhbnQKCiMjIE9iamVjdGlmCkFtb3J0aXIgbGVzIGNv+3RzIGluaOlyZW50cyDgIGwnRXJhc211cyBhdSBEYW5lbWFyay4KX19fCiMjIENvbnRleHRlCkplIHZpZW5zIGRlIHRlcm1pbmVyIG1hIGRldXhp6G1lIGFubullIGRlIGN5Y2xlIHBy6XBhcmF0b2lyZSwgamUgc29ycyB0b3V0IGp1c3RlIGRlIG1vbiBzdGFnZSBkZSBmaW4gZCdhbm7pZSBldCB0ZXJtaW5lIGRvbmMgbW9uIOl06SBzdXIgY2Ugam9iIGQn6XTpIGRlIDIgbW9pcy4KX19fCiMjIFJldG91ciBkJ2V4cOlyaWVuY2UKSidhaSBiZWF1Y291cCBhcHByaXMgc3VyIGxlIG1vbmRlIGRlIGwnZW50cmVwcmlzZSwgbGEgculhbGl06SBkdSB0cmF2YWlsIG1hbnVlbCBhaW5zaSBxdWUgbCdhc3BlY3QgbG9naXN0aXF1ZSBldCBjb21tZXJjaWFsLiBFbiBlZmZldCwgbWFsZ3LpIGxlIGZhaXQgcXVlIGplIG5lIG0nb2NjdXBhaXMgcHJpbmNpcGFsZW1lbnQgcXVlIGRlIGwnZW50cmV0aWVuLCBkZSBsYSBjYWlzc2UgYWluc2kgcXVlIGR1IHJhbmdlbWVudCwgamUgY290b3lhaXMgZGVzIGNvbGzoZ3VlcyBxdWkgZXV4IHMnb2NjdXBhaXQgZCdhdXRyZXMgYXNwZWN0cy4gQydlc3QgYWluc2kgcXVlIG1hIGNvbXBy6WhlbnNpb24gZXQgY29uc2NpZW5jZSBkdSBmb25jdGlvbm5lbWVudCBkJ3VuZSBlbnRyZXByaXNlIGEg6XZvbHXpLg==",
+			"imageURL":"img/garden.jpeg",
+			"URL":"student-job"
 		},
-		"school-support": {  
+		"it-support": {  
 			"translatable": {
-				"title": "IT support at School",
-				"subtitle": "1 month internship",
+				"title": "Support informatique",
+				"subtitle": "Stage d’un mois",
 				"year": "2021",
-				"content": "My personal website built with VueJS and TailwindCSS.",
-				"imageAlt": "A screen that displays colored lines of code."
+				"content": "Support informatique, maintenance au sein d’un établissement scolaire...",
+				"imageAlt": "Un écran affichant des lignes colorées."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":[],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBTdGFnZSBkZSBjeWNsZSBwculwYXJhdG9pcmUKCiMjIE9iamVjdGlmCk1vbiBy9GxlIGR1cmFudCBjZSBzdGFnZSDpdGFpdCBkZSBtJ2Fzc3VyZXIgZGUgbGEgbWlzZSDgIGpvdXIgZHUgc2l0ZSB3ZWIgZGUgbCfpdGFibGlzc2VtZW50IGFpbnNpIHF1ZSBkJ2FpZGVyIOAgZGVzIHTiY2hlcyBkZSBwbGFuaWZpY2F0aW9uIG91IGQnYWNjb21wYWduZW1lbnQuCl9fXwojIyBDb250ZXh0ZQpTdGFnZSBkZSBmaW4gZCdhbm7pZSBkZSAy6G1lIGFubullIGRlIGN5Y2xlIHBy6XBhcmF0b2lyZS4KX19fCiMjIFJlc3NvdXJjZXMKLSBMYVRlWAotIFBDIGRlIGwn6XRhYmxpc3NlbWVudAotIFJlbGF0aW9uIGF2ZWMgbGUgcmVzcG9uc2FibGUgaW5mb3JtYXRpcXVlCi0gUmVsYXRpb24gYXZlYyBsZXMgZW5zZWlnbmFudHMKLSByZWxhdGlvbiBhdmVjIGxhIGRpcmVjdGlvbgpfX18KIyMgUmV0b3VyIGQnZXhwZXJpZW5jZQpE6WNvdXZlcnRlIGQndW4gYXV0cmUgdHlwZSBkJ2Vudmlyb25uZW1lbnQsIGQndW4gYXV0cmUgcnl0aG1lLCBkJ2F1dHJlcyBt6XRpZXJzLg==",
+			"imageURL":"img/cables.jpeg",
+			"URL":"it-support"
 		},
-		"canalplus": {  
+		"canal-plus": {  
 			"translatable": {
-				"title": "Tenth grade internship",
-				"subtitle": "Website",
+				"title": "Stage de seconde",
+				"subtitle": "Stage de 2 semaines",
 				"year": "2017",
-				"content": "My personal website built with VueJS and TailwindCSS.",
-				"imageAlt": "A screen that displays colored lines of code."
+				"content": "Découverte des métiers du pôle numérique au sein de CANAL+...",
+				"imageAlt": "Un écran affichant des lignes colorées."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":[],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBE6WNvdXZlcnRlIGR1IHD0bGUgbnVt6XJpcXVlCgojIyBPYmplY3RpZgpE6WNvdXZyaXIgZGVzIGNvcnBzIGRlIG3pdGllcnMgbGnpcyDgIGwnaW5mb3JtYXRpcXVlLgpS6WRpZ2VyIHVuIHJhcHBvcnQgZCd1bmUgZGl6YWluZSBkZSBwYWdlcywgYWluc2kgcXVlIGxlIHBhc3NhZ2UgZCd1bmUgc291dGVuYW5jZSBhdSBzZWluIGR1IGx5Y+llLgpfX18KIyMgQ29udGV4dGUKU3RhZ2UgZGUgc2Vjb25kZSBn6W7pcmFsZS4KX19fCiMjIFJlc3NvdXJjZXMKyWRpdGV1ciBkZSB0ZXh0ZSA6IE1pY3Jvc29mdCBXb3JkLgpfX18KIyMgUmV0b3VyIGQnZXhw6XJpZW5jZQpKJ2FpIHLpYWxpc+kgcXVlIGwnaW5mb3JtYXRpcXVlIOl0YWl0IGxlIGRvbWFpbmUgZGFucyBsZXF1ZWwgamUgdm91bGFpcyB0cmF2YWlsbGVyLCBlbiBwYXJ0aWN1bGllciBsZSBk6XZlbG9wcGVtZW50IGluZm9ybWF0aXF1ZS4gQXVzc2ksIGonYWkgcHJpcyBjb25zY2llbmNlIGRlcyBtb2RlcyBkZSBmb25jdGlvbm5lbWVudCBkdSB0cmF2YWlsIGVuIOlxdWlwZSBkZSBk6XZlbG9wcGVtZW50IGluZm9ybWF0aXF1ZSAoZW4gbCdvY2N1cmVuY2Ugbel0aG9kb2xvZ2llIEFnaWxlKS4=",
+			"imageURL":"img/team.jpeg",
+			"URL":"canal-plus"
 		}
 	},
 	"projects": {

@@ -2,12 +2,7 @@
   <div class="main">
 		<main class="w-full flex-col xl:w-1/2 m-auto mt-16 md:mt-14 space-y-8">
 			<a id="github" :href="project.github" target="_blank"  class="flex justify-center space-x-2 cursor-pointer p-2 mt-24">
-
-				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> {{ $t(`projects.citadelles.translatable.title`) }} </h1>
-
-				<div class="flex justify-center items-center gap-1" style="font-size: 2rem;">
-					<i v-for="(tech, index) in project.techs" :key="index" :class=tech ></i>
-				</div>
+				<h1 class="text-2xl md:text-5xl grid place-items-center text-myBlue-900 font-bold"> {{ $t(`ambitions.translatable.title`) }} </h1>
 			</a>
 
 			<div id="article" class="article w-11/12 md:w-2/3 xl:w-full mx-auto" v-html="article"></div>
@@ -22,8 +17,8 @@
 		name: 'Professionnal',
 		data() {
 			return {
-				project: this.$t(`projects.citadelles`),
-				article: this.fetchContent(),
+				project: this.$t(`ambitions`),
+				article: this.fetchContent()
 			}
 		},
 		created() {
@@ -31,7 +26,7 @@
 		},
 		methods: {
 			fetchContent() {
-				this.article = marked(atob(this.$t(`projects.citadelles.extendedContent`)))
+				this.article = marked(atob(this.$t(`ambitions.extendedContent`)))
 			}
 		}
 	}

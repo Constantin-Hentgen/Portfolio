@@ -4,74 +4,77 @@
 			"home": "Home",
 			"projects": "Projects",
 			"skills": "Skills",
-			"experience": "Experience",
-			"commitment": "Commitment",
-			"professional": "Career Plan"
+			"experience": "Experiences",
+			"commitment": "Commitments",
+			"professional": "Ambitions"
 		},
 		"footer": {
 			"codedIn": "coded in",
 			"with": "with"
 		},
-		"student": "engineer student",
-		"description": "I am a first year student in a Cybersecurity Engineering Master degree. You will find all my projects below.",
-		"cv": "my CV"
+		"student": "student engineer in cybersecurity",
+		"description": "Fascinated by the functioning of information systems and in particular by security, I study the various means of attack and defense to better protect organizations."
+	},
+	"ambitions" : {
+		"translatable": {
+			"title": "Ambitions"
+			},
+		"extendedContent": "IyBQcm9mZXNzaW9uYWwgYW1iaXRpb25zCgojIyA1IHllYXJzIGhvcml6b24KSSBwbGFuIHRvIHdvcmsgaW4gY29tcHV0ZXIgc2VjdXJpdHk6IGF0dGFjayBvciBhdHRhY2sgcHJldmVudGlvbiBvcmllbnRlZC4KX19fCgojIyBXb3JrIGVudmlyb25tZW50Ckkgd291bGQgbGlrZSB0byB3b3JrIGluIGFuIGludGVybmF0aW9uYWwgZW52aXJvbm1lbnQgYmVjYXVzZSBJIGxpa2UgdG8gcHJhY3RpY2UgbGFuZ3VhZ2VzIGFuZCBJIGFtIGludGVyZXN0ZWQgaW4gcGVvcGxlIGFuZCB0aGVpciBjdWx0dXJlLg=="
+	},
+	"commitment": {
+		"translatable": {
+			"title": "My commitments"
+		},
+		"extendedContent": "IyBUaGUgV0VJUyBjbHViCgpGYWNpbGl0YXRpbmcgdGhlIGludGVncmF0aW9uIG9mIGludGVybmF0aW9uYWwgc3R1ZGVudHMgd2l0aGluIHRoZSBBbmdlcnMgY2FtcHVzIG9mIHRoZSBFU0FJUCBlbmdpbmVlcmluZyBzY2hvb2wuCgpFU0FJUCBpcyBhbiBlbmdpbmVlcmluZyBzY2hvb2wgdGhhdCB3ZWxjb21lcyBtYW55IGludGVybmF0aW9uYWwgc3R1ZGVudHMgZXZlcnkgeWVhci4gU29tZSBzdHVkZW50cyBoYXZlIGNyZWF0ZWQgYSBjbHViIGRpcmVjdGx5IGFmZmlsaWF0ZWQgdG8gdGhlIEJERSBpbiBvcmRlciB0byBvcmdhbml6ZSBpbnRlcm5hdGlvbmFsIGV2ZW50cyBiZXR3ZWVuIHN0dWRlbnRzLgoKQW1vbmcgdGhlIGRpZmZlcmVudCB0b29scyB0aGF0IEkgd2FzIGFibGUgdG8gdXNlLCB3ZSBmaW5kIGluIHBhcnRpY3VsYXIgOgoKLSBUcmVsbG8KLSBXaGF0c2FwcCwgVGVsZWdyYW0sIE1pY3Jvc29mdCBUZWFtcwotIEV4Y2VsCgpEdXJpbmcgdGhlc2UgNCB5ZWFycyB3aXRoaW4gdGhpcyBjbHViLCBJIHdhcyBhYmxlIHRvIGxlYXJuIGEgbG90IGFib3V0IGludGVyY3VsdHVyYWwgcmVsYXRpb25zaGlwcyBhcyB3ZWxsIGFzIGFib3V0IHRoZSBmdW5jdGlvbmluZyBvZiBhbiBvcmdhbml6YXRpb24uIEluZGVlZCwgSSB3YXMgYWJsZSB0byB1bmRlcnN0YW5kIGFuZCByZWFsaXplIGNvbGxhYm9yYXRpb25zIGFzIHdlbGwgYXMgcmVwcmVzZW50IGFuIG9yZ2FuaXphdGlvbiB0aHJvdWdoIG1lZXRpbmdzIGFuZCBvdGhlciBldmVudHMuCgpfX18KCiMgU2NvdXRpbmcKCkkgd2FzIGEgc2NvdXQgZm9yIDggeWVhcnMuIEkgcGFydGljaXBhdGVkIGluIEV1cm9qYW0sIEkgZGlkIGh1bWFuaXRhcmlhbiBhY3Rpb25zLiBUaGUgYmVzdCB0aGluZyB0aGF0IHNjb3V0aW5nIGJyb3VnaHQgdG8gbWUgYXJlIGl0cyB2YWx1ZXM6IHRoZSBzcGlyaXQgb2YgYnJvdGhlcmhvb2QsIHRoZSB0YXN0ZSBmb3IgZWZmb3J0IGFuZCBhbiBvbW5pcHJlc2VudCBvcHRpbWlzbS4="
 	},
 	"experiences": {
-		"worker-internship": {
+		"fullstack-dev": {
 			"translatable": {
-				"title": "Full stack developer",
-				"subtitle": "1 month internship",
+				"title": "Full-stack developer",
+				"subtitle": "one month internship",
 				"year": "2022",
-				"content": "My personal website built with VueJS and TailwindCSS.",
+				"content": "Integration of a pivot table in an administration interface...",
 				"imageAlt": "A screen that displays colored lines of code."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":["fa-brands fa-symfony","fa-brands fa-js-square","fa-solid fa-database"],
+			"extendedContent": "IyBXZWIgZGV2ZWxvcG1lbnQKCiMjIE9iamVjdGl2ZQpSZXByb2R1Y2UgYSBzcGVjaWZpYyBlbnZpcm9ubWVudCBhbmQgZGV0ZXJtaW5lIGlmIHRoZSBpbnRlZ3JhdGlvbiBvZiBhIHBpdm90IHRhYmxlIHNvbHV0aW9uIGlzIHBvc3NpYmxlLCBpZiBzbyB0aGVuIGludGVncmF0ZSBpdC4KX19fCgojIyBDb250ZXh0Ck9uZSBtb250aCBpbnRlcm5zaGlwIGF0IHRoZSBlbmQgb2YgbXkgZmlyc3QgeWVhciBvZiBlbmdpbmVlcmluZyBzdHVkaWVzLCBhZnRlciBteSBFcmFzbXVzIGluIERlbm1hcmsuCl9fXwojIyBSZXNvdXJjZXMKCiMjIyBUb29scwotIEdpdGh1YgotIFZpc3VhbCBTdHVkaW8gQ29kZQotIE1hYyBPUwoKIyMjIFRlY2hub2xvZ2llcwotIFN5bWZvbnkKCS0gRWFzeWFkbWluCgktIERvY3RyaW5lCi0gSmF2YXNjcmlwdAoJLSBQaXZvdHRhYmxlLmpzCl9fXwoKIyMgRXhwZXJpZW5jZSBmZWVkYmFjawpJIGxlYXJuZWQgYSBsb3QgZHVyaW5nIHRoaXMgaW50ZXJuc2hpcCwgaW5kZWVkIEkgaGFkIHRoZSBjaGFuY2UgdG8gdXNlIHRlY2hub2xvZ2llcyB0aGF0IEkgaGFkIG5ldmVyIGhhZCB0aGUgb3Bwb3J0dW5pdHkgdG8gbGVhcm4gYmVmb3JlLg==",
 			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"URL":"fullstack-dev"
 		},
 		"student-job": {
 			"translatable": {
-				"title": "Worker at Truffaut",
+				"title": "Seasonal at Truffaut",
 				"subtitle": "2 months student job",
 				"year": "2021",
-				"content": "My personal website built with VueJS and TailwindCSS.",
+				"content": "Seasonal work to finance my Erasmus in Denmark...",
 				"imageAlt": "A screen that displays colored lines of code."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":["fa-solid fa-store"],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBTdHVkZW50IGpvYgoKIyMgT2JqZWN0aXZlClRvIGNvdmVyIHRoZSBjb3N0cyBvZiBFcmFzbXVzIGluIERlbm1hcmsuCl9fXwojIyBDb250ZXh0CkkgaGF2ZSBqdXN0IGZpbmlzaGVkIG15IHNlY29uZCB5ZWFyIG9mIHByZXBhcmF0b3J5IHNjaG9vbCwgSSBoYXZlIGp1c3QgZmluaXNoZWQgbXkgZW5kIG9mIHllYXIgaW50ZXJuc2hpcCBhbmQgSSBhbSBlbmRpbmcgbXkgc3VtbWVyIG9uIHRoaXMgMiBtb250aCBzdW1tZXIgam9iLgpfX18KIyMgRmVlZGJhY2sKSSBsZWFybmVkIGEgbG90IGFib3V0IHRoZSBidXNpbmVzcyB3b3JsZCwgdGhlIHJlYWxpdHkgb2YgbWFudWFsIHdvcmsgYXMgd2VsbCBhcyB0aGUgbG9naXN0aWMgYW5kIGNvbW1lcmNpYWwgYXNwZWN0LiBJbmRlZWQsIGRlc3BpdGUgdGhlIGZhY3QgdGhhdCBJIHdhcyBtYWlubHkgaW4gY2hhcmdlIG9mIHRoZSBtYWludGVuYW5jZSwgdGhlIGNhc2ggcmVnaXN0ZXIgYW5kIHRoZSBzdG9yYWdlLCBJIHdhcyBpbiBjb250YWN0IHdpdGggY29sbGVhZ3VlcyB3aG8gd2VyZSBpbiBjaGFyZ2Ugb2Ygb3RoZXIgYXNwZWN0cy4gVGhpcyBpcyBob3cgbXkgdW5kZXJzdGFuZGluZyBhbmQgYXdhcmVuZXNzIG9mIHRoZSBmdW5jdGlvbmluZyBvZiBhIGNvbXBhbnkgZXZvbHZlZC4=",
+			"imageURL":"img/garden.jpeg",
+			"URL":"student-job"
 		},
-		"school-support": {  
+		"it-support": {  
 			"translatable": {
-				"title": "IT support at School",
-				"subtitle": "1 month internship",
+				"title": "IT Support",
+				"subtitle": "one month internship",
 				"year": "2021",
-				"content": "My personal website built with VueJS and TailwindCSS.",
+				"content": "Computer support, maintenance within a school...",
 				"imageAlt": "A screen that displays colored lines of code."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":["fa-solid fa-school"],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBQcmVwYXJhdG9yeSBjeWNsZSBjb3Vyc2UKCiMjIE9iamVjdGl2ZQpNeSByb2xlIGR1cmluZyB0aGlzIGludGVybnNoaXAgd2FzIHRvIGVuc3VyZSB0aGUgdXBkYXRpbmcgb2YgdGhlIHNjaG9vbCdzIHdlYnNpdGUgYXMgd2VsbCBhcyBhc3Npc3Rpbmcgd2l0aCBwbGFubmluZyBvciBjb2FjaGluZyB0YXNrcy4KX19fCiMjIENvbnRleHQKRW5kIG9mIHllYXIgaW50ZXJuc2hpcCBpbiAybmQgeWVhciBvZiBwcmVwYXJhdG9yeSBjeWNsZS4KX19fCiMjIFJlc291cmNlcwotIExhVGVYCi0gUEMgb2YgdGhlIGluc3RpdHV0aW9uCi0gUmVsYXRpb25zaGlwIHdpdGggdGhlIElUIG1hbmFnZXIKLSBSZWxhdGlvbnNoaXAgd2l0aCB0ZWFjaGVycwotIHJlbGF0aW9uc2hpcCB3aXRoIHRoZSBhZG1pbmlzdHJhdGlvbgpfX18KIyMgRmVlZGJhY2sKRGlzY292ZXJ5IG9mIGFub3RoZXIgdHlwZSBvZiBlbnZpcm9ubWVudCwgYW5vdGhlciByaHl0aG0sIG90aGVyIGpvYnMu",
+			"imageURL":"img/cables.jpeg",
+			"URL":"it-support"
 		},
-		"canalplus": {  
+		"canal-plus": {  
 			"translatable": {
 				"title": "Tenth grade internship",
-				"subtitle": "Website",
+				"subtitle": "2 weeks internship",
 				"year": "2017",
-				"content": "My personal website built with VueJS and TailwindCSS.",
+				"content": "Discovery of the jobs of the digital pole within CANAL+...",
 				"imageAlt": "A screen that displays colored lines of code."
 			},
-			"extendedContent": "IyBTaXRlIGFyY2hpdmUKIyMgT2JqZWN0aXZlCldlYnNpdGUgdGhhdCBnYXRoZXJzIGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUgaW4gdGhlIGxhc3QgeWVhcnMuCl9fXwojIyBDb250ZXh0Ck5lZWQgdG8gbGlzdCBhbmQgaGlnaGxpZ2h0IGFsbCB0aGUgcHJvamVjdHMgSSBoYXZlIGRvbmUuIFRvIHB1dCBpbnRvIHByYWN0aWNlIHdoYXQgSSBrbm93IGJlc3QgaW4gd2ViIGRldmVsb3BtZW50LgpfX18KIyMgUmVzb3VyY2VzCi0gKipWdWUuSlMqKgotICoqVGFpbHdpbmQuQ1NTKioKLSBNYXJrZWRdCi0gRm9udGF3ZXNvbWUKLSBCcmF2ZSBCcm93c2VyCgpfX18KIyMgRmVlZGJhY2sKVmVyeSBzYXRpc2ZpZWQgd2l0aCB0aGUgcmVzcG9uc2l2ZS4KCiMjIyBBcmVhIG9mIGltcHJvdmVtZW50Ci0gaTE4biA6IGFkZCBlbmdsaXNoCi0gYWRkaXRpb24gb2YgdmVyc2lvbiBudW1iZXJz",
-			"techs":["fa-solid fa-tv"],
-			"imageURL":"img/coding.jpeg",
-			"github":"https://github.com/Constantin-Hentgen/constantin-hentgen.fr",
-			"URL":"mon-site-perso"
+			"extendedContent": "IyBEaXNjb3Zlcnkgb2YgdGhlIGRpZ2l0YWwgcG9sZQoKIyMgT2JqZWN0aXZlClRvIGRpc2NvdmVyIHRoZSBkaWZmZXJlbnQgdHJhZGVzIHJlbGF0ZWQgdG8gY29tcHV0ZXIgc2NpZW5jZS4KV3JpdGUgYSByZXBvcnQgb2YgYWJvdXQgdGVuIHBhZ2VzLCBhcyB3ZWxsIGFzIGEgZGVmZW5zZSB3aXRoaW4gdGhlIHNjaG9vbC4KX19fCiMjIENvbnRleHQKSW50ZXJuc2hpcCBpbiB0aGUgc2Vjb25kIHllYXIgb2YgaGlnaCBzY2hvb2wuCl9fXwojIyBSZXNvdXJjZXMKVGV4dCBFZGl0b3I6IE1pY3Jvc29mdCBXb3JkLgpfX18KIyMgRmVlZGJhY2sKSSByZWFsaXplZCB0aGF0IGNvbXB1dGVyIHNjaWVuY2Ugd2FzIHRoZSBmaWVsZCBpbiB3aGljaCBJIHdhbnRlZCB0byB3b3JrLCBpbiBwYXJ0aWN1bGFyIGNvbXB1dGVyIGRldmVsb3BtZW50LiBBbHNvLCBJIGJlY2FtZSBhd2FyZSBvZiB0aGUgd2F5cyBvZiB3b3JraW5nIGluIElUIGRldmVsb3BtZW50IHRlYW1zIChpbiB0aGlzIGNhc2UgQWdpbGUgbWV0aG9kb2xvZ3kpLg==",
+			"imageURL":"img/team.jpeg",
+			"URL":"canal-plus"
 		}
 	},
 	"projects": {

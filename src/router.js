@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import i18n from './i18n'
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
-import Experience from './views/Experience.vue'
+import Experiences from './views/Experiences.vue'
 import Commitment from './views/Commitment.vue'
-import Professional from './views/Professional.vue'
+import Ambitions from './views/Ambitions.vue'
 import NotFound from './views/NotFound.vue'
 
 Vue.use(Router)
@@ -39,9 +39,38 @@ export default new Router({
 					component: Projects
 				},
 				{
+					path: 'experiences',
+					name: 'experiences',
+					component: Experiences,
+				},
+				{
 					path: 'experience',
 					name: 'experience',
-					component: Experience
+					component: {
+						render (c) { return c('router-view') }
+					},
+					children: [
+						{
+							path: 'canal-plus',
+							name: 'canal-plus',
+							component: () => import('./views/Experience.vue')
+						},
+						{
+							path: 'student-job',
+							name: 'student-job',
+							component: () => import('./views/Experience.vue')
+						},
+						{
+							path: 'it-support',
+							name: 'it-support',
+							component: () => import('./views/Experience.vue')
+						},
+						{
+							path: 'fullstack-dev',
+							name: 'fullstack-dev',
+							component: () => import('./views/Experience.vue')
+						}
+					]
 				},
 				{
 					path: 'commitment',
@@ -49,9 +78,9 @@ export default new Router({
 					component: Commitment
 				},
 				{
-					path: 'professional',
-					name: 'professional',
-					component: Professional
+					path: 'ambitions',
+					name: 'ambitions',
+					component: Ambitions
 				},
 				{
 					path: 'project',
@@ -60,7 +89,6 @@ export default new Router({
 						render (c) { return c('router-view') }
 					},
 					children: [
-
 						{
 							path: 'mon-site-perso',
 							name: 'mon-site-perso',
