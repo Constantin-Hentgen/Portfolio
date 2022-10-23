@@ -13,13 +13,13 @@
 			"with": "avec"
 		},
 		"student": "étudiant ingénieur en cybersécurité",
-		"description": "Fasciné par le fonctionnement des systèmes d’informations et en particulier par la sécurité, j’étudie et les différents moyens d’attaque et de défense afin de mieux protéger les organisations."
+		"description": "Fasciné par le fonctionnement des systèmes d’informations et en particulier par la sécurité, j’étudie les différents moyens d’attaque et de défense afin de mieux protéger les organisations."
 	},
 	"ambitions" : {
 		"translatable": {
 			"title": "Ambitions"
 			},
-		"extendedContent": "IyBBbWJpdGlvbnMgcHJvZmVzc2lvbm5lbGxlcwoKIyMgSG9yaXpvbiA1IGFucwpKZSBjb21wdGUgdHJhdmFpbGxlciBkYW5zIGxhIHPpY3VyaXTpIGluZm9ybWF0aXF1ZSA6IG9yaWVudOkgYXR0YXF1ZSBvdSBwcul2ZW50aW9uIGQnYXR0YXF1ZS4KX19fCgojIyBFbnZpcm9ubmVtZW50IGRlIHRyYXZhaWwKSidhaSBwb3VyIHNvdWhhaXQgZGUgdHJhdmFpbGxlciBkYW5zIHVuIGNhZHJlIGludGVybmF0aW9uYWwgY2FyIGonYWltZSBwcmF0aXF1ZXIgbGVzIGxhbmd1ZXMgZXQgbSdpbnTpcmVzc2UgYXV4IHBlcnNvbm5lcyBldCBsZXVyIGN1bHR1cmUu"
+		"extendedContent": "IyMgSG9yaXpvbiA1IGFucwpKZSBjb21wdGUgdHJhdmFpbGxlciBkYW5zIGxhIHPpY3VyaXTpIGluZm9ybWF0aXF1ZSA6IG9yaWVudOkgYXR0YXF1ZSBvdSBwcul2ZW50aW9uIGQnYXR0YXF1ZS4KX19fCgojIyBFbnZpcm9ubmVtZW50IGRlIHRyYXZhaWwKSidhaSBwb3VyIHNvdWhhaXQgZGUgdHJhdmFpbGxlciBkYW5zIHVuIGNhZHJlIGludGVybmF0aW9uYWwgY2FyIGonYWltZSBwcmF0aXF1ZXIgbGVzIGxhbmd1ZXMgZXQgbSdpbnTpcmVzc2UgYXV4IHBlcnNvbm5lcyBldCBsZXVyIGN1bHR1cmUu"
 	},
 	"commitment": {
 		"translatable": {
