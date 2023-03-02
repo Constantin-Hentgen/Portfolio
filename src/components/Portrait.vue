@@ -9,8 +9,7 @@
 				rounded-md
 				p-5
 				shadow-2xl 
-				cursor-pointer 
-				hover:to-blue-500
+				cursor-pointer
 				flex
 				w-80
 				h-108

@@ -2,7 +2,7 @@
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen flex flex-col justify-between">
 		<Header />
 		
-		<transition name="slideDown" appear>
+		<transition name="slideUp" appear>
 			<router-view id="content"/>
 		</transition>
 

@@ -1,6 +1,6 @@
 <template>
-	<header id="header" class="w-full flex-col text-center p-5 fixed bg-myBlue-200 gap-10 mb-10">
-		<button v-on:click="toggleNav()" class="text-myBlue-200 bg-myBlue-900 text-3xl w-20 h-20 rounded-full">
+	<header id="header" class="w-full flex-col text-center p-5 fixed gap-10">
+		<button v-on:click="toggleNav()" class="text-myBlue-200 bg-myBlue-900 text-3xl mb-16 w-20 h-20 border-myBlue-200 border-2 rounded-full">
 			<i v-if="!navOpen" class="fa fa-bars"></i>
 			<i v-else class="fas fa-xmark"></i>
 		</button>
@@ -29,10 +29,12 @@ export default {
 			var nav = document.getElementById("nav");
 			if (!this.navOpen) {
 				header.style.height = window.innerHeight + "px";
+				header.style.background = "#e5e5e5";
 				nav.style.display = "flex";
 				this.navOpen = true;
 			} else {
 				header.style.height = "50px";
+				header.style.background = "transparent";
 				nav.style.display = "none";
 				this.navOpen = false;
 			}

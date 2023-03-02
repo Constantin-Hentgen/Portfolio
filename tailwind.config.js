@@ -3,8 +3,8 @@ module.exports = {
     extend: {
 			colors: {
 				'myBlue': {
-					200:'#d1deee',
-					900:'#21243D'
+					200:'#e5e5e5',
+					900:'#14213d'
 				}
 			},
 			fontFamily: {
