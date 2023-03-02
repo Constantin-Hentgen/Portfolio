@@ -1,41 +1,37 @@
 <template>
-	<router-link :to="`/${$i18n.locale}/experience/${URL}`">
-		<div
-			id="card"
-			class="
-				m-auto
-				mb-10
-				bg-white
-				rounded-md
-				p-5
-				shadow-2xl 
-				cursor-pointer
-				flex
-				w-80
-				h-108
-				border-2 border-myBlue-900
-			">
+	<router-link :to="`/${$i18n.locale}/experience/${URL}`" id="card"
+		class="
+			m-auto
+			mb-10
+			overflow-hidden
+			bg-myBlue-900
+			text-myBlue-200
+			rounded-lg
+			shadow-2xl 
+			cursor-pointer
+			flex
+			w-80
+		">
 
 		<div class="flex flex-col">
-			
-			<div class="flex w-full justify-evenly space-y-3 flex-col">
-				<div class="flex flex-row justify-between">
-					<h1 class="text-myBlue-900 font-bold text-xl md:text-2xl"> {{ title }} </h1>
-					<div class="space-x-3 hidden sm:flex sm:text-2xl">
-						<i v-for="(tech, index) in techs" :key="index" :class=tech></i>
-					</div>		
+			<div class="flex w-full justify-evenly flex-col">
+				<div class="flex flex-col justify-between p-2">
+					<div>
+						<h1 class="text-xl md:text-2xl w-full text-center"> {{ title }} </h1>
+						
+						<div class="space-x-3 hidden sm:flex sm:text-2xl">
+							<i v-for="(tech, index) in techs" :key="index" :class=tech></i>
+						</div>
+					</div>
+
+					<h2 class="text-sm md:text-lg h-3 ml-2 text-center italic text-gray-500 font-light"> {{ subtitle }} - {{ year }} </h2>
 				</div>
 
-				<img class="h-44 w-full object-cover object-center rounded-md" :src="'/' + imageURL" :alt="imageAlt">
+				<img class="w-full mt-2 h-24 object-cover object-center" :src="'/' + imageURL" :alt="imageAlt">
 
-				<div class="flex">
-					<h3 class="bg-myBlue-900 h-full my-auto text-white font-extrabold grid place-items-center rounded-sm md:rounded-md px-1 md:px-2 text-sm sm:text-base md:text-lg"> {{ year }} </h3>
-					<h2 class="text-sm md:text-lg h-3 ml-2 text-gray-500 font-light"> {{ subtitle }} </h2>
-				</div>
-				<p class="text-sm sm:text-base md:text-lg"> {{ content }} </p>
+				<p class="text-sm sm:text-base md:text-lg p-2"> {{ content }} </p>
 			</div>
 		</div>
-	</div>
 	</router-link>
 </template>
 
