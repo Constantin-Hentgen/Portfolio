@@ -4,7 +4,8 @@ module.exports = {
 			colors: {
 				'myBlue': {
 					200:'#e5e5e5',
-					900:'#14213d'
+          500:'#003566',
+					900:'#001d3d'
 				}
 			},
 			fontFamily: {

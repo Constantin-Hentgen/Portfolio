@@ -3,19 +3,25 @@
 		class="
 			m-auto
 			mb-10
-			overflow-hidden
 			bg-myBlue-900
 			text-myBlue-200
-			rounded-lg
-			shadow-2xl 
+			shadow-2xl
+			overflow-hidden
+			rounded-md
 			cursor-pointer
 			flex
 			w-80
 		">
 
+
 		<div class="flex flex-col">
+
+			<div class="absolute mt-2 ml-2 text-myBlue-200">
+				<i class="fa-solid fa-file-lines"></i>
+			</div>
+
 			<div class="flex w-full justify-evenly flex-col">
-				<div class="flex flex-col justify-between p-2">
+				<div class="flex flex-col justify-between p-1 text-white">
 					<div>
 						<h1 class="text-xl md:text-2xl w-full text-center"> {{ title }} </h1>
 						
@@ -24,12 +30,10 @@
 						</div>
 					</div>
 
-					<h2 class="text-sm md:text-lg h-3 ml-2 text-center italic text-gray-500 font-light"> {{ subtitle }} - {{ year }} </h2>
+					<h2 class="text-sm md:text-lg h-3 ml-2 mb-2 text-center italic text-gray-500 font-light"> {{ subtitle }} - {{ year }} </h2>
 				</div>
 
-				<img class="w-full mt-2 h-24 object-cover object-center" :src="'/' + imageURL" :alt="imageAlt">
-
-				<p class="text-sm sm:text-base md:text-lg p-2"> {{ content }} </p>
+				<p class="text-sm md:text-base p-2 bg-myBlue-200 text-myBlue-900"> {{ content }} </p>
 			</div>
 		</div>
 	</router-link>

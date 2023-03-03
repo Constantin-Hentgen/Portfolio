@@ -6,7 +6,6 @@
 				<i v-else class="fas fa-xmark"></i>
 			</button>
 		</div>
-
 		
 		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
 			<h1 class="text-4xl font-bold">Go to...</h1>

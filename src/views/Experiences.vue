@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<main class="mt-32 md:mt-24 flex flex-wrap gap-x-5 place-content-center">
+		<h1 class="p-10 text-3xl font-bold"> Experiences </h1>
+		<main class="flex flex-wrap gap-x-5 place-content-center">
 			<Card v-for="(experience, index) in $t('experiences')" :key="index"
 				:title="experience.translatable.title"
 				:year="experience.translatable.year"
@@ -15,7 +16,7 @@
 </template>
 
 <script>
-import Card from '@/components/Portrait.vue'
+import Card from '@/components/Card.vue'
 
 export default {
 	name: 'Experience',
