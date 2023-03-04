@@ -5,7 +5,7 @@
 				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
 				'flex-col' : (navOpen)
 			}" 
-			class="w-full flex justify-between p-2 h-16 rounded-full bg-transparent"
+			class="w-full flex justify-between sm:w-3/4 mx-auto p-2 h-16 rounded-full bg-transparent"
 		>
 			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl text-center">
 				<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
@@ -22,6 +22,9 @@
 					</router-link>
 		
 					<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
+					<div class="hidden md:flex text-myBlue-200 my-auto">
+						progression : &nbsp; <span v-if="height > 0" class="w-16 font-semibold"> {{ progression }} % </span>
+					</div>
 			</div>
 
 			<button v-on:click="toggleNav()" 
@@ -82,10 +85,24 @@ export default {
 	name: 'Header',
 	data() {
 		return {
-			navOpen: false
+			navOpen: false,
+			progression: 0,
+			height: 0
 		}
 	},
+	created () {
+		window.addEventListener('scroll', this.getProgression);
+		this.height = document.body.scrollHeight;
+  	},
+  	unmounted () {
+    	window.removeEventListener('scroll', this.getProgression);
+  	},
 	methods: {
+		getProgression(event) {
+			this.height = document.body.scrollHeight
+			this.rawProgression = window.scrollY
+			this.progression = Math.round(100*(window.scrollY+window.innerHeight)/this.height)
+		},
 		toggleNav() {
 			var header = document.getElementById("header");
 			var nav = document.getElementById("nav");

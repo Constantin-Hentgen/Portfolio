@@ -1,9 +1,9 @@
 <template>
   <button
     @click.prevent="toggleLocale(), fetchContent()"
-    class="bg-myBlue-900 rounded-full w-20 h-10 mx-auto text-myBlue-200"
+    class="bg-myBlue-900 rounded-md w-40 h-10 mx-auto text-myBlue-200 text-sm font-semibold"
   >
-    <span> {{ $i18n.locale.toUpperCase() }} </span>
+      {{ getTranslationSuggestion() }}
   </button>
 </template>
 
@@ -19,13 +19,14 @@ export default {
 			}
 		},
     toggleLocale() {
-      let newLocale = this.$i18n.locale == "en" ? "fr" : "en";
-
       this.$router.push({
         params: {
-          lang: newLocale 
+          lang: this.$i18n.locale == "en" ? "fr" : "en" 
         }
       })
+    },
+    getTranslationSuggestion() {
+      return this.$i18n.locale === "fr" ? "translate to english" : "traduire en français";
     }
   }
 }

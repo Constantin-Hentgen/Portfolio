@@ -18,10 +18,10 @@ export default new Router({
       path: '/',
       redirect: `/${i18n.locale}`
     },
-		{
-			path: '*',
-			component: NotFound
-		},
+	{
+		path: '*',
+		component: NotFound
+	},
     {
       path: '/:lang/',
       component: {
@@ -33,119 +33,119 @@ export default new Router({
           name: 'home',
           component: Home
         },
+		{
+			path: 'projects',
+			name: 'projects',
+			component: Projects
+		},
+		{
+			path: 'experiences',
+			name: 'experiences',
+			component: Experiences,
+		},
+		{
+			path: 'experience',
+			name: 'experience',
+			component: {
+				render (c) { return c('router-view') }
+			},
+			children: [
 				{
-					path: 'projects',
-					name: 'projects',
-					component: Projects
+					path: 'canal-plus',
+					name: 'canal-plus',
+					component: () => import('./views/Experience.vue')
 				},
 				{
-					path: 'experiences',
-					name: 'experiences',
-					component: Experiences,
+					path: 'student-job',
+					name: 'student-job',
+					component: () => import('./views/Experience.vue')
 				},
 				{
-					path: 'experience',
-					name: 'experience',
-					component: {
-						render (c) { return c('router-view') }
-					},
-					children: [
-						{
-							path: 'canal-plus',
-							name: 'canal-plus',
-							component: () => import('./views/Experience.vue')
-						},
-						{
-							path: 'student-job',
-							name: 'student-job',
-							component: () => import('./views/Experience.vue')
-						},
-						{
-							path: 'it-support',
-							name: 'it-support',
-							component: () => import('./views/Experience.vue')
-						},
-						{
-							path: 'fullstack-dev',
-							name: 'fullstack-dev',
-							component: () => import('./views/Experience.vue')
-						}
-					]
+					path: 'it-support',
+					name: 'it-support',
+					component: () => import('./views/Experience.vue')
 				},
 				{
-					path: 'commitment',
-					name: 'commitment',
-					component: Commitment
+					path: 'fullstack-dev',
+					name: 'fullstack-dev',
+					component: () => import('./views/Experience.vue')
+				}
+			]
+		},
+		{
+			path: 'commitment',
+			name: 'commitment',
+			component: Commitment
+		},
+		{
+			path: 'ambitions',
+			name: 'ambitions',
+			component: Ambitions
+		},
+		{
+			path: 'project',
+			name: 'project',
+			component: {
+				render (c) { return c('router-view') }
+			},
+			children: [
+				{
+					path: 'mon-site-perso',
+					name: 'mon-site-perso',
+					component: () => import('./views/Project.vue')
 				},
 				{
-					path: 'ambitions',
-					name: 'ambitions',
-					component: Ambitions
+					path: 'horsensei',
+					name: 'horsensei',
+					component: () => import('./views/Project.vue')
 				},
 				{
-					path: 'project',
-					name: 'project',
-					component: {
-						render (c) { return c('router-view') }
-					},
-					children: [
-						{
-							path: 'mon-site-perso',
-							name: 'mon-site-perso',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'horsensei',
-							name: 'horsensei',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'prime-explo',
-							name: 'prime-explo',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'citadelles',
-							name: 'citadelles',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'vue-weather',
-							name: 'vue-weather',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'task-manager',
-							name: 'task-manager',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'touyube',
-							name: 'touyube',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'text-parser',
-							name: 'text-parser',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'php-experiment',
-							name: 'php-experiment',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'clavier-bepo',
-							name: 'clavier-bepo',
-							component: () => import('./views/Project.vue')
-						},
-						{
-							path: 'le-pouvoir-du-vote',
-							name: 'le-pouvoir-du-vote',
-							component: () => import('./views/Project.vue')
-						}
-					]
+					path: 'prime-explo',
+					name: 'prime-explo',
+					component: () => import('./views/Project.vue')
 				},
+				{
+					path: 'citadelles',
+					name: 'citadelles',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'vue-weather',
+					name: 'vue-weather',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'task-manager',
+					name: 'task-manager',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'touyube',
+					name: 'touyube',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'text-parser',
+					name: 'text-parser',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'php-experiment',
+					name: 'php-experiment',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'clavier-bepo',
+					name: 'clavier-bepo',
+					component: () => import('./views/Project.vue')
+				},
+				{
+					path: 'le-pouvoir-du-vote',
+					name: 'le-pouvoir-du-vote',
+					component: () => import('./views/Project.vue')
+				}
+			]
+		},
       ]
     }
   ],
