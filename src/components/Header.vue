@@ -1,48 +1,79 @@
 <template>
-	<header id="header" class="w-full flex-col p-5 fixed">
-		<div class="w-full h-20 grid place-items-end">
-			<button v-on:click="toggleNav()" class="text-myBlue-200 bg-myBlue-900 text-3xl mb-16 w-20 h-20 shadow-xl border-myBlue-200 border-2 rounded-full">
-				<i v-if="!navOpen" class="fa fa-bars"></i>
-				<i v-else class="fas fa-xmark"></i>
+	<header id="header" class="w-full flex-col p-5 fixed z-40">
+		<div
+			:class="{ 
+				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
+				'flex-col' : (navOpen)
+			}" 
+			class="w-full flex justify-between p-2 h-16 rounded-full bg-transparent"
+		>
+			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl text-center">
+				<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
+					<i class="fa-brands fa-linkedin"></i>
+					</a>
+				<a href="https://github.com/Constantin-Hentgen" target="_blank">
+					<i class="fa-brands fa-github"></i>
+				</a>
+			</div>
+
+			<div v-if="$route.name != 'home' && !navOpen" class="flex justify-between w-4/5">
+					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()"> 
+						<img class="w-12 h-12 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
+					</router-link>
+		
+					<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
+			</div>
+
+			<button v-on:click="toggleNav()" 
+				:class="{ 
+					'text-myBlue-200 bg-myBlue-900 ' : ($route.name == 'home' || navOpen),
+					'text-myBlue-900 bg-myBlue-200 ' : !($route.name == 'home' || navOpen),
+					'self-end' : (navOpen)
+				}"
+				class="text-xl w-12 h-full shadow-xl rounded-full"
+			>
+				<i v-if="!navOpen" class="fa fa-bars" />
+				<i v-else class="fas fa-xmark" />
 			</button>
 		</div>
-		
-		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
-			<h1 class="text-4xl font-bold">Go to...</h1>
 
+		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
+			<h1 class="text-3xl font-bold">Go to...</h1>
+			
 			<ul>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-3xl"> 
+					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
 						<i class="fa fa-house"></i>
 						{{$t("landing-page.nav.home")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-3xl"> 
-						<i class="fa fa-suitcase"></i>
+					<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+						<i class="fa fa-suitcase" />
 						{{$t("landing-page.nav.experience")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-3xl"> 
+					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
 						<i class="fa-solid fa-vial"></i>
 						{{$t("landing-page.nav.projects")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-3xl"> 
-						<i class="fa fa-bullseye"></i>
+					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+						<i class="fa fa-bullseye" />
 						{{$t("landing-page.nav.professional")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-3xl"> 
-						<i class="fa-solid fa-people-group"></i>
+					<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+						<i class="fa-solid fa-people-group" />
 						{{$t("landing-page.nav.commitment")}} 
 					</router-link>
 				</li>
 			</ul>
 		</nav>
+
 	</header>
 </template>
 
@@ -73,4 +104,3 @@ export default {
 	}
 }
 </script>
-

@@ -4,8 +4,8 @@
 		w-11/12
 		md:w-3/4
 		xl:w-1/2
-
 		mx-auto
+		my-auto
 		flex-col
 		justify-center
 		space-y-5

@@ -2,11 +2,11 @@
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen flex flex-col justify-between">
 		<Header />
 		
-		<transition name="slideUp" appear>
+		<transition name="fade" appear>
 			<router-view id="content"/>
 		</transition>
 
-		<transition name="slideUp" appear>
+		<transition name="fade" appear>
 			<Footer />
 		</transition>
   </div>

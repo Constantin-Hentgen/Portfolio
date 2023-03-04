@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1 class="p-10 text-3xl font-bold"> Experiences </h1>
-		<main class="flex flex-wrap gap-x-5 place-content-center">
+		<main class="flex flex-wrap md:px-20 gap-y-5 place-content-center">
 			<Card v-for="(experience, index) in $t('experiences')" :key="index"
 				:title="experience.translatable.title"
 				:year="experience.translatable.year"
