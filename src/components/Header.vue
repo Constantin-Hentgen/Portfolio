@@ -28,8 +28,8 @@
 	
 				<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
 
-				<div class="hidden md:grid px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
-					<p class="w-48 pl-3">
+				<div class="hidden md:grid text-base px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
+					<p class="w-40">
 						<span v-if="height > 0">
 							progression : &nbsp; <span class="font-semibold"> {{ progression }} % </span>
 						</span>
@@ -56,7 +56,7 @@
 			<ul class="mx-auto">
 				<li class="mt-5">
 					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
-						<i class="fa fa-house"></i>
+						<i class="fa-solid fa-house"></i>
 						{{$t("landing-page.nav.home")}} 
 					</router-link>
 				</li>
@@ -67,20 +67,20 @@
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
-						<i class="fa-solid fa-vial"></i>
-						{{$t("landing-page.nav.projects")}} 
-					</router-link>
-				</li>
-				<li class="mt-5">
 					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
 						<i class="fa-solid fa-graduation-cap"></i>
 						Éducation
 					</router-link>
 				</li>
 				<li class="mt-5">
+					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+						<i class="fa-solid fa-cubes"></i>
+						{{$t("landing-page.nav.projects")}} 
+					</router-link>
+				</li>
+				<li class="mt-5">
 					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
-						<i class="fa fa-bullseye" />
+						<i class="fa-solid fa-bullseye" />
 						{{$t("landing-page.nav.professional")}} 
 					</router-link>
 				</li>

@@ -28,5 +28,5 @@ export default {
 </script>
 
 <style src="@/fontawesome-free/css/all.min.css"/>
-<style src="@/assets/css/vue2-animate.css" />
+<style src="@/assets/css/vue2-animate.min.css" />
 <style src="@/assets/css/tailwind.css" />
