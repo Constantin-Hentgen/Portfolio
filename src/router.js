@@ -2,10 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import i18n from './i18n'
 import Home from './views/Home.vue'
-import Projects from './views/Projects.vue'
-import Experiences from './views/Experiences.vue'
 import NotFound from './views/NotFound.vue'
 import TextPage from './views/TextPage.vue'
+import List from './views/List.vue'
 
 Vue.use(Router)
 
@@ -35,12 +34,12 @@ export default new Router({
 		{
 			path: 'projects',
 			name: 'projects',
-			component: Projects
+			component: List
 		},
 		{
 			path: 'experiences',
 			name: 'experiences',
-			component: Experiences,
+			component: List,
 		},
 		{
 			path: 'experience',

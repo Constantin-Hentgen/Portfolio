@@ -1,5 +1,10 @@
 <template>
-	<header id="header" class="w-full flex-col p-5 fixed z-40">
+	<header id="header" class="w-full flex-col p-5 fixed z-40 transition duration-200 opacity-100 active:animate-fade-in-out"
+	:class="{
+		'opacity-100': navOpen,
+		'opacity-0': !navOpen
+	}"
+	>
 		<div
 			:class="{ 
 				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
@@ -38,7 +43,7 @@
 					'text-myBlue-900 bg-myBlue-200 ' : !($route.name == 'home' || navOpen),
 					'self-end' : (navOpen)
 				}"
-				class="text-xl w-12 h-full shadow-xl rounded-full"
+				class="text-xl w-12 h-full shadow-xl rounded-full transition duration-500"
 			>
 				<i v-if="!navOpen" class="fa fa-bars" />
 				<i v-else class="fas fa-xmark" />
@@ -141,3 +146,22 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+@keyframes fade-in-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 1s ease-in-out;
+}
+
+</style>

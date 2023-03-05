@@ -1,12 +1,12 @@
 <template>
-	<main class="flex flex-wrap space-y-5 mt-32 w-full sm:w-3/4 mx-auto">
-		<Card v-for="(project, index) in $t('projects')" :key="index"
-			:title="project.translatable.title" 
-			:year="project.translatable.year"
-			:subtitle="project.translatable.subtitle"
-			:content="project.translatable.content"
-			:techs="project.techs"
-			:URL="project.URL"
+	<main class="flex flex-wrap mt-32 md:px-20 gap-y-5 place-content-center mx-auto sm:w-3/4">
+		<Card v-for="(item, index) in $t(this.type)" :key="index"
+			:title="item.translatable.title" 
+			:year="item.translatable.year"
+			:subtitle="item.translatable.subtitle"
+			:content="item.translatable.content"
+			:techs="item.techs"
+			:URL="item.URL"
 		/>
 	</main>
 </template>
@@ -18,6 +18,34 @@ export default {
 	name: 'List',
 	components: {
 		Card
+	},
+	data() {
+		return {
+			type: ""
+		}
+	},
+	created() {
+		this.getType()
+		window.addEventListener('click', this.getType);
+		window.addEventListener('load', this.getType);
+	},
+	watch: {
+		'$route'() {
+			this.getType();
+		}
+	},
+	unmounted () {
+		window.removeEventListener('click', this.getType);
+		window.removeEventListener('load', this.getType);
+	},
+	methods: {
+		getType() {
+			if (this.$route.path.includes('project')) {
+				this.type = "projects"
+			} else if (this.$route.path.includes('experience')) {
+				this.type = "experiences"
+			}
+		}
 	}
 }
 </script>

@@ -1,12 +1,14 @@
 <template>
   <div id="app" class="font-sans text-gray-800 scroll-smooth bg-myBlue-200 text-lg min-h-screen flex flex-col justify-between">
-		<Header />
+		<transition name="slideLeft" appear :key="$route.fullPath">
+			<Header />
+		</transition>
 		
-		<transition name="fade" appear>
-			<router-view id="content"/>
+		<transition name="slideLeft" appear :key="$route.fullPath">
+			<router-view />
 		</transition>
 
-		<transition name="fade" appear>
+		<transition name="slideLeft" appear :key="$route.fullPath">
 			<Footer />
 		</transition>
   </div>
@@ -21,7 +23,7 @@ export default {
 	components: {
 		Header,
 		Footer
-	},
+	}
 }
 </script>
 

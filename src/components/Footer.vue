@@ -5,9 +5,10 @@
 			{{ $t("landing-page.footer.codedIn") }} 
 			<i class="fa-brands fa-vuejs" /> 
 			{{ $t("landing-page.footer.with") }} 
-			<i class="fas fa-heart-pulse" /> |
-			sous license
+			<i class="fas fa-heart-pulse" /> 
+			| sous license
 			<i class="fa-brands fa-creative-commons"/>
+			| 2023
 		</p>
 	</footer>
 </template>

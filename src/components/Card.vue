@@ -12,22 +12,22 @@
 			w-80
 		">
 		<div class="flex flex-col w-full bg-myBlue-200">
-			<div class="bg-myBlue-900">
-				<i class="fa-solid fa-file-lines absolute mt-2 ml-2 text-myBlue-200" />
-	
-				<div class="flex w-full justify-evenly flex-col">
-					<div class="flex flex-col justify-between p-1 text-white">
-						<h1 class="text-xl md:text-2xl w-full text-center"> {{ title }} </h1>
-						
-						<h2 class="text-sm md:text-lg h-3 ml-2 mb-3 text-center italic text-gray-500 font-light">
-							{{ year }} - {{ subtitle }} &nbsp;
-							<i v-for="(tech, index) in techs" :key="index" :class=tech>&nbsp;</i>
-						</h2>
-					</div>
+			<div class="bg-myBlue-900 flex w-full justify-evenly flex-col">
+				<div class="flex flex-col justify-between p-1 text-white">
+					<h1 class="text-xl md:text-2xl w-full text-center"> {{ title }} </h1>
+					
+					<h2 class="text-sm md:text-lg h-3 ml-2 mb-3 text-center italic text-gray-500 font-light">
+						{{ year }} - {{ subtitle }} &nbsp;
+						<i v-for="(tech, index) in techs" :key="index" :class=tech>&nbsp;</i>
+					</h2>
 				</div>
 			</div>
 
 			<p class="text-sm md:text-base p-2 bg-myBlue-200 text-myBlue-900 min-w-full"> {{ content }} </p>
+
+			<div class="grid place-items-end mb-2 mr-2">
+				<i class="fa-solid fa-arrow-up-right-from-square text-base text-myBlue-900" />
+			</div>
 		</div>
 	</router-link>
 </template>
