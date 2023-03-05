@@ -6,13 +6,13 @@
 	}"
 	>
 		<div
+			class="w-full flex justify-between sm:w-1/2 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
 			:class="{ 
 				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
 				'flex-col' : (navOpen)
 			}" 
-			class="w-full flex justify-between sm:w-3/4 mx-auto p-2 h-16 rounded-full bg-transparent"
 		>
-			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl text-center">
+			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl md:text-4xl text-center">
 				<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
 					<i class="fa-brands fa-linkedin"></i>
 					</a>
@@ -23,13 +23,13 @@
 
 			<div v-if="$route.name !== 'home' && !navOpen" class="flex justify-between w-4/5">
 				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()"> 
-					<img class="w-12 h-12 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
+					<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
 				</router-link>
 	
-				<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
+				<h1 class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"> {{ $t("landing-page.nav." + $route.name) }} </h1>
 
-				<div class="hidden md:grid text-base px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
-					<p class="w-40">
+				<div class="hidden md:grid md:text-xl text-base px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
+					<p class="w-40 md:w-56 md:ml-5">
 						<span v-if="height > 0">
 							progression : &nbsp; <span class="font-semibold"> {{ progression }} % </span>
 						</span>
@@ -43,7 +43,7 @@
 					'text-myBlue-900 bg-myBlue-200 ' : !($route.name == 'home' || navOpen),
 					'self-end' : (navOpen)
 				}"
-				class="text-xl w-12 h-full shadow-xl rounded-full transition duration-500"
+				class="text-xl md:text-2xl w-12 md:w-16 h-full shadow-xl rounded-full transition duration-500"
 			>
 				<i v-if="!navOpen" class="fa fa-bars" />
 				<i v-else class="fas fa-xmark" />
@@ -51,41 +51,41 @@
 		</div>
 
 		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
-			<h1 class="text-3xl font-bold mx-auto">Go to...</h1>
+			<h1 class="text-3xl md:text-5xl font-bold mx-auto"> {{ $t("landing-page.nav.goto") }}</h1>
 			
 			<ul class="mx-auto">
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa-solid fa-house"></i>
 						{{$t("landing-page.nav.home")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa fa-suitcase" />
 						{{$t("landing-page.nav.experience")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}/education`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa-solid fa-graduation-cap"></i>
 						Éducation
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa-solid fa-cubes"></i>
 						{{$t("landing-page.nav.projects")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa-solid fa-bullseye" />
 						{{$t("landing-page.nav.professional")}} 
 					</router-link>
 				</li>
 				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+					<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 						<i class="fa-solid fa-people-group" />
 						{{$t("landing-page.nav.commitment")}} 
 					</router-link>
@@ -162,6 +162,13 @@ export default {
 
 .animate-fade-in-out {
   animation: fade-in-out 1s ease-in-out;
+}
+
+li:hover {
+	border-radius: 2px;
+	outline-color: #001d3d;
+	outline-style: dashed;
+	outline-offset: 5px;
 }
 
 </style>

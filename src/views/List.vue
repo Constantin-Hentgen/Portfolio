@@ -1,10 +1,10 @@
 <template>
-	<main class="flex flex-wrap mt-32 md:px-20 gap-y-5 place-content-center mx-auto sm:w-3/4">
+	<main class="w-11/12 md:w-1/2 flex flex-wrap mt-32 md:px-20 gap-y-5 place-content-center mx-auto">
 		<Card v-for="(item, index) in $t(this.type)" :key="index"
-			:title="item.translatable.title" 
-			:year="item.translatable.year"
-			:subtitle="item.translatable.subtitle"
-			:content="item.translatable.content"
+			:title="item.title" 
+			:year="item.year"
+			:subtitle="item.subtitle"
+			:content="item.description"
 			:techs="item.techs"
 			:URL="item.URL"
 		/>

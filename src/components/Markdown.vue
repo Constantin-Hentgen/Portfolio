@@ -1,6 +1,6 @@
 <template>
 	<main
-		class="w-11/12 md:w-2/3 xl:w-1/2 flex-col md:mt-14 space-y-8 mt-16 mx-auto article" 
+		class="w-11/12 md:w-1/3 flex-col md:mt-32 space-y-8 mt-16 mx-auto article" 
 		v-html="article">
 	</main>
 </template>
@@ -36,11 +36,11 @@
 		methods: {
 			fetchContent() {
 				if (this.$route.path.includes('project')) {
-					this.article = marked(atob(this.$t(`projects.${this.url}.extendedContent`)))
+					this.article = marked(decodeURIComponent(escape(atob(this.$t(`projects.${this.url}.text`)))))
 				}  else if (this.$route.path.includes('experience')) {
-					this.article = marked(atob(this.$t(`experiences.${this.url}.extendedContent`)))
+					this.article = marked(decodeURIComponent(escape(atob(this.$t(`experiences.${this.url}.text`)))))
 				} else {
-					this.article = marked(atob(this.$t(`${this.url}.extendedContent`)))
+					this.article = marked(decodeURIComponent(escape(atob(this.$t(`${this.url}.text`)))))
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 <template>
   <button
     @click.prevent="toggleLocale(), fetchContent()"
-    class="bg-myBlue-900 rounded-md w-40 h-10 mx-auto text-myBlue-200 text-sm font-semibold shadow-md"
+    class="bg-myBlue-900 rounded-md w-40 md:w-56 h-10 mx-auto text-myBlue-200 text-sm md:text-lg font-semibold shadow-md"
   >
       {{ getTranslationSuggestion() }}
   </button>

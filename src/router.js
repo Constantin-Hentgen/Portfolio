@@ -42,6 +42,11 @@ export default new Router({
 			component: List,
 		},
 		{
+			path: 'education',
+			name: 'education',
+			component: TextPage,
+		},
+		{
 			path: 'experience',
 			name: 'experience',
 			component: {
