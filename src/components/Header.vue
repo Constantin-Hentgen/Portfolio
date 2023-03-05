@@ -16,15 +16,20 @@
 				</a>
 			</div>
 
-			<div v-if="$route.name != 'home' && !navOpen" class="flex justify-between w-4/5">
-					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()"> 
-						<img class="w-12 h-12 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
-					</router-link>
-		
-					<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
-					<div class="hidden md:flex text-myBlue-200 my-auto">
-						progression : &nbsp; <span v-if="height > 0" class="w-16 font-semibold"> {{ progression }} % </span>
-					</div>
+			<div v-if="$route.name !== 'home' && !navOpen" class="flex justify-between w-4/5">
+				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()"> 
+					<img class="w-12 h-12 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
+				</router-link>
+	
+				<h1 class="text-myBlue-200 my-auto text-xl w-48 mr-1 text-center"> {{ $route.name }} </h1>
+
+				<div class="hidden md:grid px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
+					<p class="w-48 pl-3">
+						<span v-if="height > 0">
+							progression : &nbsp; <span class="font-semibold"> {{ progression }} % </span>
+						</span>
+					</p>
+				</div>
 			</div>
 
 			<button v-on:click="toggleNav()" 
@@ -41,9 +46,9 @@
 		</div>
 
 		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
-			<h1 class="text-3xl font-bold">Go to...</h1>
+			<h1 class="text-3xl font-bold mx-auto">Go to...</h1>
 			
-			<ul>
+			<ul class="mx-auto">
 				<li class="mt-5">
 					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
 						<i class="fa fa-house"></i>
@@ -63,6 +68,12 @@
 					</router-link>
 				</li>
 				<li class="mt-5">
+					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
+						<i class="fa-solid fa-graduation-cap"></i>
+						Éducation
+					</router-link>
+				</li>
+				<li class="mt-5">
 					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl"> 
 						<i class="fa fa-bullseye" />
 						{{$t("landing-page.nav.professional")}} 
@@ -76,7 +87,6 @@
 				</li>
 			</ul>
 		</nav>
-
 	</header>
 </template>
 
@@ -92,13 +102,23 @@ export default {
 	},
 	created () {
 		window.addEventListener('scroll', this.getProgression);
+		window.addEventListener('click', this.getProgression);
+		window.addEventListener('load', this.getProgression);
+		window.addEventListener('resize', this.getProgression);
+		window.addEventListener('orientationchange', this.getProgression);
+
 		this.height = document.body.scrollHeight;
-  	},
-  	unmounted () {
-    	window.removeEventListener('scroll', this.getProgression);
-  	},
+		this.windowHeight = window.innerHeight;
+	},
+	unmounted () {
+		window.removeEventListener('scroll', this.getProgression);
+		window.removeEventListener('click', this.getProgression);
+		window.removeEventListener('load', this.getProgression);
+		window.removeEventListener('resize', this.getProgression);
+		window.removeEventListener('orientationchange', this.getProgression);
+	},
 	methods: {
-		getProgression(event) {
+		getProgression() {
 			this.height = document.body.scrollHeight
 			this.rawProgression = window.scrollY
 			this.progression = Math.round(100*(window.scrollY+window.innerHeight)/this.height)

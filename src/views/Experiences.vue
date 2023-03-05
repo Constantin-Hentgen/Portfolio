@@ -5,8 +5,6 @@
 			:year="experience.translatable.year"
 			:subtitle="experience.translatable.subtitle"
 			:content="experience.translatable.content"
-			:imageURL="experience.imageURL"
-			:imageAlt="experience.translatable.imageAlt"
 			:URL="experience.URL"
 		/>
 	</main>

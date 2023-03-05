@@ -1,5 +1,5 @@
 <template>
-	<router-link :to="`/${$i18n.locale}/experience/${URL}`" id="card"
+	<router-link :to="`/${$i18n.locale}/${this.type}/${URL}`" id="card"
 		class="
 			m-auto
 			bg-myBlue-900
@@ -36,16 +36,31 @@
 export default {
   name: 'Portrait',
   props: {
-		id: Number,
-		techs: Array,
-    title: String,
-		content: String,
-		year: String,
-		subtitle: String,
-		imageURL: String,
-		imageAlt: String,
-		URL: String
-  }
+	  id: Number,
+	  techs: Array,
+	  title: String,
+	  content: String,
+	  year: String,
+	  subtitle: String,
+	  URL: String
+	},
+	data() {
+		return {
+			type: ""
+		}
+	},
+	created() {
+		this.getType()
+	},
+	methods: {
+		getType() {
+			if (this.$route.path.includes('project')) {
+				this.type = "project"
+			} else if (this.$route.path.includes('experience')) {
+				this.type = "experience"
+			}
+		}
+	}
 }
 </script>
 

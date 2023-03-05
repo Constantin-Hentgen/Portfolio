@@ -4,9 +4,8 @@ import i18n from './i18n'
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
 import Experiences from './views/Experiences.vue'
-import Commitment from './views/Commitment.vue'
-import Ambitions from './views/Ambitions.vue'
 import NotFound from './views/NotFound.vue'
+import TextPage from './views/TextPage.vue'
 
 Vue.use(Router)
 
@@ -53,34 +52,34 @@ export default new Router({
 				{
 					path: 'canal-plus',
 					name: 'canal-plus',
-					component: () => import('./views/Experience.vue')
+					component: TextPage
 				},
 				{
 					path: 'student-job',
 					name: 'student-job',
-					component: () => import('./views/Experience.vue')
+					component: TextPage
 				},
 				{
 					path: 'it-support',
 					name: 'it-support',
-					component: () => import('./views/Experience.vue')
+					component: TextPage
 				},
 				{
 					path: 'fullstack-dev',
 					name: 'fullstack-dev',
-					component: () => import('./views/Experience.vue')
+					component: TextPage
 				}
 			]
 		},
 		{
 			path: 'commitment',
 			name: 'commitment',
-			component: Commitment
+			component: TextPage
 		},
 		{
 			path: 'ambitions',
 			name: 'ambitions',
-			component: Ambitions
+			component: TextPage
 		},
 		{
 			path: 'project',
@@ -92,57 +91,57 @@ export default new Router({
 				{
 					path: 'mon-site-perso',
 					name: 'mon-site-perso',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'horsensei',
 					name: 'horsensei',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'prime-explo',
 					name: 'prime-explo',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'citadelles',
 					name: 'citadelles',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'vue-weather',
 					name: 'vue-weather',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'task-manager',
 					name: 'task-manager',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'touyube',
 					name: 'touyube',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'text-parser',
 					name: 'text-parser',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'php-experiment',
 					name: 'php-experiment',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'clavier-bepo',
 					name: 'clavier-bepo',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				},
 				{
 					path: 'le-pouvoir-du-vote',
 					name: 'le-pouvoir-du-vote',
-					component: () => import('./views/Project.vue')
+					component: TextPage
 				}
 			]
 		},

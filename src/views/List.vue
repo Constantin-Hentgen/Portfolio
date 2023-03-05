@@ -15,7 +15,7 @@
 import Card from '@/components/Card.vue'
 
 export default {
-	name: 'Home',
+	name: 'List',
 	components: {
 		Card
 	}
