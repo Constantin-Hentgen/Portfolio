@@ -14,7 +14,7 @@
 		</a>
 
 		<div
-			class="w-full flex justify-between sm:w-1/2 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
+			class="w-full flex justify-between md:w-2/3 xl:w-1/2 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
 			:class="{ 
 				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
 				'flex-col' : (navOpen)
@@ -29,38 +29,40 @@
 				</a>
 			</div>
 
-			<div v-if="$route.name !== 'home' && !navOpen" class="flex justify-between w-4/5">
-				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()"> 
-					<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
-				</router-link>
-	
-				<h1 
-					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+			<router-link 
+				:to="`/${$i18n.locale}`"
+				v-on:click.native="toggleNav()"
+				v-if="$route.name !== 'home' && !navOpen"
+			> 
+				<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
+			</router-link>
+
+			<div v-if="$route.name !== 'home' && !navOpen" class="grid place-items-center pt-2 sm:pt-3">
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
 					v-if="isProjectPage"
 				>
 					{{ $t("projects." + $route.name + ".title") }} 
 				</h1>
 
-				<h1 
-					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
 					v-if="isExperiencePage"
 				>
 					{{ $t("experiences." + $route.name + ".title") }} 
 				</h1> 
 
-				<h1 
-					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
 					v-if="!isProjectPage && !isExperiencePage"
 				>
 					{{ $t("landing-page.nav." + $route.name) }}
 				</h1>
 
-				<div class="hidden md:grid md:text-xl text-base px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
-					<p class="w-40 md:w-56 md:ml-5">
-						<span v-if="height > 0">
-							progression : &nbsp; <span class="font-semibold"> {{ progression }} % </span>
-						</span>
-					</p>
+				<div class="grid md:text-xl text-base px-3 place-items-center border-4 border-myBlue-900 bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
+					<span v-if="height > 0" class="hidden sm:flex">
+						<span class="font-semibold"> {{ progression }} % </span>
+					</span>
 				</div>
 			</div>
 
@@ -108,7 +110,7 @@
 				<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
 					<li class="mt-5">
 						<i class="fa-solid fa-bullseye" />
-						{{$t("landing-page.nav.professional")}} 
+						{{$t("landing-page.nav.ambitions")}} 
 					</li>
 				</router-link>
 				<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 

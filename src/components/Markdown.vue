@@ -1,6 +1,6 @@
 <template>
 	<main
-		class="w-11/12 md:w-1/3 flex-col md:mt-32 space-y-8 mt-16 mx-auto article" 
+		class="w-10/12 md:w-1/2 flex-col mt-24 md:mt-32 space-y-8 mx-auto article" 
 		v-html="article">
 	</main>
 </template>
@@ -55,12 +55,17 @@
 .article h1 {
 	margin-top:60px;
 	margin-bottom:30px;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: 800;
 }
 
 .article h2 {
 	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.article h3 {
+	font-size: 1.2em;
 	font-weight: 700;
 }
 
@@ -70,6 +75,11 @@
 	height: 2px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.article em {
+	font-style: italic;
+	font-weight: 500;
 }
 
 .article ul {
