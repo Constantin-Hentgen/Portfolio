@@ -93,8 +93,8 @@ export default new Router({
 			},
 			children: [
 				{
-					path: 'mon-site-perso',
-					name: 'mon-site-perso',
+					path: 'portfolio',
+					name: 'portfolio',
 					component: TextPage
 				},
 				{
@@ -113,28 +113,8 @@ export default new Router({
 					component: TextPage
 				},
 				{
-					path: 'vue-weather',
-					name: 'vue-weather',
-					component: TextPage
-				},
-				{
-					path: 'task-manager',
-					name: 'task-manager',
-					component: TextPage
-				},
-				{
-					path: 'touyube',
-					name: 'touyube',
-					component: TextPage
-				},
-				{
 					path: 'text-parser',
 					name: 'text-parser',
-					component: TextPage
-				},
-				{
-					path: 'php-experiment',
-					name: 'php-experiment',
 					component: TextPage
 				},
 				{

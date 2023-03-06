@@ -12,8 +12,8 @@
 	">
 		<img class="w-40 md:w-48 mx-auto mt-20 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="picture of the webmaster">
 
-		<h1 class="text-2xl md:text-4xl text-center md:text-left text-myBlue-900 font-extrabold">Constantin, {{ $t('landing-page.student') }} <i class="fas fa-shield-halved text-2xl md:text-3xl"></i></h1>
-		<p class="text-left w-full text-md md:text-xl" v-html="description"></p>
+		<h1 class="text-2xl md:text-4xl text-center text-myBlue-900 font-extrabold">Constantin, {{ $t('landing-page.student') }} <i class="fas fa-shield-halved text-2xl md:text-3xl"></i></h1>
+		<p class="text-justify w-full text-md md:text-xl" v-html="description"></p>
 	</div>
 </template>
 

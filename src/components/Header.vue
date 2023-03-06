@@ -5,6 +5,14 @@
 		'opacity-0': !navOpen
 	}"
 	>
+		<a 
+			href="#header" 
+			class="hidden md:flex"
+			v-if="rawProgression != 0"
+		>
+			<i class="fa-solid fa-circle-up absolute right-0 top-0 mr-64 mt-108 text-5xl" />
+		</a>
+
 		<div
 			class="w-full flex justify-between sm:w-1/2 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
 			:class="{ 
@@ -26,7 +34,26 @@
 					<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
 				</router-link>
 	
-				<h1 class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"> {{ $t("landing-page.nav." + $route.name) }} </h1>
+				<h1 
+					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+					v-if="isProjectPage"
+				>
+					{{ $t("projects." + $route.name + ".title") }} 
+				</h1>
+
+				<h1 
+					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+					v-if="isExperiencePage"
+				>
+					{{ $t("experiences." + $route.name + ".title") }} 
+				</h1> 
+
+				<h1 
+					class="text-myBlue-200 my-auto text-xl md:text-2xl md:font-semibold w-48 mr-1 text-center"
+					v-if="!isProjectPage && !isExperiencePage"
+				>
+					{{ $t("landing-page.nav." + $route.name) }}
+				</h1>
 
 				<div class="hidden md:grid md:text-xl text-base px-3 place-items-center bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
 					<p class="w-40 md:w-56 md:ml-5">
@@ -54,42 +81,42 @@
 			<h1 class="text-3xl md:text-5xl font-bold mx-auto"> {{ $t("landing-page.nav.goto") }}</h1>
 			
 			<ul class="mx-auto">
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa-solid fa-house"></i>
 						{{$t("landing-page.nav.home")}} 
-					</router-link>
-				</li>
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa fa-suitcase" />
-						{{$t("landing-page.nav.experience")}} 
-					</router-link>
-				</li>
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/education`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+						{{$t("landing-page.nav.experiences")}} 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/education`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa-solid fa-graduation-cap"></i>
 						Éducation
-					</router-link>
-				</li>
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa-solid fa-cubes"></i>
 						{{$t("landing-page.nav.projects")}} 
-					</router-link>
-				</li>
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa-solid fa-bullseye" />
 						{{$t("landing-page.nav.professional")}} 
-					</router-link>
-				</li>
-				<li class="mt-5">
-					<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
 						<i class="fa-solid fa-people-group" />
 						{{$t("landing-page.nav.commitment")}} 
-					</router-link>
-				</li>
+					</li>
+				</router-link>
 			</ul>
 		</nav>
 	</header>
@@ -102,10 +129,16 @@ export default {
 		return {
 			navOpen: false,
 			progression: 0,
-			height: 0
+			rawProgression: 0,
+			height: 0,
+			isProjectPage: false,
+			isExperiencePage: false
 		}
 	},
 	created () {
+		this.getPageNature();
+		window.addEventListener('click', this.getPageNature);
+
 		window.addEventListener('scroll', this.getProgression);
 		window.addEventListener('click', this.getProgression);
 		window.addEventListener('load', this.getProgression);
@@ -116,6 +149,8 @@ export default {
 		this.windowHeight = window.innerHeight;
 	},
 	unmounted () {
+		window.removeEventListener('click', this.getPageNature);
+
 		window.removeEventListener('scroll', this.getProgression);
 		window.removeEventListener('click', this.getProgression);
 		window.removeEventListener('load', this.getProgression);
@@ -123,6 +158,18 @@ export default {
 		window.removeEventListener('orientationchange', this.getProgression);
 	},
 	methods: {
+		getPageNature() {
+			if (this.$route.path.includes('project/')) {
+				this.isProjectPage = true;
+				this.isExperiencePage = false;
+			} else if (this.$route.path.includes('experience/')) {
+				this.isProjectPage = false;
+				this.isExperiencePage = true;
+			} else {
+				this.isProjectPage = false;
+				this.isExperiencePage = false;
+			}
+		},
 		getProgression() {
 			this.height = document.body.scrollHeight
 			this.rawProgression = window.scrollY
