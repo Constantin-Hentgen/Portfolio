@@ -7,14 +7,14 @@
 	>
 		<a 
 			href="#header" 
-			class="hidden md:flex"
+			class="hidden lg:flex"
 			v-if="rawProgression != 0"
 		>
-			<i class="fa-solid fa-circle-up absolute right-0 top-0 mr-64 mt-108 text-5xl" />
+			<i class="fa-solid fa-circle-up absolute right-0 top-0 lg:mr-40 xl:mr-56 mt-108 text-5xl" />
 		</a>
 
 		<div
-			class="w-full flex justify-between md:w-2/3 xl:w-1/2 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
+			class="w-full flex justify-between md:w-2/3 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
 			:class="{ 
 				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
 				'flex-col' : (navOpen)
@@ -39,28 +39,28 @@
 
 			<div v-if="$route.name !== 'home' && !navOpen" class="grid place-items-center pt-2 sm:pt-3">
 				<h1
-					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
 					v-if="isProjectPage"
 				>
 					{{ $t("projects." + $route.name + ".title") }} 
 				</h1>
 
 				<h1
-					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
 					v-if="isExperiencePage"
 				>
 					{{ $t("experiences." + $route.name + ".title") }} 
 				</h1> 
 
 				<h1
-					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold w-48 text-center"
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
 					v-if="!isProjectPage && !isExperiencePage"
 				>
 					{{ $t("landing-page.nav." + $route.name) }}
 				</h1>
 
 				<div class="grid md:text-xl text-base px-3 place-items-center border-4 border-myBlue-900 bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
-					<span v-if="height > 0" class="hidden sm:flex">
+					<span v-if="height > 0">
 						<span class="font-semibold"> {{ progression }} % </span>
 					</span>
 				</div>

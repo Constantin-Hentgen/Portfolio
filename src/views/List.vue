@@ -1,5 +1,5 @@
 <template>
-	<main class="w-11/12 md:w-1/2 flex flex-wrap mt-32 md:mt-40 md:px-20 gap-y-8 place-content-center mx-auto">
+	<main class="w-11/12 md:w-1/2 flex flex-wrap mt-32 md:mt-40 md:px-20 gap-y-5 sm:gap-y-8 place-content-center mx-auto">
 		<Card v-for="(item, index) in $t(this.type)" :key="index"
 			:title="item.title" 
 			:year="item.year"

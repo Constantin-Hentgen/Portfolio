@@ -1,6 +1,6 @@
 <template>
 	<main
-		class="w-10/12 md:w-1/2 flex-col mt-24 md:mt-32 space-y-8 mx-auto article" 
+		class="w-10/12 md:w-1/2 flex-col mt-20 md:mt-32 space-y-8 mx-auto article" 
 		v-html="article">
 	</main>
 </template>
