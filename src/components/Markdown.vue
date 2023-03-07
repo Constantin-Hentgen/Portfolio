@@ -20,7 +20,7 @@
 			}
 		},
 		created() {
-			this.fetchContent()
+			this.fetchContent();
 			window.addEventListener('click', this.fetchContent);
 			window.addEventListener('load', this.getProgression);
 		},
@@ -30,7 +30,7 @@
 			}
 		},
 		unmounted () {
-			window.removeEventListener('click', this.getProgression);
+			window.removeEventListener('click', this.fetchContent);
 			window.removeEventListener('load', this.getProgression);
 		},
 		methods: {
