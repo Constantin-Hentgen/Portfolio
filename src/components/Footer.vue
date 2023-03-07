@@ -1,17 +1,25 @@
 <template>
-	<footer class="main flex flex-col sm:flex-row justify-evenly w-full mb-5 mt-20 text-myBlue-900">
-		<LanguageSwitcher />
+	<footer class="main flex flex-col justify-evenly w-full mb-5 mt-12 space-y-5 text-myBlue-900">
+		<LanguageSwitcher v-if="$route.name == 'home'"/>
+		<p class="text-center flex flex-col-reverse sm:flex-row justify-center">
+			<span>
+				{{ $t("landing-page.footer.codedIn") }} 
+				<i class="fa-brands fa-vuejs" /> 
+				{{ $t("landing-page.footer.with") }} 
+				<i class="fas fa-heart-pulse" /> 
+			</span>
 
-		<div class="space-x-5 text-3xl text-center">
-			<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
-				<i class="fa-brands fa-linkedin-in"></i>
-				</a>
-			<a href="https://github.com/Constantin-Hentgen" target="_blank">
-				<i class="fa-brands fa-github"></i>
-			</a>
-		</div>
-		
-		<p class="text-center"> {{ $t("landing-page.footer.codedIn") }} <i class="fa-brands fa-vuejs"></i> {{ $t("landing-page.footer.with") }} <i class="fas fa-heart-pulse"></i> </p>
+			<span class="hidden sm:flex">&nbsp;|&nbsp;</span>
+
+			<span>
+				{{ $t("landing-page.footer.license") }}
+				<i class="fa-brands fa-creative-commons"/>
+			</span>
+
+			<span class="hidden sm:flex">&nbsp;|&nbsp;</span>
+
+			<span> 2023 </span>
+		</p>
 	</footer>
 </template>
 

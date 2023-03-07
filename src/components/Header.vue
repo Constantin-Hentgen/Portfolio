@@ -1,22 +1,127 @@
 <template>
-  <div>
-		<header id="xprime" class="bg-myBlue-900 z-10 w-full shadow-md fixed top-0">
-			<div class="topnav w-full bg-myBlue-900 md:flex md:justify-center  pl-10 md:pl-0 text-myBlue-200 font-semibold" id="myTopnav">
-				<a class="icon" v-on:click="toggleNav()">
-					<i v-if="!navOpen" class="fa fa-bars"></i>
-					<i v-else class="fas fa-xmark text-xl"></i>
+	<header id="header" class="w-full flex-col p-5 fixed z-40 transition duration-200 opacity-100 active:animate-fade-in-out"
+	:class="{
+		'opacity-100': navOpen,
+		'opacity-0': !navOpen
+	}"
+	>
+		<a 
+			href="#header" 
+			class="hidden lg:flex"
+			v-if="rawProgression != 0"
+		>
+			<i class="fa-solid fa-circle-up absolute right-0 top-0 lg:mr-40 xl:mr-56 mt-108 text-5xl" />
+		</a>
+
+		<div
+			class="w-full flex justify-between md:w-2/3 mx-auto p-2 h-16 md:h-20 rounded-full bg-transparent"
+			:class="{ 
+				'w-full bg-myBlue-900': ($route.name != 'home' && !navOpen),
+				'flex-col' : (navOpen)
+			}" 
+		>
+			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl md:text-4xl text-center">
+				<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
+					<i class="fa-brands fa-linkedin"></i>
+					</a>
+				<a href="https://github.com/Constantin-Hentgen" target="_blank">
+					<i class="fa-brands fa-github"></i>
 				</a>
-
-				<router-link :to="`/${$i18n.locale}`" id="info"> Constantin Hentgen </router-link>
-
-				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.home")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.professional")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.experience")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.commitment")}} </router-link>
-				<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="hover:bg-white w-4/5 rounded-lg md:rounded-none md:w-full hover:text-myBlue-900 text-3xl focus:bg-white focus:text-myBlue-900"> {{$t("landing-page.nav.projects")}} </router-link>
 			</div>
-		</header>
-  </div>
+
+			<router-link 
+				:to="`/${$i18n.locale}`"
+				v-on:click.native="toggleNav()"
+				v-if="$route.name !== 'home' && !navOpen"
+			> 
+				<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
+			</router-link>
+
+			<div v-if="$route.name !== 'home' && !navOpen" class="grid place-items-center pt-2 sm:pt-3">
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
+					v-if="isProjectPage"
+				>
+					{{ $t("projects." + $route.name + ".title") }} 
+				</h1>
+
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
+					v-if="isExperiencePage"
+				>
+					{{ $t("experiences." + $route.name + ".title") }} 
+				</h1> 
+
+				<h1
+					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
+					v-if="!isProjectPage && !isExperiencePage"
+				>
+					{{ $t("landing-page.nav." + $route.name) }}
+				</h1>
+
+				<div class="grid md:text-xl text-base px-3 place-items-center border-4 border-myBlue-900 bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
+					<span v-if="height > 0">
+						<span class="font-semibold"> {{ progression }} % </span>
+					</span>
+				</div>
+			</div>
+
+			<button v-on:click="toggleNav()" 
+				:class="{ 
+					'text-myBlue-200 bg-myBlue-900 ' : ($route.name == 'home' || navOpen),
+					'text-myBlue-900 bg-myBlue-200 ' : !($route.name == 'home' || navOpen),
+					'self-end' : (navOpen)
+				}"
+				class="text-xl md:text-2xl w-12 md:w-16 h-full shadow-xl rounded-full transition duration-500"
+			>
+				<i v-if="!navOpen" class="fa fa-bars" />
+				<i v-else class="fas fa-xmark" />
+			</button>
+		</div>
+
+		<nav class="hidden w-full h-full flex-col gap-10 p-12" id="nav">
+			<h1 class="text-3xl md:text-5xl font-bold mx-auto"> {{ $t("landing-page.nav.goto") }}</h1>
+			
+			<ul class="mx-auto">
+				<router-link :to="`/${$i18n.locale}`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa-solid fa-house"></i>
+						{{$t("landing-page.nav.home")}} 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/experiences`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa fa-suitcase" />
+						{{$t("landing-page.nav.experiences")}} 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/education`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa-solid fa-graduation-cap"></i>
+						Éducation
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/projects`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa-solid fa-cubes"></i>
+						{{$t("landing-page.nav.projects")}} 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/ambitions`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa-solid fa-bullseye" />
+						{{$t("landing-page.nav.ambitions")}} 
+					</li>
+				</router-link>
+				<router-link :to="`/${$i18n.locale}/commitment`" v-on:click.native="toggleNav()" class="text-myBlue-900 text-2xl md:text-3xl"> 
+					<li class="mt-5">
+						<i class="fa-solid fa-people-group" />
+						{{$t("landing-page.nav.commitment")}} 
+					</li>
+				</router-link>
+			</ul>
+		</nav>
+	</header>
 </template>
 
 <script>
@@ -24,132 +129,95 @@ export default {
 	name: 'Header',
 	data() {
 		return {
-			navOpen: false
+			navOpen: false,
+			progression: 0,
+			rawProgression: 0,
+			height: 0,
+			isProjectPage: false,
+			isExperiencePage: false
 		}
 	},
+	created () {
+		this.getPageNature();
+		window.addEventListener('click', this.getPageNature);
+
+		window.addEventListener('scroll', this.getProgression);
+		window.addEventListener('click', this.getProgression);
+		window.addEventListener('load', this.getProgression);
+		window.addEventListener('resize', this.getProgression);
+		window.addEventListener('orientationchange', this.getProgression);
+
+		this.height = document.body.scrollHeight;
+		this.windowHeight = window.innerHeight;
+	},
+	unmounted () {
+		window.removeEventListener('click', this.getPageNature);
+
+		window.removeEventListener('scroll', this.getProgression);
+		window.removeEventListener('click', this.getProgression);
+		window.removeEventListener('load', this.getProgression);
+		window.removeEventListener('resize', this.getProgression);
+		window.removeEventListener('orientationchange', this.getProgression);
+	},
 	methods: {
-		toggleNav() {
-			var x = document.getElementById("myTopnav");
-			var xprime = document.getElementById("xprime");
-			var y = document.getElementById("info");
-
-			if (!x.className.includes("responsive")) {
-				this.navOpen = true;
-				if (window.innerWidth < 700) {
-					xprime.animate(
-						[
-							{ transform: 'translateY(-400px)' },
-							{ transform: 'translateY(0px)' }
-						],
-						{
-							duration: 225
-						}
-					);
-					content.style.filter = "blur(3px)";
-					x.className += " responsive";
-				}
-				
-				y.style.display = "none";
+		getPageNature() {
+			if (this.$route.path.includes('project/')) {
+				this.isProjectPage = true;
+				this.isExperiencePage = false;
+			} else if (this.$route.path.includes('experience/')) {
+				this.isProjectPage = false;
+				this.isExperiencePage = true;
 			} else {
+				this.isProjectPage = false;
+				this.isExperiencePage = false;
+			}
+		},
+		getProgression() {
+			this.height = document.body.scrollHeight
+			this.rawProgression = window.scrollY
+			this.progression = Math.round(100*(window.scrollY+window.innerHeight)/this.height)
+		},
+		toggleNav() {
+			var header = document.getElementById("header");
+			var nav = document.getElementById("nav");
+			if (!this.navOpen) {
+				header.style.height = window.innerHeight + "px";
+				header.style.background = "#e5e5e5";
+				nav.style.display = "flex";
+				this.navOpen = true;
+			} else {
+				header.style.height = "50px";
+				header.style.background = "transparent";
+				nav.style.display = "none";
 				this.navOpen = false;
-				content.style.filter = "blur(0px)";
-
-				x.animate(
-					[
-						{ transform: 'translateX(-500px)'},
-						{ transform: 'translateY(0)' }
-					],
-					{
-						duration: 200
-					}
-				);
-
-				// le nouveau afit 400px de trop et il se fait resize
-
-				x.className = "topnav w-full bg-myBlue-900  pl-10 text-white font-semibold";
-				y.style.display = "block";
 			}
 		}
 	}
 }
 </script>
 
-<style>
-* {
-	-webkit-tap-highlight-color: transparent;
-}
-
-.dropdown-fade-enter-active, .dropdown-fade-leave-active {
-	transition: all .1s ease-in-out;
-}
-.dropdown-fade-enter, .dropdown-fade-leave-to {
-	opacity: 0;
-	transform: translateY(-12px);
-}
-
-/* NEW TOP NAV */
-
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#info {
-	display: none;
-}
-
-.topnav .icon, .topnav .info {
-  display: none;
-}
-
-@media screen and (max-width: 750px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav .info {
-    float: left;
-    display: block;
+<style scoped>
+@keyframes fade-in-out {
+  0% {
+    opacity: 1;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  50% {
+    opacity: 0;
   }
-
-  .topnav.responsive {
-		position: relative;
-	}
-
-	#info {
-		display: block;
-	}
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  100% {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 751px) {
-	#myTopnav {
-		display: flex;
-		justify-content: center;
-	}
-	#info {
-		display: none !important;
-	}
+.animate-fade-in-out {
+  animation: fade-in-out 1s ease-in-out;
 }
+
+li:hover {
+	border-radius: 2px;
+	outline-color: #001d3d;
+	outline-style: dashed;
+	outline-offset: 5px;
+}
+
 </style>
-
