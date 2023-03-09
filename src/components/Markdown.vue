@@ -27,6 +27,7 @@
 		watch: {
 			'$route'() {
 				this.fetchContent();
+				this.getProgression();
 			}
 		},
 		unmounted () {

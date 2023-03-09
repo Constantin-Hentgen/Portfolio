@@ -8,7 +8,7 @@
 		<a 
 			href="#header" 
 			class="hidden lg:flex"
-			v-if="rawProgression != 0"
+			v-show="rawProgression != 0"
 		>
 			<i class="fa-solid fa-circle-up absolute right-0 top-0 lg:mr-40 xl:mr-56 mt-108 text-5xl" />
 		</a>
@@ -20,7 +20,7 @@
 				'flex-col' : (navOpen)
 			}" 
 		>
-			<div v-if="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl md:text-4xl text-center">
+			<div v-show="($route.name === 'home') && (!navOpen)" class="space-x-5 text-3xl md:text-4xl text-center">
 				<a href="https://www.linkedin.com/in/constantin-hentgen/" target="_blank">
 					<i class="fa-brands fa-linkedin"></i>
 					</a>
@@ -32,35 +32,35 @@
 			<router-link 
 				:to="`/${$i18n.locale}`"
 				v-on:click.native="toggleNav()"
-				v-if="$route.name !== 'home' && !navOpen"
+				v-show="$route.name !== 'home' && !navOpen"
 			> 
 				<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
 			</router-link>
 
-			<div v-if="$route.name !== 'home' && !navOpen" class="grid place-items-center pt-2 sm:pt-3">
+			<div v-show="$route.name !== 'home' && !navOpen" class="grid place-items-center pt-2 sm:pt-3">
 				<h1
 					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
-					v-if="isProjectPage"
+					v-show="isProjectPage"
 				>
 					{{ $t("projects." + $route.name + ".title") }} 
 				</h1>
 
 				<h1
 					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
-					v-if="isExperiencePage"
+					v-show="isExperiencePage"
 				>
 					{{ $t("experiences." + $route.name + ".title") }} 
 				</h1> 
 
 				<h1
 					class="text-myBlue-200 grid place-items-center text-xl md:text-2xl md:font-semibold text-center"
-					v-if="!isProjectPage && !isExperiencePage"
+					v-show="!isProjectPage && !isExperiencePage"
 				>
 					{{ $t("landing-page.nav." + $route.name) }}
 				</h1>
 
 				<div class="grid md:text-xl text-base px-3 place-items-center border-4 border-myBlue-900 bg-myBlue-200 rounded-full text-myBlue-900 my-auto">
-					<span v-if="height > 0">
+					<span v-show="height > 0">
 						<span class="font-semibold"> {{ progression }} % </span>
 					</span>
 				</div>
@@ -137,9 +137,15 @@ export default {
 			isExperiencePage: false
 		}
 	},
+	watch: {
+		'$route'() {
+			this.getPageNature();
+		}
+	},
 	created () {
 		this.getPageNature();
 		window.addEventListener('click', this.getPageNature);
+		window.addEventListener('load', this.getPageNature);
 
 		window.addEventListener('scroll', this.getProgression);
 		window.addEventListener('click', this.getProgression);
@@ -152,6 +158,7 @@ export default {
 	},
 	unmounted () {
 		window.removeEventListener('click', this.getPageNature);
+		window.removeEventListener('load', this.getPageNature);
 
 		window.removeEventListener('scroll', this.getProgression);
 		window.removeEventListener('click', this.getProgression);
