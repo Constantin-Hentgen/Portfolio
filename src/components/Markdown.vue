@@ -90,8 +90,10 @@
 .article img {
 	width:auto;
 	margin:auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -10px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 10px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	border-radius: 10px;
 }
 
 .article p, .article ul, .article h2 {
