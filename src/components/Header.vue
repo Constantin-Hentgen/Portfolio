@@ -31,7 +31,6 @@
 
 			<router-link 
 				:to="`/${$i18n.locale}`"
-				v-on:click.native="toggleNav()"
 				v-show="$route.name !== 'home' && !navOpen"
 			> 
 				<img class="w-12 h-12 md:w-16 md:h-16 shadow-2xl rounded-full" src="../assets/pp.jpeg" alt="portrait picture of the webmaster">
