@@ -1,4 +1,4 @@
-# vue-fuse-example
+# Vue setup
 
 ## Project setup
 ```
